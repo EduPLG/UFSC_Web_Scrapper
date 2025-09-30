@@ -1,0 +1,7 @@
+services:
+  scraper:
+    build: .
+    container_name: imoveis_scraper
+    volumes:
+      - .:/app
+    command: python main.py
