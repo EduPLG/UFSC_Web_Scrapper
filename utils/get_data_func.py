@@ -93,24 +93,27 @@ def get_important_data_zapimoveis(imovel: BeautifulSoup):
     return object_imovel.model_dump() if object_imovel else None
 
 
+def get_important_data_imoveisweb(imovel: BeautifulSoup):
+    pass
+
 def get_important_data_brognoli(imovel: BeautifulSoup):
     # Título do imóvel
     try:
-        title = imovel.find("a").get_attribute("title")
+        title = imovel.find("a")["title"]
     except:
         print("Erro ao obter o título")
         title = "None"
 
     # Link do imóvel
     try:
-        link = imovel.find("a.i").get_attribute("href")
+        link = imovel.find("a")['href']
     except:
         print("Erro ao obter o link")
         link = "None"
 
     # Localização (bairro/cidade)
     try:
-        location_full = imovel.find("span.e").text_content().strip()
+        location_full = imovel.find("span", {"class": "e"}).text.strip()
         if "," in location_full:
             street = location_full.split(",")[0].strip()
             location = location_full.split(",")[1].strip()
@@ -126,9 +129,9 @@ def get_important_data_brognoli(imovel: BeautifulSoup):
     bathrooms = 0
     parking = 0
     try:
-        features = imovel.find("li").all()
+        features = imovel.find_all("li")
         for feature in features:
-            text = feature.text_content().lower()
+            text = feature.text.strip().lower()
             if 'm²' in text:
                 area = float(text.replace('m²', '').strip())
             elif 'quartos' in text or 'dormitório' in text:
@@ -149,7 +152,7 @@ def get_important_data_brognoli(imovel: BeautifulSoup):
 
     # Preço
     try:
-        price_txt = imovel.find("span.v").text_content()
+        price_txt = imovel.find("span", {"class": "v"}).text.strip()
     except:
         print("Erro ao obter o preço")
         price_txt = "0.0"
@@ -158,7 +161,7 @@ def get_important_data_brognoli(imovel: BeautifulSoup):
         object_imovel = ImovelCard(
             title=title,
             street=street,
-            link=link,
+            url=link,
             price_txt=price_txt,
             location=location,
             rooms=rooms,
@@ -170,4 +173,4 @@ def get_important_data_brognoli(imovel: BeautifulSoup):
         print("ERROR: ", e.errors())
         object_imovel = None
 
-    return object_imovel.model_dump() if object_imovel else None
+    return object_imovel.model_dump_json() if object_imovel else None

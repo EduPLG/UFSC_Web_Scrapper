@@ -1,8 +1,11 @@
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
+from tqdm import tqdm
+from collections.abc import Callable
 from utils.get_data_func import (
     get_important_data_zapimoveis,
     get_important_data_brognoli,
+    get_important_data_imoveisweb,
     save_elements_to_json
 )
 
@@ -17,7 +20,7 @@ def get_page_content(url: str) -> list[BeautifulSoup]:
         )
         # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-
         page = browser.new_page(java_script_enabled=True)
-        page.goto(url, wait_until="domcontentloaded", timeout=60000)
+        page.goto(url, wait_until="load", timeout=60000)
         content = page.content()
         SOUPS.append(BeautifulSoup(content, "html.parser"))  # Verifica se o HTML é válido
         # TODO: Tenta ir para a próxima página
@@ -25,41 +28,40 @@ def get_page_content(url: str) -> list[BeautifulSoup]:
         return SOUPS
 
 
-def init_playwright_zapimoveis(url: str) -> None:
+def save_site_content(url: str,
+                      filter: tuple[str, dict],
+                      function: Callable[[BeautifulSoup], list[str]],
+                      json_name: str) -> list[BeautifulSoup]:
+    print("Acessando o site...")
     soups = get_page_content(url)
+    print("Páginas salvas com sucesso!")
     lista = []
-    for pag_soup in soups:
-        elementos = pag_soup.select('li[data-cy="rp-property-cd"]')
-        print(elementos)
-        lista += [get_important_data_zapimoveis(imovel) for imovel in elementos]
-        # TODO: Tenta ir para a próxima página
-
-    save_elements_to_json(lista, "zapimoveis.json")
-
-
-def init_playwright_imoveisweb(url: str) -> None:
-    soups = get_page_content(url)
-    lista = []
-    for pag_soup in soups:
-        elementos = pag_soup.select('[data-cy="rp-property-cd"]')  # TROCAR
-        lista += [get_important_data_zapimoveis(imovel) for imovel in elementos]  # TROCAR
-        # TODO: Tenta ir para a próxima página
-    
-    save_elements_to_json(lista, "imoveisweb.json")
-
-
-def init_playwright_brognoli(url: str) -> None:
-    soups = get_page_content(url)
-    lista = []
-    for pag_soup in soups:
-        elementos = pag_soup.select(".imovel")
-        lista += [get_important_data_brognoli(imovel) for imovel in elementos]
-        # TODO: Tenta ir para a próxima página
-
-    save_elements_to_json(lista, "brognoli.json")
+    print("Extraindo os dados...")
+    for pag_soup in tqdm(soups):
+        elementos = pag_soup.find_all(filter[0], filter[1])
+        lista += list(map(function, elementos))
+    print("Salvando os dados em JSON...")
+    save_elements_to_json(lista, json_name)
+    print(f"Dados salvos com sucesso! Verifique o arquivo {json_name}")
 
 
 if __name__ == "__main__":
-    # init_playwright_zapimoveis("https://www.zapimoveis.com.br/aluguel/")
-    # init_playwright_imoveisweb("https://www.imovelweb.com.br/imoveis-venda-santa-catarina.html")
-    init_playwright_brognoli("https://www.brognoli.com.br/comprar/cidade/biguacu/1")
+    save_site_content(
+        "https://www.zapimoveis.com.br/venda/imoveis/sc/santa-catarina/",
+        ("li", {"data-cy": "rp-property-cd"}),
+        get_important_data_zapimoveis,
+        "zapimoveis.json"
+    )
+
+    save_site_content(
+        "https://www.imovelweb.com.br/imoveis-venda-santa-catarina.html",
+        ("div", {"class": "postingsList-module__card-container"}),
+        get_important_data_imoveisweb,
+        "imovelweb.json"
+    )
+
+    save_site_content(
+        "https://www.brognoli.com.br/comprar/cidade/biguacu/1",
+        ("article", {"class": "imovel"}),
+        get_important_data_brognoli,
+        "brognoli.json")

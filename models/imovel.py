@@ -1,4 +1,5 @@
 from pydantic import BaseModel, HttpUrl, Field, model_validator
+import re
 
 
 class ImovelCard(BaseModel):
@@ -16,7 +17,8 @@ class ImovelCard(BaseModel):
     @model_validator(mode="after")
     def _fill_valor_num(self):
         bruto = (
-            self.price_txt.replace("R$", "").replace(" ", "").replace(".", "").replace(",", ".")
+            # self.price_txt.replace("R$", "").replace(" ", "").replace(",", ".")
+            re.sub(r"[^0-9,\.]", "", self.price_txt).replace(".", "").replace(",", ".")
         )
         try:
             self.price_num = float(bruto)
