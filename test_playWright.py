@@ -15,14 +15,15 @@ def get_page_content(url: str) -> list[BeautifulSoup]:
     SOUPS = []
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(
-            headless=True,
+            headless=False,
             args=["--no-sandbox", "--disable-dev-shm-usage"]
         )
-        # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-
         page = browser.new_page(java_script_enabled=True)
         page.goto(url, wait_until="load", timeout=60000)
+        # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-
         content = page.content()
-        SOUPS.append(BeautifulSoup(content, "html.parser"))  # Verifica se o HTML é válido
+        page_soup = BeautifulSoup(content, "html.parser")
+        SOUPS.append(page_soup)  # Verifica se o HTML é válido
         # TODO: Tenta ir para a próxima página
         browser.close()
         return SOUPS
@@ -47,7 +48,7 @@ def save_site_content(url: str,
 
 if __name__ == "__main__":
     save_site_content(
-        "https://www.zapimoveis.com.br/venda/imoveis/sc/santa-catarina/",
+        "https://www.zapimoveis.com.br/aluguel",
         ("li", {"data-cy": "rp-property-cd"}),
         get_important_data_zapimoveis,
         "zapimoveis.json"
@@ -59,7 +60,7 @@ if __name__ == "__main__":
         get_important_data_imoveisweb,
         "imovelweb.json"
     )
-
+    
     save_site_content(
         "https://www.brognoli.com.br/comprar/cidade/biguacu/1",
         ("article", {"class": "imovel"}),

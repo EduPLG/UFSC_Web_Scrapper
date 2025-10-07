@@ -26,53 +26,61 @@ def save_elements_to_json(elements: list[dict], filename: str):
 
 def get_important_data_zapimoveis(imovel: BeautifulSoup):
     # Link do imóvel
-    link = imovel.locator("a").get_attribute("href") or "None"
-
+    try:
+        link = imovel.find("a")["href"]
+    except Exception as e:
+        link = "None"
+        
     # Título do imóvel
-    title = imovel.locator("a").get_attribute("title") or ""
-
-    # Localização (bairro/cidade)
-    location = imovel.locator('[data-cy="rp-cardProperty-location-txt"]').text_content() or ""
-    location = location.split("\n")[1] if "\n" in location else location
-
+    try:
+        title = imovel.find("a")["title"]
+    except Exception as e:
+        title = "None"
+    try:
+        # Localização (bairro/cidade)
+        location = imovel.find("h2", {"data-cy": "rp-cardProperty-location-txt"}).text or ""
+        location = location.split("\n")[1] if "\n" in location else location
+    except Exception as e:
+        location = ""
+        
     # Endereço (rua)
     try:
-        street = imovel.locator('[data-cy="rp-cardProperty-street-txt"]').text_content().strip()
-    except:
+        street = imovel.find("p", {"data-cy": "rp-cardProperty-street-txt"}).text.strip()
+    except Exception as e:
         street = ""
 
     # Área
     try:
-        area_txt = imovel.locator('[data-cy="rp-cardProperty-propertyArea-txt"]').text_content()
+        area_txt = imovel.find("li", {"data-cy": "rp-cardProperty-propertyArea-txt"}).text
         area = float(area_txt.split("\n")[-1].replace("m²", "").replace(",", ".").strip())
-    except:
+    except Exception as e:
         area = 0.0
 
     # Banheiros
     try:
-        bathrooms_txt = imovel.locator('[data-cy="rp-cardProperty-bathroomQuantity-txt"]').text_content()
+        bathrooms_txt = imovel.find("li", {"data-cy": "rp-cardProperty-bathroomQuantity-txt"}).text
         bathrooms = int(bathrooms_txt.split("\n")[-1])
-    except:
+    except Exception as e:
         bathrooms = 0
 
     # Quartos
     try:
-        rooms_txt = imovel.locator('[data-cy="rp-cardProperty-bedroomQuantity-txt"]').text_content()
+        rooms_txt = imovel.find("li", {"data-cy": "rp-cardProperty-bedroomQuantity-txt"}).text
         rooms = int(rooms_txt.split("\n")[-1])
-    except:
+    except Exception as e:
         rooms = 0
 
     # Preço
     try:
-        price_txt = imovel.locator('[data-cy="rp-cardProperty-price-txt"] p').text_content()
-    except:
+        price_txt = imovel.find("div", {"data-cy": "rp-cardProperty-price-txt"}).text
+    except Exception as e:
         price_txt = None
 
     # Vagas
     try:
-        parking_txt = imovel.locator('[data-cy="rp-cardProperty-parkingSpacesQuantity-txt"]').text_content()
+        parking_txt = imovel.find("li", {"data-cy": "rp-cardProperty-parkingSpacesQuantity-txt"}).text
         parking = int(parking_txt.split("\n")[-1])
-    except:
+    except Exception as e:
         parking = 0
 
     try:
@@ -89,26 +97,92 @@ def get_important_data_zapimoveis(imovel: BeautifulSoup):
         )
     except ValidationError as e:
         print(e.errors())
-        object_imovel = None
-    return object_imovel.model_dump() if object_imovel else None
+        return None
+    return object_imovel.model_dump_json()
 
 
 def get_important_data_imoveisweb(imovel: BeautifulSoup):
-    pass
+    # Título do imóvel
+    try:
+        title = imovel.find("h3", {"data-qa": "POSTING_CARD_DESCRIPTION"}).text
+    except Exception as e:
+        title = "None"
+
+    # Link do imóvel
+    try:
+        link = imovel.find('a')["href"]
+        if not link.startswith("http"):
+            link = "https://www.imovelweb.com.br" + link
+    except Exception as e:
+        link = "None"
+
+    # Localização (bairro/cidade)
+    try:
+        location = imovel.find("h2", {"data-qa": "POSTING_CARD_LOCATION"}).text.strip()
+    except Exception as e:
+        location = "None"
+
+    # Endereço (rua)
+    try:
+        street = imovel.find("div", {"class": "postingLocations-module__location-address-in-listing"}).text.strip()
+    except Exception as e:
+        street = "None"
+
+    # Área, quartos, banheiros, vagas
+    area = 0.0
+    rooms = 0
+    bathrooms = 0
+    parking = 0
+    try:
+        features = imovel.find("h3", {"data-qa": "POSTING_CARD_FEATURES"})
+        spans = features.find_all("span")
+        list_values = []
+        for span in spans:
+            list_values.append(span.text.split()[0])
+        area, rooms, bathrooms, parking = list_values[:4]
+
+    except Exception as e:
+        area = 0.0
+        rooms = 0
+        bathrooms = 0
+        parking = 0
+
+    # Preço
+    try:
+        price_txt = imovel.find("div", {"data-qa": "POSTING_CARD_PRICE"}).text
+    except Exception as e:
+        price_txt = "0.0"
+
+    try:
+        object_imovel = ImovelCard(
+            title=title,
+            street=street,
+            url=link,
+            price_txt=price_txt,
+            location=location,
+            rooms=rooms,
+            area=area,
+            bathrooms=bathrooms,
+            parking=parking
+        )
+    except ValidationError as e:
+        print(e.errors())
+        return None
+
+    return object_imovel.model_dump_json()
+
 
 def get_important_data_brognoli(imovel: BeautifulSoup):
     # Título do imóvel
     try:
         title = imovel.find("a")["title"]
-    except:
-        print("Erro ao obter o título")
+    except Exception as e:
         title = "None"
 
     # Link do imóvel
     try:
         link = imovel.find("a")['href']
-    except:
-        print("Erro ao obter o link")
+    except Exception as e:
         link = "None"
 
     # Localização (bairro/cidade)
@@ -119,8 +193,7 @@ def get_important_data_brognoli(imovel: BeautifulSoup):
             location = location_full.split(",")[1].strip()
         else:
             street = location = location_full
-    except:
-        print("Erro ao obter a localização")
+    except Exception as e:
         location = street = "None"
 
     # Área, quartos, banheiros, vagas
@@ -141,10 +214,9 @@ def get_important_data_brognoli(imovel: BeautifulSoup):
             else:
                 try:
                     parking = int(text.strip())
-                except:
+                except Exception as e:
                     parking = 0
-    except:
-        print("Erro ao obter área, quartos, banheiros ou vagas")
+    except Exception as e:
         area = 0.0
         rooms = 0
         bathrooms = 0
@@ -153,8 +225,7 @@ def get_important_data_brognoli(imovel: BeautifulSoup):
     # Preço
     try:
         price_txt = imovel.find("span", {"class": "v"}).text.strip()
-    except:
-        print("Erro ao obter o preço")
+    except Exception as e:
         price_txt = "0.0"
 
     try:
@@ -171,6 +242,6 @@ def get_important_data_brognoli(imovel: BeautifulSoup):
         )
     except ValidationError as e:
         print("ERROR: ", e.errors())
-        object_imovel = None
+        return None
 
-    return object_imovel.model_dump_json() if object_imovel else None
+    return object_imovel.model_dump_json()
