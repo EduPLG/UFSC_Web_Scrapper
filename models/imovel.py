@@ -18,7 +18,7 @@ class ImovelCard(BaseModel):
     def _fill_valor_num(self):
         bruto = (
             # self.price_txt.replace("R$", "").replace(" ", "").replace(",", ".")
-            re.sub(r"[^0-9,\.]", "", self.price_txt).replace(".", "").replace(",", ".")
+            re.sub(r"[^0-9,]", "", self.price_txt).replace(",", ".")
         )
         try:
             self.price_num = float(bruto)

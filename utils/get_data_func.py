@@ -96,7 +96,7 @@ def get_important_data_zapimoveis(imovel: BeautifulSoup):
             parking=parking
         )
     except ValidationError as e:
-        print(e.errors())
+        # print("ERROR: ", e.errors())
         return None
     return object_imovel.model_dump_json()
 
@@ -166,7 +166,7 @@ def get_important_data_imoveisweb(imovel: BeautifulSoup):
             parking=parking
         )
     except ValidationError as e:
-        print(e.errors())
+        # print("ERROR: ", e.errors())
         return None
 
     return object_imovel.model_dump_json()
@@ -241,7 +241,7 @@ def get_important_data_brognoli(imovel: BeautifulSoup):
             parking=parking
         )
     except ValidationError as e:
-        print("ERROR: ", e.errors())
+        # print("ERROR: ", e.errors())
         return None
 
     return object_imovel.model_dump_json()
