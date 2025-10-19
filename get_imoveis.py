@@ -27,13 +27,14 @@ def get_page_content(url: str, next_page_func: Callable[[Page], bool]) -> list[B
             args=[
                 "--no-sandbox",
                 "--disable-dev-shm-usage",
-                "--window-position=-2000,-2000",  # joga fora da tela
-                "--window-size=1,1"
+                # "--window-position=-2000,-2000",  # joga fora da tela
+                # "--window-size=1,1"
             ]
         )
         page = browser.new_page(java_script_enabled=True)
         page.goto(url, wait_until="load", timeout=60000)
         # -=-=-=-=-=-=-=-=-=-=-=-=-=-=- Next Page Loop -=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+        print(f"Donwloading page ( 0 / {MAX_PAGE} )...", end="\r")
         for _ in range(1, MAX_PAGE + 1):
             content = page.content()
             page_soup = BeautifulSoup(content, "html.parser")
@@ -73,13 +74,13 @@ if __name__ == "__main__":
         "zapimoveis.json"
     )
 
-    save_site_content(
-        "https://www.imovelweb.com.br/imoveis-venda-santa-catarina.html",
-        ("div", {"class": "postingsList-module__card-container"}),
-        get_important_data_imoveisweb,
-        next_page_imoveisweb,
-        "imovelweb.json"
-    )
+    # save_site_content(
+    #     "https://www.imovelweb.com.br/imoveis-venda-santa-catarina.html",
+    #     ("div", {"class": "postingsList-module__card-container"}),
+    #     get_important_data_imoveisweb,
+    #     next_page_imoveisweb,
+    #     "imovelweb.json"
+    # )
 
     save_site_content(
         "https://www.brognoli.com.br/comprar/cidade/biguacu/1",
