@@ -101,58 +101,85 @@ def get_important_data_zapimoveis(imovel: BeautifulSoup):
     return object_imovel.model_dump_json()
 
 
-def get_important_data_imoveisweb(imovel: BeautifulSoup):
+def get_important_data_imoveis_sc(imovel: BeautifulSoup):
     # Título do imóvel
     try:
-        title = imovel.find("h3", {"data-qa": "POSTING_CARD_DESCRIPTION"}).text
+        title = imovel.find("a").text.strip()
     except Exception as e:
         title = "None"
 
     # Link do imóvel
     try:
         link = imovel.find('a')["href"]
-        if not link.startswith("http"):
-            link = "https://www.imovelweb.com.br" + link
     except Exception as e:
         link = "None"
 
     # Localização (bairro/cidade)
     try:
-        location = imovel.find("h2", {"data-qa": "POSTING_CARD_LOCATION"}).text.strip()
+        location = imovel.find("div", {"class": "imovel-extra"}).select_one("strong").get_text(strip=True)
     except Exception as e:
         location = "None"
 
-    # Endereço (rua)
-    try:
-        street = imovel.find("div", {"class": "postingLocations-module__location-address-in-listing"}).text.strip()
-    except Exception as e:
-        street = "None"
+    # Endereço (rua)  Esse site não fornece o endereço completo
+    street = "None"
 
     # Área, quartos, banheiros, vagas
     area = 0.0
     rooms = 0
     bathrooms = 0
     parking = 0
-    try:
-        features = imovel.find("h3", {"data-qa": "POSTING_CARD_FEATURES"})
-        spans = features.find_all("span")
-        list_values = []
-        for span in spans:
-            list_values.append(span.text.split()[0])
-        area, rooms, bathrooms, parking = list_values[:4]
+    
+    features = imovel.find("ul", {"class": "imovel-info"})
+    
+    # Primeiro, verifique se a <ul> foi encontrada
+    if features:
+        # Não precisamos de try/except aqui fora
+        spans = features.select("li > span")
+        if spans:
+            for span in spans:
+                text_ = span.get_text(strip=True)
+                
+                # Use .select_one() para pegar o <strong>
+                strong_tag = span.select_one("strong")
+                
+                # Se não houver <strong>, pule este <span>
+                if not strong_tag:
+                    continue
 
-    except Exception as e:
-        area = 0.0
-        rooms = 0
-        bathrooms = 0
-        parking = 0
+                strong_text = strong_tag.get_text(strip=True)
+
+                if 'm²' in text_:
+                    try:
+                        # CORREÇÃO: Substitui vírgula por ponto
+                        area = float(strong_text.replace(",", "."))
+                    except (ValueError, AttributeError):
+                        pass # falha silenciosa, area continua 0.0
+                
+                elif 'quartos' in text_:
+                    try:
+                        rooms = int(strong_text)
+                    except (ValueError, AttributeError):
+                        pass # rooms continua 0
+                    
+                elif 'suíte' in text_:
+                    try:
+                        bathrooms = int(strong_text)
+                    except (ValueError, AttributeError):
+                        pass # bathrooms continua 0
+                    
+                # O HTML diz 'vaga' (singular), não 'vagas'
+                elif 'vaga' in text_: 
+                    try:
+                        parking = int(strong_text)
+                    except (ValueError, AttributeError):
+                        pass # parking continua 0
 
     # Preço
     try:
-        price_txt = imovel.find("div", {"data-qa": "POSTING_CARD_PRICE"}).text
+        price_txt = imovel.find("span", {"class": "imovel-preco"}).text.strip()
     except Exception as e:
         price_txt = "0.0"
-
+    
     try:
         object_imovel = ImovelCard(
             title=title,
@@ -166,9 +193,7 @@ def get_important_data_imoveisweb(imovel: BeautifulSoup):
             parking=parking
         )
     except ValidationError as e:
-        # print("ERROR: ", e.errors())
         return None
-
     return object_imovel.model_dump_json()
 
 
@@ -245,3 +270,4 @@ def get_important_data_brognoli(imovel: BeautifulSoup):
         return None
 
     return object_imovel.model_dump_json()
+

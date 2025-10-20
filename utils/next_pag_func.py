@@ -1,4 +1,3 @@
-import re
 from playwright.sync_api import Page
 
 
@@ -58,22 +57,33 @@ def next_page_zapimoveis(page: Page) -> bool:
         return False
 
 
-def next_page_imoveisweb(page: Page) -> bool:
-    old_url = page.url
-    match = re.search(r'pagina-(\d+)\.html', old_url)
-
-    if match:
-        numero = int(match.group(1))  # pega o número como inteiro
-        new_url = old_url.replace(f'pagina-{numero}.html', f'pagina-{numero + 1}.html')
-    else:
-        new_url = old_url.replace(".html", "") + '-pagina-2.html'
+def next_page_imoveis_sc(page: Page) -> bool:
+    paginacao_ul = page.locator('div.navigation')
+    next_page_btn = paginacao_ul.locator("a.next")
+    
+    if not next_page_btn.count():
+        return False  # Não há mais botões "próxima" (chegou ao fim)
+    
     try:
-        page.goto(new_url, timeout=5000)
-        page.wait_for_url(lambda url: url != old_url)
-        page.wait_for_load_state("networkidle", timeout=1200000)
+        page_ = next_page_btn.get_attribute("data-page")
+        
+        if not page_:
+            print("Erro: Botão 'próxima' não tem o atributo 'data-page'.")
+            return False
+        page_ = int(page_) + 1
+        next_page_btn.scroll_into_view_if_needed()
+        next_page_btn.click(timeout=5000)
+        # Espera até que a página mude
+        new_active_locator = paginacao_ul.locator(f'a.next[data-page="{page_}"]')
+        # Espera até que o novo botão "active" esteja visível
+        new_active_locator.wait_for(state="visible", timeout=15000)
+        
+        # BÔNUS: Adiciona uma espera por 'networkidle' para garantir que
+        # os cards de imóveis também carregaram após a navegação.
+        page.wait_for_load_state("load", timeout=10000)
         return True
     except Exception as e:
-        print(f"imoveisweb: erro ao tentar avançar -> {e}")
+        print(f"creditoreal: erro ao tentar avançar -> {e}")
         return False
 
 

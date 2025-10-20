@@ -6,13 +6,13 @@ from collections.abc import Callable
 from utils.get_data_func import (
     get_important_data_zapimoveis,
     get_important_data_brognoli,
-    get_important_data_imoveisweb,
+    get_important_data_imoveis_sc,
     save_elements_to_json
 )
 from utils.next_pag_func import (
     next_page_zapimoveis,
     next_page_brognoli,
-    next_page_imoveisweb
+    next_page_imoveis_sc
 )
 
 MAX_PAGE = 5
@@ -27,8 +27,8 @@ def get_page_content(url: str, next_page_func: Callable[[Page], bool]) -> list[B
             args=[
                 "--no-sandbox",
                 "--disable-dev-shm-usage",
-                # "--window-position=-2000,-2000",  # joga fora da tela
-                # "--window-size=1,1"
+                "--window-position=-2000,-2000",  # joga fora da tela
+                "--window-size=1,1"
             ]
         )
         page = browser.new_page(java_script_enabled=True)
@@ -74,13 +74,13 @@ if __name__ == "__main__":
         "zapimoveis.json"
     )
 
-    # save_site_content(
-    #     "https://www.imovelweb.com.br/imoveis-venda-santa-catarina.html",
-    #     ("div", {"class": "postingsList-module__card-container"}),
-    #     get_important_data_imoveisweb,
-    #     next_page_imoveisweb,
-    #     "imovelweb.json"
-    # )
+    save_site_content(
+        "https://www.imoveis-sc.com.br/todas-cidades/comprar/apartamento",
+        ("div", {"class": "imovel-data"}),
+        get_important_data_imoveis_sc,
+        next_page_imoveis_sc,
+        "imoveis_sc.json"
+    )
 
     save_site_content(
         "https://www.brognoli.com.br/comprar/cidade/biguacu/1",
