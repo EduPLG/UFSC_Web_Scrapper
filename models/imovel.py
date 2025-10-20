@@ -4,7 +4,7 @@ import re
 
 class ImovelCard(BaseModel):
     url: HttpUrl
-    title: str = Field(..., description="Título do anúncio")
+    title: str = Field(None, description="Título do anúncio")
     local: str = Field(None, description="Localização do imóvel (bairro/cidade)")
     street: str = Field(None, description="Endereço do imóvel (rua)")
     price_txt: str = Field(..., description="Valor do imóvel formatado (ex: 'R$ 850.000,00')")
