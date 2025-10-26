@@ -2,7 +2,7 @@ from playwright.sync_api import Page
 
 
 def next_page_zapimoveis(page: Page) -> bool:
-    btn = page.locator('button[data-testid="next-page"]')
+    btn = page.locator('button[data-testid="next-page"]').first
     if not btn.count():
         return False  # Não há botão "próxima"
 
@@ -59,14 +59,14 @@ def next_page_zapimoveis(page: Page) -> bool:
 
 def next_page_imoveis_sc(page: Page) -> bool:
     paginacao_ul = page.locator('div.navigation')
-    next_page_btn = paginacao_ul.locator("a.next")
-    
+    next_page_btn = paginacao_ul.locator("a.next").first
+
     if not next_page_btn.count():
         return False  # Não há mais botões "próxima" (chegou ao fim)
-    
+
     try:
         page_ = next_page_btn.get_attribute("data-page")
-        
+
         if not page_:
             print("Erro: Botão 'próxima' não tem o atributo 'data-page'.")
             return False
@@ -74,10 +74,10 @@ def next_page_imoveis_sc(page: Page) -> bool:
         next_page_btn.scroll_into_view_if_needed()
         next_page_btn.click(timeout=5000)
         # Espera até que a página mude
-        new_active_locator = paginacao_ul.locator(f'a.next[data-page="{page_}"]')
+        new_active_locator = paginacao_ul.locator(f'a.next[data-page="{page_}"]').first
         # Espera até que o novo botão "active" esteja visível
         new_active_locator.wait_for(state="visible", timeout=15000)
-        
+
         # BÔNUS: Adiciona uma espera por 'networkidle' para garantir que
         # os cards de imóveis também carregaram após a navegação.
         page.wait_for_load_state("load", timeout=10000)
@@ -94,43 +94,32 @@ def next_page_brognoli(page: Page) -> bool:
 
     pagination.scroll_into_view_if_needed()
 
-    # 1. Encontra o botão "active" atual
-    active_locator = pagination.locator("a.active")
+    active_locator = pagination.locator("a.active").first
     if not active_locator.count():
         return False  # Não achou paginação ativa
 
     active_text = active_locator.text_content()
 
     try:
-        # 2. Calcula o número da próxima página
         next_page_num = int(active_text) + 1
     except (ValueError, TypeError):
         print(f"brognoli: não foi possível ler o número da página ativa '{active_text}'")
         return False
 
-    # 3. Encontra o botão da próxima página
-    # Usamos :text-matches("^{next_page_num}$") para garantir uma correspondência exata
-    # (ex: "3" e não "13")
     next_btn = pagination.locator(f'a:text-matches("^{next_page_num}$")')
-    
+
     if not next_btn.count():
         return False  # Não há mais botões "próxima" (chegou ao fim)
 
     try:
-        # 4. Clica no botão
         next_btn.click(timeout=5000)
 
-        # 5. Espera até que a página mude
-
         # Este seletor só vai existir QUANDO a página nova carregar
-        # e o "active" for atualizado para o 'next_page_num'
         new_active_locator = pagination.locator(f'a.active:text-matches("^{next_page_num}$")')
-        
+
         # Espera até que o novo botão "active" esteja visível
         new_active_locator.wait_for(state="visible", timeout=15000)
-        
-        # BÔNUS: Adiciona uma espera por 'networkidle' para garantir que
-        # os cards de imóveis também carregaram após a navegação.
+
         page.wait_for_load_state("load", timeout=10000)
 
         return True
