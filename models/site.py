@@ -58,7 +58,7 @@ class Site(BaseModel):
             self.filter,
             self.func_get_data,
             self.func_next_page,
-            self.json_name
+            self.json_name + "_" + city + ("_aluguel" if aluguel else "_venda")
         )
 
     @classmethod
@@ -89,7 +89,7 @@ class Site_ZapImoveis(Site):
     filter: tuple[str, dict[str, Any]] = ("li", {"data-cy": "rp-property-cd"})
     func_get_data: Callable[[BeautifulSoup], str | None] = get_important_data_zapimoveis
     func_next_page: Callable[[Page], bool] = next_page_zapimoveis
-    json_name: str = "zapimoveis.json"
+    json_name: str = "zapimoveis"
 
     def prepare_filter_url(self,
                            city: str,
@@ -105,7 +105,7 @@ class Site_Imoveis_SC(Site):
     filter: tuple[str, dict[str, Any]] = ("div", {"class": "imovel-data"})
     func_get_data: Callable[[BeautifulSoup], str | None] = get_important_data_imoveis_sc
     func_next_page: Callable[[Page], bool] = next_page_imoveis_sc
-    json_name: str = "imoveis_sc.json"
+    json_name: str = "imoveis_sc"
 
     def prepare_filter_url(self,
                            city: str,
@@ -121,7 +121,7 @@ class Site_Brognoli(Site):
     filter: tuple[str, dict[str, Any]] = ("article", {"class": "imovel"})
     func_get_data: Callable[[BeautifulSoup], str | None] = get_important_data_brognoli
     func_next_page: Callable[[Page], bool] = next_page_brognoli
-    json_name: str = "brognoli.json"
+    json_name: str = "brognoli"
 
     def prepare_filter_url(self,
                            city: str,

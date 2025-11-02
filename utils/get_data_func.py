@@ -24,25 +24,45 @@ def save_elements_to_json(elements: list[dict], filename: str):
         json.dump(elements, file, ensure_ascii=False, indent=4)
 
 
+def get_elements_from_json(filename: str) -> list[ImovelCard]:
+    """Lê uma lista de elementos de um arquivo JSON.
+
+    Args:
+        filename (str): Nome do arquivo JSON a ser lido.
+
+    Returns:
+        list[ImovelCard]: Lista de elementos lidos do arquivo JSON.
+    """
+    with open(join(PATH_OUTPUT, filename), "r", encoding="utf-8") as file:
+        list_imovel_str = json.load(file)
+    imoveis = []
+    for imovel_json_str in list_imovel_str:
+        if imovel_json_str:  # Garante que a string não é nula ou vazia
+            imovel_dict = json.loads(imovel_json_str)
+            imoveis.append(ImovelCard.model_validate(imovel_dict))
+    return imoveis
+
+
 def get_important_data_zapimoveis(imovel: BeautifulSoup):
     # Link do imóvel
     try:
         link = imovel.find("a")["href"]
     except Exception as e:
         link = None
-        
+
     # Título do imóvel
     try:
         title = imovel.find("a")["title"]
     except Exception as e:
         title = None
+
     try:
         # Localização (bairro/cidade)
         location = imovel.find("h2", {"data-cy": "rp-cardProperty-location-txt"}).text or ""
         location = location.split("\n")[1] if "\n" in location else location
     except Exception as e:
         location = None
-        
+
     # Endereço (rua)
     try:
         street = imovel.find("p", {"data-cy": "rp-cardProperty-street-txt"}).text.strip()
@@ -93,7 +113,7 @@ def get_important_data_zapimoveis(imovel: BeautifulSoup):
         "area": area,
         "bathrooms": bathrooms,
         "parking": parking
-    }   
+    }
 
     # Filtre o dicionário, removendo chaves com valores "Nulos"
     dados_filtrados = {
@@ -136,21 +156,18 @@ def get_important_data_imoveis_sc(imovel: BeautifulSoup):
     rooms = None
     bathrooms = None
     parking = None
-    
+
     features = imovel.find("ul", {"class": "imovel-info"})
-    
+
     # Primeiro, verifique se a <ul> foi encontrada
     if features:
-        # Não precisamos de try/except aqui fora
         spans = features.select("li > span")
         if spans:
             for span in spans:
                 text_ = span.get_text(strip=True)
-                
-                # Use .select_one() para pegar o <strong>
+
                 strong_tag = span.select_one("strong")
-                
-                # Se não houver <strong>, pule este <span>
+
                 if not strong_tag:
                     continue
 
@@ -161,33 +178,32 @@ def get_important_data_imoveis_sc(imovel: BeautifulSoup):
                         # CORREÇÃO: Substitui vírgula por ponto
                         area = float(strong_text.replace(",", "."))
                     except (ValueError, AttributeError):
-                        pass # falha silenciosa, area continua 0.0
-                
+                        pass
+
                 elif 'quartos' in text_:
                     try:
                         rooms = int(strong_text)
                     except (ValueError, AttributeError):
-                        pass # rooms continua 0
-                    
+                        pass
+
                 elif 'suíte' in text_:
                     try:
                         bathrooms = int(strong_text)
                     except (ValueError, AttributeError):
-                        pass # bathrooms continua 0
-                    
-                # O HTML diz 'vaga' (singular), não 'vagas'
-                elif 'vaga' in text_: 
+                        pass
+
+                elif 'vaga' in text_:
                     try:
                         parking = int(strong_text)
                     except (ValueError, AttributeError):
-                        pass # parking continua 0
+                        pass
 
     # Preço
     try:
         price_txt = imovel.find("span", {"class": "imovel-preco"}).text.strip()
     except Exception as e:
         price_txt = None
-    
+
     dados_imovel = {
         "title": title,
         "street": street,
@@ -198,7 +214,7 @@ def get_important_data_imoveis_sc(imovel: BeautifulSoup):
         "area": area,
         "bathrooms": bathrooms,
         "parking": parking
-    }   
+    }
 
     # Filtre o dicionário, removendo chaves com valores "Nulos"
     dados_filtrados = {
@@ -210,7 +226,7 @@ def get_important_data_imoveis_sc(imovel: BeautifulSoup):
         object_imovel = ImovelCard(**dados_filtrados)
     except ValidationError as e:
         return None
-    
+
     return object_imovel.model_dump_json()
 
 
@@ -291,4 +307,3 @@ def get_important_data_brognoli(imovel: BeautifulSoup):
         return None
 
     return object_imovel.model_dump_json()
-
