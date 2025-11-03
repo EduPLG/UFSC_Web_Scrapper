@@ -18,10 +18,11 @@ def save_elements_to_json(elements: list[dict], filename: str):
     if not filename.endswith(".json"):
         filename += ".json"
 
+    elements_to_save = list(filter(lambda x: x is not None, elements))
     makedirs(PATH_OUTPUT, exist_ok=True)
 
     with open(join(PATH_OUTPUT, filename), "w", encoding="utf-8") as file:
-        json.dump(elements, file, ensure_ascii=False, indent=4)
+        json.dump(elements_to_save, file, ensure_ascii=False, indent=4)
 
 
 def get_elements_from_json(filename: str) -> list[ImovelCard]:
