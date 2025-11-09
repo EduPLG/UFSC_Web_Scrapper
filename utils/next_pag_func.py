@@ -1,4 +1,5 @@
 from playwright.sync_api import Page
+from urllib.parse import urlsplit, urlunsplit, parse_qs, urlencode
 
 
 def next_page_zapimoveis(page: Page) -> bool:
@@ -126,4 +127,38 @@ def next_page_brognoli(page: Page) -> bool:
     except Exception as e:
         # Se 'wait_for' der timeout, a página não mudou.
         print(f"brognoli: erro ao tentar avançar para a pág {next_page_num} -> {e}")
+        return False
+    
+def next_page_adrianoimoveis(page: Page) -> bool:
+    try:
+        cur_url = page.url
+        parts = urlsplit(cur_url)
+        qs = parse_qs(parts.query)
+
+        try:
+            cur_page = int(qs.get("page", ["1"])[0])
+        except Exception:
+            cur_page = 1
+
+        next_page = cur_page + 1
+        qs["page"] = [str(next_page)]
+
+        next_query = urlencode(qs, doseq=True)
+        next_url = urlunsplit((parts.scheme, parts.netloc, parts.path, next_query, parts.fragment))
+
+        page.goto(next_url, wait_until="domcontentloaded", timeout=15000)
+
+        # checa se tem cards de imóvel
+        try:
+            page.wait_for_selector('a[href^="/imovel/"]', timeout=5000)
+        except Exception:
+            return False
+
+        if page.url == cur_url:
+            return False
+
+        return True
+
+    except Exception as e:
+        print(f"adrianoimoveis: erro ao tentar avançar -> {e}")
         return False

@@ -9,12 +9,14 @@ from utils.scrap_func import save_site_content
 from utils.next_pag_func import (
     next_page_zapimoveis,
     next_page_brognoli,
-    next_page_imoveis_sc
+    next_page_imoveis_sc,
+    next_page_adrianoimoveis
 )
 from utils.get_data_func import (
     get_important_data_zapimoveis,
     get_important_data_brognoli,
-    get_important_data_imoveis_sc
+    get_important_data_imoveis_sc,
+    get_important_data_adrianoimoveis
 )
 
 
@@ -129,3 +131,20 @@ class Site_Brognoli(Site):
         tipo = "alugar" if aluguel else "comprar"
         base = str(self.url).rstrip("/")
         return f"{base}/{tipo}/cidade/{city}/1"
+    
+
+class Site_AdrianoImoveis(Site):
+    name: str = "adrianoimoveis"
+    url: HttpUrl = "https://www.adrianoimoveis.com.br/imoveis/para-alugar/apartamento+casa+cobertura+kitnet/florianopolis?finalidade=residencial"
+    filter: tuple[str, dict[str, Any]] = ("a", {"class": "card-with-buttons"})
+    func_get_data: Callable[[BeautifulSoup], str | None] = get_important_data_adrianoimoveis
+    func_next_page: Callable[[Page], bool] = next_page_adrianoimoveis
+    json_name: str = "adrianoimoveis"
+
+    def prepare_filter_url(self,
+                           city: str,
+                           aluguel: bool) -> str:
+        tipo = "alugar" if aluguel else "comprar"
+        base = str(self.url).rstrip("/")
+        return "https://www.adrianoimoveis.com.br/imoveis/para-alugar/apartamento+casa+cobertura+kitnet/florianopolis?finalidade=residencial"
+

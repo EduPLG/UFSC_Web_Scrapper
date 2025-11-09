@@ -13,6 +13,9 @@ if __name__ == "__main__":
     obj_ImoveisSC = Site.factory("Imoveis_SC")
     obj_ImoveisSC.start_web_scrapping()  # city="florianopolis", aluguel=True
 
+    obj_AdrianoImoveis = Site.factory("AdrianoImoveis")
+    obj_AdrianoImoveis.start_web_scrapping()
+
     # From output, get de first file
 
     file_names = os.listdir("output")

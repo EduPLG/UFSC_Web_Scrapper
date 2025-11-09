@@ -16,7 +16,7 @@ def get_page_content(url: str, next_page_func: Callable[[Page], bool]) -> list[B
     SOUPS = []
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(
-            headless=False,
+            headless=True,
             args=[
                 "--no-sandbox",
                 "--disable-dev-shm-usage",
