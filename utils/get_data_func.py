@@ -53,15 +53,19 @@ def get_important_data_zapimoveis(imovel: BeautifulSoup):
 
     # Título do imóvel
     try:
-        title = imovel.find("a")["title"]
+        title = imovel.find("a")["title"].strip()
     except Exception as e:
         title = None
 
     try:
         # Localização (bairro/cidade)
-        location = imovel.find("h2", {"data-cy": "rp-cardProperty-location-txt"}).text or ""
-        location = location.split("\n")[1] if "\n" in location else location
-    except Exception as e:
+        location_tag = imovel.find("h2", {"data-cy": "rp-cardProperty-location-txt"})
+        if location_tag:
+            # Remove o span interno que contém texto indesejado
+            if span_to_remove := location_tag.find("span"):
+                span_to_remove.decompose()
+            location = location_tag.text.strip()
+    except Exception:
         location = None
 
     # Endereço (rua)
