@@ -1,6 +1,5 @@
-from utils.get_data_func import get_elements_from_json
+from utils.get_csv import generate_df
 from models.site import Site
-import os
 
 
 if __name__ == "__main__":
@@ -15,12 +14,6 @@ if __name__ == "__main__":
 
     # From output, get de first file
 
-    file_names = os.listdir("output")
-    lista_de_imoveis = get_elements_from_json(file_names[0])
-
-    # Agora você tem uma lista de objetos ImovelCard
-    if lista_de_imoveis:
-        primeiro_imovel = lista_de_imoveis[0]
-        print(f"Título: {primeiro_imovel.title}")
-        print(f"Preço (numérico): {primeiro_imovel.price_num}")
-        print(f"URL: {primeiro_imovel.url}")
+    df = generate_df()
+    # Ao salvar, substitui os valores NaN pela string 'NULL' no arquivo CSV
+    df.to_csv("output/data_base.csv", na_rep='NULL', index=False)
