@@ -1,6 +1,5 @@
 import os
 import pandas as pd
-import numpy as np
 from utils.get_data_func import get_elements_from_json, PATH_OUTPUT
 
 

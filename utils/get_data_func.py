@@ -45,96 +45,6 @@ def get_elements_from_json(filename: str) -> list[ImovelCard]:
     return imoveis
 
 
-def get_important_data_zapimoveis(imovel: BeautifulSoup):
-    # Link do imóvel
-    try:
-        link = imovel.find("a")["href"]
-    except Exception as e:
-        link = None
-
-    # Título do imóvel
-    try:
-        title = imovel.find("a")["title"].strip()
-    except Exception as e:
-        title = None
-
-    try:
-        # Localização (bairro/cidade)
-        location_tag = imovel.find("h2", {"data-cy": "rp-cardProperty-location-txt"})
-        if location_tag:
-            # Remove o span interno que contém texto indesejado
-            if span_to_remove := location_tag.find("span"):
-                span_to_remove.decompose()
-            location = location_tag.text.strip()
-    except Exception:
-        location = None
-
-    # Endereço (rua)
-    try:
-        street = imovel.find("p", {"data-cy": "rp-cardProperty-street-txt"}).text.strip()
-    except Exception as e:
-        street = None
-
-    # Área
-    try:
-        area_txt = imovel.find("li", {"data-cy": "rp-cardProperty-propertyArea-txt"}).text
-        area = float(area_txt.split("\n")[-1].replace("m²", "").replace(",", ".").strip())
-    except Exception as e:
-        area = None
-
-    # Banheiros
-    try:
-        bathrooms_txt = imovel.find("li", {"data-cy": "rp-cardProperty-bathroomQuantity-txt"}).text
-        bathrooms = int(bathrooms_txt.split("\n")[-1])
-    except Exception as e:
-        bathrooms = None
-
-    # Quartos
-    try:
-        rooms_txt = imovel.find("li", {"data-cy": "rp-cardProperty-bedroomQuantity-txt"}).text
-        rooms = int(rooms_txt.split("\n")[-1])
-    except Exception as e:
-        rooms = None
-
-    # Preço
-    try:
-        price_txt = imovel.find("div", {"data-cy": "rp-cardProperty-price-txt"}).text
-    except Exception as e:
-        price_txt = None
-
-    # Vagas
-    try:
-        parking_txt = imovel.find("li", {"data-cy": "rp-cardProperty-parkingSpacesQuantity-txt"}).text
-        parking = int(parking_txt.split("\n")[-1])
-    except Exception as e:
-        parking = None
-
-    dados_imovel = {
-        "title": title,
-        "street": street,
-        "url": link,
-        "price_txt": price_txt,
-        "local": location,
-        "rooms": rooms,
-        "area": area,
-        "bathrooms": bathrooms,
-        "parking": parking
-    }
-
-    # Filtre o dicionário, removendo chaves com valores "Nulos"
-    dados_filtrados = {
-        chave: valor for chave, valor in dados_imovel.items()
-        if valor is not None
-    }
-
-    try:
-        object_imovel = ImovelCard(**dados_filtrados)
-    except ValidationError as e:
-        return None
-
-    return object_imovel.model_dump_json()
-
-
 def get_important_data_imoveis_sc(imovel: BeautifulSoup):
     # Título do imóvel
     try:
@@ -314,6 +224,7 @@ def get_important_data_brognoli(imovel: BeautifulSoup):
 
     return object_imovel.model_dump_json()
 
+
 def get_important_data_adrianoimoveis(imovel: BeautifulSoup):
     BASE_URL = "https://www.adrianoimoveis.com.br"
 
@@ -321,98 +232,79 @@ def get_important_data_adrianoimoveis(imovel: BeautifulSoup):
         href = imovel.get("href") or ""
         url = href if href.startswith("http") else f"{BASE_URL}{href}"
     except Exception:
-        url = "None"
+        url = None
 
     # Título
     try:
-        title = (imovel.get("title") or "").strip()
-        if not title:
-            h = imovel.find(["h1", "h2", "h3", "h4"])
-            title = (h.get_text(" ", strip=True) if h else imovel.get_text(" ", strip=True)).strip() or "None"
+        title = imovel.find("p", {"class": "card-with-buttons__title"}).text.strip()
     except Exception:
-        title = "None"
+        title = None
 
     # Texto bruto do card (pra usar nos outros elementos)
     try:
-        card_text = imovel.get_text(" ", strip=True)
+        location = imovel.find("h2", {"class": "card-with-buttons__heading"}).text.strip()
     except Exception:
-        card_text = ""
-
-    if len(card_text) < 10 and imovel.parent:
-        try:
-            card_text = f"{card_text} {imovel.parent.get_text(' ', strip=True)}".strip()
-        except Exception:
-            pass
-
-    # Price / Área / Quartos / Banheiros / Vagas
-    price_txt = None
-    area = 0.0
-    rooms = 0
-    bathrooms = 0
-    parking = 0
-    location = ""
-    street = ""
-
+        location = None
+        
     try:
-        m_price = re.search(r"R\$\s*[\d\.\,]+", card_text)
-        price_txt = m_price.group(0) if m_price else None
+        price_txt = imovel.find("p", {"class": "card-with-buttons__value"}).text.strip()
     except Exception:
         price_txt = None
 
+    # Price / Área / Quartos / Banheiros / Vagas
+    area = None
+    rooms = None
+    bathrooms = None
+    parking = None
+    street = None
+    atributos = None
     try:
-        m_area = re.search(r"(\d+(?:[.,]\d+)?)\s*m²", card_text, flags=re.IGNORECASE)
-        if m_area:
-            val = m_area.group(1).replace(".", "").replace(",", ".")
-            area = float(val)
+        # Encontra a tag 'ul' que NÃO possui o atributo 'class'
+        atributos = imovel.find("ul", class_=False)
     except Exception:
-        area = 0.0
-
-    try:
-        m_rooms = re.search(r"(\d+)\s*(quartos?|dormit[óo]rios?)", card_text, flags=re.IGNORECASE)
-        if m_rooms:
-            rooms = int(m_rooms.group(1))
-    except Exception:
-        rooms = 0
-
-    try:
-        m_baths = re.search(r"(\d+)\s*banheiros?", card_text, flags=re.IGNORECASE)
-        if m_baths:
-            bathrooms = int(m_baths.group(1))
-    except Exception:
-        bathrooms = 0
-
-    try:
-        m_park = re.search(r"(\d+)\s*vagas?", card_text, flags=re.IGNORECASE)
-        if m_park:
-            parking = int(m_park.group(1))
-    except Exception:
-        parking = 0
-
-    # Localização
-    try:
-        lines = [t.strip() for t in card_text.splitlines() if t.strip()]
-        cand = [l for l in lines if "florian" in l.lower() or " - " in l]
-        if cand:
-            location = cand[-1]
-    except Exception:
-        location = ""
+        pass
+    if atributos is not None:
+        lista_atr = atributos.find_all("li")
+        for atrib in lista_atr:
+            text = atrib.text.strip().lower()
+            if 'm²' in text:
+                try:
+                    area = float(text.replace('m²', '').strip())
+                except Exception:
+                    pass
+            elif 'quarto' in text:
+                try:
+                    rooms = int(text.split()[0])
+                except Exception:
+                    pass
+            elif 'banheiro' in text:
+                try:
+                    bathrooms = int(text.split()[0])
+                except Exception:
+                    pass
+            elif 'vaga' in text:
+                try:
+                    parking = int(text.split()[0])
+                except Exception:
+                    pass
+            elif 'suíte' in text:
+                if bathrooms is None:
+                    bathrooms = 0
+                bathrooms += 1
 
     try:
         obj = ImovelCard(
-            title=title or "None",
-            street=street or "",
             url=url,
+            title=title,
+            local=location,
+            street=street,
             price_txt=price_txt,
-            location=location or "",
-            rooms=rooms,
             area=area,
-            bathrooms=bathrooms,
-            parking=parking
+            rooms=rooms,
+            parking=parking,
+            bathrooms=bathrooms
         )
-
     except ValidationError:
         return None
 
     return obj.model_dump_json()
-
-

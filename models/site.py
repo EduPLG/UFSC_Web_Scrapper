@@ -7,13 +7,11 @@ from playwright.sync_api import Page
 
 from utils.scrap_func import save_site_content
 from utils.next_pag_func import (
-    next_page_zapimoveis,
     next_page_brognoli,
     next_page_imoveis_sc,
     next_page_adrianoimoveis
 )
 from utils.get_data_func import (
-    get_important_data_zapimoveis,
     get_important_data_brognoli,
     get_important_data_imoveis_sc,
     get_important_data_adrianoimoveis
@@ -85,22 +83,6 @@ class Site(BaseModel):
         raise ValueError(f"Chave de site desconhecida: {name!r}. Opções disponíveis: {', '.join(available_sites)}")
 
 
-class Site_ZapImoveis(Site):
-    name: str = "zapimoveis"
-    url: HttpUrl = "https://www.zapimoveis.com.br"
-    filter: tuple[str, dict[str, Any]] = ("li", {"data-cy": "rp-property-cd"})
-    func_get_data: Callable[[BeautifulSoup], str | None] = get_important_data_zapimoveis
-    func_next_page: Callable[[Page], bool] = next_page_zapimoveis
-    json_name: str = "zapimoveis"
-
-    def prepare_filter_url(self,
-                           city: str,
-                           aluguel: bool) -> str:
-        tipo = "aluguel" if aluguel else "venda"
-        base = str(self.url).rstrip("/")  # converte HttpUrl para str
-        return f"{base}/{tipo}/imoveis/sc+{city}"
-
-
 class Site_Imoveis_SC(Site):
     name: str = "imoveis_sc"
     url: HttpUrl = "https://www.imoveis-sc.com.br"
@@ -131,11 +113,11 @@ class Site_Brognoli(Site):
         tipo = "alugar" if aluguel else "comprar"
         base = str(self.url).rstrip("/")
         return f"{base}/{tipo}/cidade/{city}/1"
-    
+
 
 class Site_AdrianoImoveis(Site):
     name: str = "adrianoimoveis"
-    url: HttpUrl = "https://www.adrianoimoveis.com.br/imoveis/para-alugar/apartamento+casa+cobertura+kitnet/florianopolis?finalidade=residencial"
+    url: HttpUrl = "https://www.adrianoimoveis.com.br"
     filter: tuple[str, dict[str, Any]] = ("a", {"class": "card-with-buttons"})
     func_get_data: Callable[[BeautifulSoup], str | None] = get_important_data_adrianoimoveis
     func_next_page: Callable[[Page], bool] = next_page_adrianoimoveis
@@ -144,7 +126,6 @@ class Site_AdrianoImoveis(Site):
     def prepare_filter_url(self,
                            city: str,
                            aluguel: bool) -> str:
-        tipo = "alugar" if aluguel else "comprar"
+        tipo = "para-alugar" if aluguel else "a-venda"
         base = str(self.url).rstrip("/")
-        return "https://www.adrianoimoveis.com.br/imoveis/para-alugar/apartamento+casa+cobertura+kitnet/florianopolis?finalidade=residencial"
-
+        return f"{base}/imoveis/{tipo}/{city}"
