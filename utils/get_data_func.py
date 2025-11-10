@@ -4,6 +4,7 @@ from models.imovel import ImovelCard
 import json
 from os.path import join
 from os import makedirs
+import re
 
 PATH_OUTPUT = "output"
 
@@ -312,3 +313,106 @@ def get_important_data_brognoli(imovel: BeautifulSoup):
         return None
 
     return object_imovel.model_dump_json()
+
+def get_important_data_adrianoimoveis(imovel: BeautifulSoup):
+    BASE_URL = "https://www.adrianoimoveis.com.br"
+
+    try:
+        href = imovel.get("href") or ""
+        url = href if href.startswith("http") else f"{BASE_URL}{href}"
+    except Exception:
+        url = "None"
+
+    # Título
+    try:
+        title = (imovel.get("title") or "").strip()
+        if not title:
+            h = imovel.find(["h1", "h2", "h3", "h4"])
+            title = (h.get_text(" ", strip=True) if h else imovel.get_text(" ", strip=True)).strip() or "None"
+    except Exception:
+        title = "None"
+
+    # Texto bruto do card (pra usar nos outros elementos)
+    try:
+        card_text = imovel.get_text(" ", strip=True)
+    except Exception:
+        card_text = ""
+
+    if len(card_text) < 10 and imovel.parent:
+        try:
+            card_text = f"{card_text} {imovel.parent.get_text(' ', strip=True)}".strip()
+        except Exception:
+            pass
+
+    # Price / Área / Quartos / Banheiros / Vagas
+    price_txt = None
+    area = 0.0
+    rooms = 0
+    bathrooms = 0
+    parking = 0
+    location = ""
+    street = ""
+
+    try:
+        m_price = re.search(r"R\$\s*[\d\.\,]+", card_text)
+        price_txt = m_price.group(0) if m_price else None
+    except Exception:
+        price_txt = None
+
+    try:
+        m_area = re.search(r"(\d+(?:[.,]\d+)?)\s*m²", card_text, flags=re.IGNORECASE)
+        if m_area:
+            val = m_area.group(1).replace(".", "").replace(",", ".")
+            area = float(val)
+    except Exception:
+        area = 0.0
+
+    try:
+        m_rooms = re.search(r"(\d+)\s*(quartos?|dormit[óo]rios?)", card_text, flags=re.IGNORECASE)
+        if m_rooms:
+            rooms = int(m_rooms.group(1))
+    except Exception:
+        rooms = 0
+
+    try:
+        m_baths = re.search(r"(\d+)\s*banheiros?", card_text, flags=re.IGNORECASE)
+        if m_baths:
+            bathrooms = int(m_baths.group(1))
+    except Exception:
+        bathrooms = 0
+
+    try:
+        m_park = re.search(r"(\d+)\s*vagas?", card_text, flags=re.IGNORECASE)
+        if m_park:
+            parking = int(m_park.group(1))
+    except Exception:
+        parking = 0
+
+    # Localização
+    try:
+        lines = [t.strip() for t in card_text.splitlines() if t.strip()]
+        cand = [l for l in lines if "florian" in l.lower() or " - " in l]
+        if cand:
+            location = cand[-1]
+    except Exception:
+        location = ""
+
+    try:
+        obj = ImovelCard(
+            title=title or "None",
+            street=street or "",
+            url=url,
+            price_txt=price_txt,
+            location=location or "",
+            rooms=rooms,
+            area=area,
+            bathrooms=bathrooms,
+            parking=parking
+        )
+
+    except ValidationError:
+        return None
+
+    return obj.model_dump_json()
+
+
