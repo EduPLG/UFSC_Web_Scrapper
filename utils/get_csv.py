@@ -1,12 +1,12 @@
 import os
 import pandas as pd
-from utils.get_data_func import get_elements_from_json, PATH_OUTPUT
+from utils.get_data_func import get_elements_from_json, FOLDER_JSON
 
 
 # From output, get de first file
 def generate_df() -> pd.DataFrame:
     ALL_DF = []
-    file_names = list(filter(lambda x: x.endswith(".json"), os.listdir(PATH_OUTPUT)))
+    file_names = list(filter(lambda x: x.endswith(".json"), os.listdir(FOLDER_JSON)))
     for file in file_names:
         try:
             lista_de_imoveis = get_elements_from_json(file)

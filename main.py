@@ -1,4 +1,6 @@
 from utils.get_csv import generate_df
+from utils.get_data_func import PATH_OUTPUT
+from os.path import join
 from models.site import Site
 
 
@@ -41,14 +43,14 @@ def troca_cidade(atual: str) -> str:
 
 def menu(city: str, aluguel: bool) -> int:
     print(
-        f"\n           ================== MENU PRINCIPAL ======================\n"
+        "\n           ================== MENU PRINCIPAL ======================\n"
         "1. Executar Scrapping de todas as opções disponíveis\n"
         f"2. Selecionar Cidade: (atual: {Estilos.BOLD}{Estilos.YELLOW}{CIDADES.get(city)}{Estilos.RESET})\n"
         f"3. Tipo de transação (Alugar/Comprar): (atual: {Estilos.BOLD}{Estilos.YELLOW}{'Alugar' if aluguel else 'Comprar'}{Estilos.RESET})\n"
         f"4. Executar Scrapping de {Estilos.BOLD}{Estilos.YELLOW}{CIDADES.get(city)}{Estilos.RESET} para {Estilos.BOLD}{Estilos.YELLOW}{'Alugar' if aluguel else 'Comprar'}{Estilos.RESET}\n"
-        "5. Salvar dados em CSV\n"
-        "6. Sair\n"
-        f"           ========================================================\n"
+        f"5. Salvar dados em um {Estilos.BOLD}json{Estilos.RESET} e {Estilos.BOLD}csv{Estilos.RESET}",
+        "\n6. Sair\n"
+        "           ========================================================\n"
     )
     while True:
         choice = input("Selecione uma opção: _ ")
@@ -90,8 +92,19 @@ if __name__ == "__main__":
             case 5:
                 print("Gerando arquivo CSV...")
                 df = generate_df()
-                df.to_csv("output/data_base.csv", na_rep='NULL', index=False)
+                df.to_csv(
+                    join(PATH_OUTPUT, "data_base.csv"),
+                    na_rep='NULL',
+                    index=False
+                )
                 print("Arquivo CSV salvo com sucesso!")
+                print("Gerando arquivo JSON...")
+                df.to_json(
+                    join(PATH_OUTPUT, "data_base.json"), orient="records",
+                    force_ascii=False,
+                    indent=4
+                )
+                print("Arquivo JSON salvo com sucesso!")
             case 6:
                 print("Saindo...")
                 break

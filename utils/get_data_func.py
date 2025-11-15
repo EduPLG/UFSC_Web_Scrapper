@@ -4,9 +4,9 @@ from models.imovel import ImovelCard
 import json
 from os.path import join
 from os import makedirs
-import re
 
 PATH_OUTPUT = "output"
+FOLDER_JSON = join(PATH_OUTPUT, "json_files")
 
 
 def save_elements_to_json(elements: list[dict], filename: str):
@@ -20,9 +20,9 @@ def save_elements_to_json(elements: list[dict], filename: str):
         filename += ".json"
 
     elements_to_save = list(filter(lambda x: x is not None, elements))
-    makedirs(PATH_OUTPUT, exist_ok=True)
+    makedirs(FOLDER_JSON, exist_ok=True)
 
-    with open(join(PATH_OUTPUT, filename), "w", encoding="utf-8") as file:
+    with open(join(FOLDER_JSON, filename), "w", encoding="utf-8") as file:
         json.dump(elements_to_save, file, ensure_ascii=False, indent=4)
 
 
@@ -35,7 +35,7 @@ def get_elements_from_json(filename: str) -> list[ImovelCard]:
     Returns:
         list[ImovelCard]: Lista de elementos lidos do arquivo JSON.
     """
-    with open(join(PATH_OUTPUT, filename), "r", encoding="utf-8") as file:
+    with open(join(FOLDER_JSON, filename), "r", encoding="utf-8") as file:
         list_imovel_str = json.load(file)
     imoveis = []
     for imovel_json_str in list_imovel_str:
@@ -125,7 +125,7 @@ def get_important_data_imoveis_sc(imovel: BeautifulSoup):
         "street": street,
         "url": link,
         "price_txt": price_txt,
-        "local": location,
+        "local_txt": location,
         "rooms": rooms,
         "area": area,
         "bathrooms": bathrooms,
@@ -204,7 +204,7 @@ def get_important_data_brognoli(imovel: BeautifulSoup):
         "street": street,
         "url": link,
         "price_txt": price_txt,
-        "local": location,
+        "local_txt": location,
         "rooms": rooms,
         "area": area,
         "bathrooms": bathrooms,
@@ -245,7 +245,7 @@ def get_important_data_adrianoimoveis(imovel: BeautifulSoup):
         location = imovel.find("h2", {"class": "card-with-buttons__heading"}).text.strip()
     except Exception:
         location = None
-        
+
     try:
         price_txt = imovel.find("p", {"class": "card-with-buttons__value"}).text.strip()
     except Exception:
@@ -296,7 +296,7 @@ def get_important_data_adrianoimoveis(imovel: BeautifulSoup):
         obj = ImovelCard(
             url=url,
             title=title,
-            local=location,
+            local_txt=location,
             street=street,
             price_txt=price_txt,
             area=area,

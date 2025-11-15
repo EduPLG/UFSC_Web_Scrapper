@@ -59,4 +59,4 @@ def save_site_content(url: str,
         lista += list(map(get_imp_data_func, elementos))
     print("Salvando os dados em JSON...")
     save_elements_to_json(lista, json_name)
-    print(f"Dados salvos com sucesso! Verifique o arquivo {json_name}")
+    print(f"Dados salvos com sucesso! Verifique o arquivo {json_name}\n")
