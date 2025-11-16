@@ -1,7 +1,10 @@
+from analise import run_complete_analysis
 from utils.get_csv import generate_df
 from utils.get_data_func import PATH_OUTPUT
+from utils.funcoesAnalise import DataAnalyzer
 from os.path import join
 from models.site import Site
+from pathlib import Path
 
 
 class Estilos:
@@ -11,6 +14,8 @@ class Estilos:
     BOLD = '\033[1m'
     # Cores (texto)
     YELLOW = '\033[93m'
+    GREEN = '\033[92m'
+    BLUE = '\033[94m'
 
 
 CIDADES = {
@@ -48,13 +53,14 @@ def menu(city: str, aluguel: bool) -> int:
         f"2. Selecionar Cidade: (atual: {Estilos.BOLD}{Estilos.YELLOW}{CIDADES.get(city)}{Estilos.RESET})\n"
         f"3. Tipo de transação (Alugar/Comprar): (atual: {Estilos.BOLD}{Estilos.YELLOW}{'Alugar' if aluguel else 'Comprar'}{Estilos.RESET})\n"
         f"4. Executar Scrapping de {Estilos.BOLD}{Estilos.YELLOW}{CIDADES.get(city)}{Estilos.RESET} para {Estilos.BOLD}{Estilos.YELLOW}{'Alugar' if aluguel else 'Comprar'}{Estilos.RESET}\n"
-        f"5. Salvar dados em um {Estilos.BOLD}json{Estilos.RESET} e {Estilos.BOLD}csv{Estilos.RESET}",
-        "\n6. Sair\n"
+        f"5. Salvar dados em um {Estilos.BOLD}json{Estilos.RESET} e {Estilos.BOLD}csv{Estilos.RESET}\n"
+        f"6. {Estilos.GREEN}Executar análise completa dos dados{Estilos.RESET}\n"
+        "7. Sair\n"
         "           ========================================================\n"
     )
     while True:
         choice = input("Selecione uma opção: _ ")
-        if choice.isnumeric() and 1 <= int(choice) <= 6:
+        if choice.isnumeric() and 1 <= int(choice) <= 8:
             return int(choice)
         else:
             print("Opção inválida. Tente novamente.")
@@ -106,5 +112,21 @@ if __name__ == "__main__":
                 )
                 print("Arquivo JSON salvo com sucesso!")
             case 6:
+                print("Selecione o tipo de análise:")
+                print("1. Apenas ALUGUEL")
+                print("2. Apenas VENDA")
+                print("3. Todos os tipos (misturado)")
+
+                tipo_choice = input("Escolha uma opção: _ ")
+                if tipo_choice == "1":
+                    tipo = "aluguel"
+                elif tipo_choice == "2":
+                    tipo = "venda"
+                else:
+                    tipo = None
+
+                run_complete_analysis(verbose=True, tipo=tipo)
+
+            case 7:
                 print("Saindo...")
                 break
