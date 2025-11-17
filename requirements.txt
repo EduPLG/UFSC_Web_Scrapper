@@ -1,4 +1,7 @@
+BeautifulSoup4
+matplotlib
+pandas
 playwright
 pydantic
-bs4
+seaborn
 tqdm
