@@ -1,6 +1,7 @@
 import os
+from utils.get_data_func import FOLDER_JSON
 import pandas as pd
-from utils.get_data_func import get_elements_from_json, FOLDER_JSON
+from utils.get_data_func import get_elements_from_json
 
 
 # From output, get de first file
@@ -35,8 +36,6 @@ def generate_df(tipo: str = None) -> pd.DataFrame:
     final_df = pd.concat(ALL_DF, ignore_index=True)
     print(f"✅ {len(final_df)} registros combinados.")
     return final_df
-
-
 
 
 if __name__ == "__main__":

@@ -1,10 +1,9 @@
-from analise import run_complete_analysis
+from utils.analise import run_complete_analysis
 from utils.get_csv import generate_df
-from utils.get_data_func import PATH_OUTPUT
-from utils.funcoesAnalise import DataAnalyzer
+from utils.get_data_func import PATH_OUTPUT, FOLDER_JSON
 from os.path import join
+import os
 from models.site import Site
-from pathlib import Path
 
 
 class Estilos:
@@ -47,20 +46,23 @@ def troca_cidade(atual: str) -> str:
 
 
 def menu(city: str, aluguel: bool) -> int:
+    arq_json = True if (os.path.exists(FOLDER_JSON) and list(filter(lambda x: x.endswith(".json"), os.listdir(FOLDER_JSON)))) else False
+    data_base = True if (os.path.exists(PATH_OUTPUT) and list(filter(lambda x: x.startswith("data_base."), os.listdir(PATH_OUTPUT)))) else False
+
     print(
         "\n           ================== MENU PRINCIPAL ======================\n"
-        "1. Executar Scrapping de todas as opções disponíveis\n"
-        f"2. Selecionar Cidade: (atual: {Estilos.BOLD}{Estilos.YELLOW}{CIDADES.get(city)}{Estilos.RESET})\n"
-        f"3. Tipo de transação (Alugar/Comprar): (atual: {Estilos.BOLD}{Estilos.YELLOW}{'Alugar' if aluguel else 'Comprar'}{Estilos.RESET})\n"
-        f"4. Executar Scrapping de {Estilos.BOLD}{Estilos.YELLOW}{CIDADES.get(city)}{Estilos.RESET} para {Estilos.BOLD}{Estilos.YELLOW}{'Alugar' if aluguel else 'Comprar'}{Estilos.RESET}\n"
-        f"5. Salvar dados em um {Estilos.BOLD}json{Estilos.RESET} e {Estilos.BOLD}csv{Estilos.RESET}\n"
-        f"6. {Estilos.GREEN}Executar análise completa dos dados{Estilos.RESET}\n"
+        f"1. {Estilos.BLUE}Executar Scrapping de todas as opções disponíveis{Estilos.RESET}\n"
+        f"2. Selecionar Cidade: (atual: {Estilos.YELLOW}{CIDADES.get(city)}{Estilos.RESET})\n"
+        f"3. Tipo de transação (Alugar/Comprar): (atual: {Estilos.YELLOW}{'Alugar' if aluguel else 'Comprar'}{Estilos.RESET})\n"
+        f"4. Executar Scrapping de {Estilos.YELLOW}{CIDADES.get(city)}{Estilos.RESET} para {Estilos.YELLOW}{'Alugar' if aluguel else 'Comprar'}{Estilos.RESET}\n"
+        f"5. Salvar dados em um {Estilos.BOLD}json{Estilos.RESET} e {Estilos.BOLD}csv{Estilos.RESET} {"" if arq_json else "⚠️ Falta arquivos do Scrapping"}\n"
+        f"6. {Estilos.GREEN}Executar análise completa dos dados{Estilos.RESET} {"" if data_base else "⚠️ Falta dados do csv"}\n"
         "7. Sair\n"
         "           ========================================================\n"
     )
     while True:
         choice = input("Selecione uma opção: _ ")
-        if choice.isnumeric() and 1 <= int(choice) <= 8:
+        if choice.isnumeric() and 1 <= int(choice) <= 7 and not (choice == "5" and not arq_json) and not (choice == "6" and not data_base):
             return int(choice)
         else:
             print("Opção inválida. Tente novamente.")
@@ -112,6 +114,9 @@ if __name__ == "__main__":
                 )
                 print("Arquivo JSON salvo com sucesso!")
             case 6:
+                if not filter(lambda x: x.startswith("data_base."), os.listdir(PATH_OUTPUT)):
+                    print("Nenhum arquivo de dados encontrado. Por favor, execute o scrapping e salve os dados primeiro.")
+                    continue
                 print("Selecione o tipo de análise:")
                 print("1. Apenas ALUGUEL")
                 print("2. Apenas VENDA")

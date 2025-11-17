@@ -65,13 +65,13 @@ def get_important_data_imoveis_sc(imovel: BeautifulSoup):
         location = None
 
     # Endereço (rua)  Esse site não fornece o endereço completo
-    street = None
+    rua = None
 
     # Área, quartos, banheiros, vagas
     area = None
-    rooms = None
-    bathrooms = None
-    parking = None
+    quartos = None
+    banheiros = None
+    garagem = None
 
     features = imovel.find("ul", {"class": "imovel-info"})
 
@@ -98,19 +98,19 @@ def get_important_data_imoveis_sc(imovel: BeautifulSoup):
 
                 elif 'quartos' in text_:
                     try:
-                        rooms = int(strong_text)
+                        quartos = int(strong_text)
                     except (ValueError, AttributeError):
                         pass
 
                 elif 'suíte' in text_:
                     try:
-                        bathrooms = int(strong_text)
+                        banheiros = int(strong_text)
                     except (ValueError, AttributeError):
                         pass
 
                 elif 'vaga' in text_:
                     try:
-                        parking = int(strong_text)
+                        garagem = int(strong_text)
                     except (ValueError, AttributeError):
                         pass
 
@@ -121,15 +121,15 @@ def get_important_data_imoveis_sc(imovel: BeautifulSoup):
         price_txt = None
 
     dados_imovel = {
-        "title": title,
-        "street": street,
+        "titulo": title,
+        "rua": rua,
         "url": link,
         "price_txt": price_txt,
         "local_txt": location,
-        "rooms": rooms,
+        "quartos": quartos,
         "area": area,
-        "bathrooms": bathrooms,
-        "parking": parking
+        "banheiros": banheiros,
+        "garagem": garagem
     }
 
     # Filtre o dicionário, removendo chaves com valores "Nulos"
@@ -163,18 +163,18 @@ def get_important_data_brognoli(imovel: BeautifulSoup):
     try:
         location_full = imovel.find("span", {"class": "e"}).text.strip()
         if "," in location_full:
-            street = location_full.split(",")[0].strip()
+            rua = location_full.split(",")[0].strip()
             location = location_full.split(",")[1].strip()
         else:
-            street = location = location_full
+            rua = location = location_full
     except Exception as e:
-        location = street = None
+        location = rua = None
 
     # Área, quartos, banheiros, vagas
     area = None
-    rooms = None
-    bathrooms = None
-    parking = None
+    quartos = None
+    banheiros = None
+    garagem = None
     try:
         features = imovel.find_all("li")
         for feature in features:
@@ -182,14 +182,14 @@ def get_important_data_brognoli(imovel: BeautifulSoup):
             if 'm²' in text:
                 area = float(text.replace('m²', '').strip())
             elif 'quartos' in text or 'dormitório' in text:
-                rooms = int(text.split()[0])
+                quartos = int(text.split()[0])
             elif 'banheiro' in text:
-                bathrooms = int(text.split()[0])
+                banheiros = int(text.split()[0])
             else:
                 try:
-                    parking = int(text.strip())
+                    garagem = int(text.strip())
                 except Exception as e:
-                    parking = 0
+                    garagem = 0
     except Exception as e:
         pass
 
@@ -200,15 +200,15 @@ def get_important_data_brognoli(imovel: BeautifulSoup):
         price_txt = None
 
     dados_imovel = {
-        "title": title,
-        "street": street,
+        "titulo": title,
+        "rua": rua,
         "url": link,
         "price_txt": price_txt,
         "local_txt": location,
-        "rooms": rooms,
+        "quartos": quartos,
         "area": area,
-        "bathrooms": bathrooms,
-        "parking": parking
+        "banheiros": banheiros,
+        "garagem": garagem
     }   
 
     # Filtre o dicionário, removendo chaves com valores "Nulos"
@@ -253,10 +253,10 @@ def get_important_data_adrianoimoveis(imovel: BeautifulSoup):
 
     # Price / Área / Quartos / Banheiros / Vagas
     area = None
-    rooms = None
-    bathrooms = None
-    parking = None
-    street = None
+    quartos = None
+    banheiros = None
+    garagem = None
+    rua = None
     atributos = None
     try:
         # Encontra a tag 'ul' que NÃO possui o atributo 'class'
@@ -274,35 +274,35 @@ def get_important_data_adrianoimoveis(imovel: BeautifulSoup):
                     pass
             elif 'quarto' in text:
                 try:
-                    rooms = int(text.split()[0])
+                    quartos = int(text.split()[0])
                 except Exception:
                     pass
             elif 'banheiro' in text:
                 try:
-                    bathrooms = int(text.split()[0])
+                    banheiros = int(text.split()[0])
                 except Exception:
                     pass
             elif 'vaga' in text:
                 try:
-                    parking = int(text.split()[0])
+                    garagem = int(text.split()[0])
                 except Exception:
                     pass
             elif 'suíte' in text:
-                if bathrooms is None:
-                    bathrooms = 0
-                bathrooms += 1
+                if banheiros is None:
+                    banheiros = 0
+                banheiros += 1
 
     try:
         obj = ImovelCard(
             url=url,
-            title=title,
+            titulo=title,
             local_txt=location,
-            street=street,
+            rua=rua,
             price_txt=price_txt,
             area=area,
-            rooms=rooms,
-            parking=parking,
-            bathrooms=bathrooms
+            quartos=quartos,
+            garagem=garagem,
+            banheiros=banheiros
         )
     except ValidationError:
         return None

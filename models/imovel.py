@@ -4,17 +4,17 @@ import re
 
 class ImovelCard(BaseModel):
     url: HttpUrl
-    title: str | None = Field(None, description="Título do anúncio")
+    titulo: str | None = Field(None, description="Título do anúncio")
     local_txt: str | None = Field(..., description="Localização do imóvel (bairro/cidade)")
-    city: str | None = Field(None, description="Cidade do imóvel (ex: Florianópolis)")
-    neighborhood: str | None = Field(None, description="Bairro do imóvel (ex: Capoeiras)")
-    street: str | None = Field(None, description="Endereço do imóvel (rua)")
+    cidade: str | None = Field(None, description="Cidade do imóvel (ex: Florianópolis)")
+    bairro: str | None = Field(None, description="Bairro do imóvel (ex: Capoeiras)")
+    rua: str | None = Field(None, description="Endereço do imóvel (rua)")
     price_txt: str = Field(..., description="Valor do imóvel formatado (ex:'R$ 850.000,00')")
     price_num: float | None = Field(None, description="Valor numérico do imóvel em reais")
     area: float | None = Field(None, description="Área do imóvel em metros quadrados")
-    rooms: int | None = Field(None, description="Número de quartos")
-    parking: int | None = Field(None, description="Número de vagas na garagem")
-    bathrooms: int | None = Field(None, description="Número de banheiros")
+    quartos: int | None = Field(None, description="Número de quartos")
+    garagem: int | None = Field(None, description="Número de vagas na garagem")
+    banheiros: int | None = Field(None, description="Número de banheiros")
 
     def _fill_valor_num(self) -> None:
         bruto = (
@@ -36,8 +36,8 @@ class ImovelCard(BaseModel):
         if ',' in local:
             parts = [p.strip() for p in local.split(',')]
             if len(parts) >= 2:
-                self.city = parts[0].title()
-                self.neighborhood = parts[1].title()
+                self.cidade = parts[0].title()
+                self.bairro = parts[1].title()
                 return
 
         # Tenta o padrão "Bairro - Cidade"
@@ -45,12 +45,12 @@ class ImovelCard(BaseModel):
             parts = [p.strip() for p in local.split('-')]
             if len(parts) >= 2:
                 # O padrão mais comum é Bairro - Cidade
-                self.neighborhood = parts[0].title()
-                self.city = parts[1].title()
+                self.bairro = parts[0].title()
+                self.cidade = parts[1].title()
                 return
 
         # Se nenhum padrão acima funcionar, assume que o texto é a cidade
-        self.city = local.title()
+        self.cidade = local.title()
 
     @model_validator(mode="after")
     def _fill_computed_fields(self) -> "ImovelCard":
