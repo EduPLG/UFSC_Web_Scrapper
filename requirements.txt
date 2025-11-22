@@ -5,3 +5,5 @@ playwright
 pydantic
 seaborn
 tqdm
+pandas
+pymongo

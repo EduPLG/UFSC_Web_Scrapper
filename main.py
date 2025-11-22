@@ -57,7 +57,8 @@ def menu(city: str, aluguel: bool) -> int:
         f"4. Executar Scrapping de {Estilos.YELLOW}{CIDADES.get(city)}{Estilos.RESET} para {Estilos.YELLOW}{'Alugar' if aluguel else 'Comprar'}{Estilos.RESET}\n"
         f"5. Salvar dados em um {Estilos.BOLD}json{Estilos.RESET} e {Estilos.BOLD}csv{Estilos.RESET} {"" if arq_json else "⚠️ Falta arquivos do Scrapping"}\n"
         f"6. {Estilos.GREEN}Executar análise completa dos dados{Estilos.RESET} {"" if data_base else "⚠️ Falta dados do csv"}\n"
-        "7. Sair\n"
+        f"7. {Estilos.BLUE}Executar Scrapping de todas as opções disponíveis e salvar no banco{Estilos.RESET}\n"
+        "8. Sair\n"
         "           ========================================================\n"
     )
     while True:
@@ -133,5 +134,13 @@ if __name__ == "__main__":
                 run_complete_analysis(verbose=True, tipo=tipo)
 
             case 7:
+                print("Executando Scrapping para todas as opções e salvando no banco...")
+                for aluguel in [True, False]:
+                    for cidade in todas_cidades:
+                        for obj_site in sites:
+                            obj_site.start_web_scrapping(city=cidade, aluguel=aluguel, save_mongo=True)
+                print("Scrapping concluído!")
+
+            case 8:
                 print("Saindo...")
                 break
