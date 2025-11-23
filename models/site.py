@@ -44,8 +44,7 @@ class Site(BaseModel):
 
     def start_web_scrapping(self,
                             city: str = "florianopolis",
-                            aluguel: bool = True,
-                            save_mongo: bool = False) -> None:
+                            aluguel: bool = True) -> None:
         """
         Inicia o processo de scraping usando os utilitários existentes.
         Apenas cidades de Santa Catarina são suportadas atualmente.
@@ -59,8 +58,7 @@ class Site(BaseModel):
             self.filter,
             self.func_get_data,
             self.func_next_page,
-            self.json_name + "_" + city + ("_aluguel" if aluguel else "_venda"),
-            save_mongo=save_mongo
+            self.json_name + "_" + city + ("_aluguel" if aluguel else "_venda")
         )
 
     @classmethod

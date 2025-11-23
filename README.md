@@ -22,16 +22,17 @@ Os seguintes sites são utilizados para a coleta de dados:
 ## Como Usar
 
 1.  **Configuração do Ambiente:**
-    -   Certifique-se de ter o Python instalado (versão 3.7 ou superior).
-    -   Instale as dependências do projeto:
+    -   Certifique-se de ter o [Docker](https://www.docker.com/products/docker-desktop/) e o Docker Compose instalados.
+    -   Na primeira vez ou sempre que alterar as dependências (`requirements.txt`), construa as imagens com o comando:
 
     ```bash
-    pip install -r requirements.txt
+    docker-compose up --build
     ```
-2.  **Execução do Scrapper:**
-    -   Execute o script `main.py` para iniciar o processo de web scraping e análise.
+
+2.  **Execução Interativa do Scrapper:**
+    -   Para iniciar a aplicação e interagir com o menu principal, execute o seguinte comando. Ele irá iniciar todos os serviços necessários (`mongo`, `metabase`) e conectar seu terminal ao script principal:
     ```bash
-    python main.py
+    docker-compose run --rm scraper
     ```
 3.  **Menu Interativo:**
     -   O script oferece um menu interativo para selecionar as opções de scraping e análise.

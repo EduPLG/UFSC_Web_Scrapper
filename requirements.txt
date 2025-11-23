@@ -1,6 +1,5 @@
 BeautifulSoup4
 matplotlib
-pandas
 playwright
 pydantic
 seaborn

@@ -4,7 +4,6 @@ from bs4 import BeautifulSoup
 from tqdm import tqdm
 from collections.abc import Callable
 from models.imovel import ImovelCard
-from utils.load_json_to_mongo import save_elements_to_mongo
 from utils.get_data_func import (
     save_elements_to_json
 )
@@ -51,8 +50,7 @@ def save_site_content(
     filter: tuple[str, dict],
     get_imp_data_func: Callable[[BeautifulSoup], ImovelCard | None],
     next_page_func: Callable[[Page], bool],
-    json_name: str,
-    save_mongo: bool = False,
+    json_name: str
 ) -> None:
     print(f"Acessando o site {url.split('.')[1]}...")
     soups = get_page_content(url, next_page_func)
@@ -66,8 +64,5 @@ def save_site_content(
         lista += list(map(get_imp_data_func, elementos))
     print("Salvando os dados em JSON...")
     save_elements_to_json(lista, json_name)
-
-    if (save_mongo):
-        save_elements_to_mongo(lista, json_name)
 
     print(f"Dados salvos com sucesso! Verifique o arquivo {json_name}\n")

@@ -1,5 +1,6 @@
 from utils.analise import run_complete_analysis
 from utils.get_csv import generate_df
+from utils.load_json_to_mongo import save_elements_to_mongo
 from utils.get_data_func import PATH_OUTPUT, FOLDER_JSON
 from os.path import join
 import os
@@ -57,8 +58,7 @@ def menu(city: str, aluguel: bool) -> int:
         f"4. Executar Scrapping de {Estilos.YELLOW}{CIDADES.get(city)}{Estilos.RESET} para {Estilos.YELLOW}{'Alugar' if aluguel else 'Comprar'}{Estilos.RESET}\n"
         f"5. Salvar dados em um {Estilos.BOLD}json{Estilos.RESET} e {Estilos.BOLD}csv{Estilos.RESET} {"" if arq_json else "⚠️ Falta arquivos do Scrapping"}\n"
         f"6. {Estilos.GREEN}Executar análise completa dos dados{Estilos.RESET} {"" if data_base else "⚠️ Falta dados do csv"}\n"
-        f"7. {Estilos.BLUE}Executar Scrapping de todas as opções disponíveis e salvar no banco{Estilos.RESET}\n"
-        "8. Sair\n"
+        "7. Sair\n"
         "           ========================================================\n"
     )
     while True:
@@ -118,6 +118,7 @@ if __name__ == "__main__":
                 if not filter(lambda x: x.startswith("data_base."), os.listdir(PATH_OUTPUT)):
                     print("Nenhum arquivo de dados encontrado. Por favor, execute o scrapping e salve os dados primeiro.")
                     continue
+                save_elements_to_mongo(join(PATH_OUTPUT, "data_base.json"))
                 print("Selecione o tipo de análise:")
                 print("1. Apenas ALUGUEL")
                 print("2. Apenas VENDA")
@@ -131,16 +132,8 @@ if __name__ == "__main__":
                 else:
                     tipo = None
 
-                run_complete_analysis(verbose=True, tipo=tipo)
+                run_complete_analysis(tipo)
 
             case 7:
-                print("Executando Scrapping para todas as opções e salvando no banco...")
-                for aluguel in [True, False]:
-                    for cidade in todas_cidades:
-                        for obj_site in sites:
-                            obj_site.start_web_scrapping(city=cidade, aluguel=aluguel, save_mongo=True)
-                print("Scrapping concluído!")
-
-            case 8:
                 print("Saindo...")
                 break
