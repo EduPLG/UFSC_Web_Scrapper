@@ -9,7 +9,7 @@ PATH_OUTPUT = "output"
 FOLDER_JSON = join(PATH_OUTPUT, "json_files")
 
 
-def save_elements_to_json(elements: list[dict], filename: str):
+def save_elements_to_json(elements: list[ImovelCard], filename: str):
     """Salva uma lista de elementos em um arquivo JSON.
 
     Args:
@@ -20,6 +20,8 @@ def save_elements_to_json(elements: list[dict], filename: str):
         filename += ".json"
 
     elements_to_save = list(filter(lambda x: x is not None, elements))
+    elements_to_save = [el.model_dump(mode="json") for el in elements_to_save]
+
     makedirs(FOLDER_JSON, exist_ok=True)
 
     with open(join(FOLDER_JSON, filename), "w", encoding="utf-8") as file:
@@ -36,16 +38,15 @@ def get_elements_from_json(filename: str) -> list[ImovelCard]:
         list[ImovelCard]: Lista de elementos lidos do arquivo JSON.
     """
     with open(join(FOLDER_JSON, filename), "r", encoding="utf-8") as file:
-        list_imovel_str = json.load(file)
+        list_imovel = json.load(file)
     imoveis = []
-    for imovel_json_str in list_imovel_str:
-        if imovel_json_str:  # Garante que a string não é nula ou vazia
-            imovel_dict = json.loads(imovel_json_str)
-            imoveis.append(ImovelCard.model_validate(imovel_dict))
+    for imovel_json in list_imovel:
+        if imovel_json:  # Garante que a string não é nula ou vazia
+            imoveis.append(ImovelCard.model_validate(imovel_json))
     return imoveis
 
 
-def get_important_data_imoveis_sc(imovel: BeautifulSoup):
+def get_important_data_imoveis_sc(imovel: BeautifulSoup)-> ImovelCard | None:
     # Título do imóvel
     try:
         title = imovel.find("a").text.strip()
@@ -143,10 +144,10 @@ def get_important_data_imoveis_sc(imovel: BeautifulSoup):
     except ValidationError as e:
         return None
 
-    return object_imovel.model_dump_json()
+    return object_imovel
 
 
-def get_important_data_brognoli(imovel: BeautifulSoup):
+def get_important_data_brognoli(imovel: BeautifulSoup) -> ImovelCard | None:
     # Título do imóvel
     try:
         title = imovel.find("a")["title"]
@@ -222,11 +223,17 @@ def get_important_data_brognoli(imovel: BeautifulSoup):
     except ValidationError as e:
         return None
 
-    return object_imovel.model_dump_json()
+    return object_imovel
 
 
-def get_important_data_adrianoimoveis(imovel: BeautifulSoup):
+def get_important_data_adrianoimoveis(imovel: BeautifulSoup) -> ImovelCard | None:
     BASE_URL = "https://www.adrianoimoveis.com.br"
+
+    pricestxt = imovel.find_all("p", class_="card-with-buttons__value")
+    
+    if len(pricestxt) != 1:
+        # Impedir que pegue imoveis com mais de um preço
+        return None
 
     try:
         href = imovel.get("href") or ""
@@ -293,7 +300,7 @@ def get_important_data_adrianoimoveis(imovel: BeautifulSoup):
                 banheiros += 1
 
     try:
-        obj = ImovelCard(
+        object_imovel = ImovelCard(
             url=url,
             titulo=title,
             local_txt=location,
@@ -307,4 +314,4 @@ def get_important_data_adrianoimoveis(imovel: BeautifulSoup):
     except ValidationError:
         return None
 
-    return obj.model_dump_json()
+    return object_imovel

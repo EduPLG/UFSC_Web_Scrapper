@@ -3,6 +3,7 @@ from playwright.sync_api import Page
 from bs4 import BeautifulSoup
 from tqdm import tqdm
 from collections.abc import Callable
+from models.imovel import ImovelCard
 from utils.get_data_func import (
     save_elements_to_json
 )
@@ -44,19 +45,24 @@ def get_page_content(url: str, next_page_func: Callable[[Page], bool]) -> list[B
         return SOUPS
 
 
-def save_site_content(url: str,
-                      filter: tuple[str, dict],
-                      get_imp_data_func: Callable[[BeautifulSoup], list[str]],
-                      next_page_func: Callable[[Page], bool],
-                      json_name: str) -> None:
+def save_site_content(
+    url: str,
+    filter: tuple[str, dict],
+    get_imp_data_func: Callable[[BeautifulSoup], ImovelCard | None],
+    next_page_func: Callable[[Page], bool],
+    json_name: str
+) -> None:
     print(f"Acessando o site {url.split('.')[1]}...")
     soups = get_page_content(url, next_page_func)
     print("Páginas salvas com sucesso!")
-    lista = []
+    
+    lista: list[ImovelCard] = []
+
     print("Extraindo os dados...")
     for pag_soup in tqdm(soups):
         elementos = pag_soup.find_all(filter[0], filter[1])
         lista += list(map(get_imp_data_func, elementos))
     print("Salvando os dados em JSON...")
     save_elements_to_json(lista, json_name)
+
     print(f"Dados salvos com sucesso! Verifique o arquivo {json_name}\n")

@@ -1,5 +1,6 @@
 from utils.analise import run_complete_analysis
 from utils.get_csv import generate_df
+from utils.load_json_to_mongo import save_elements_to_mongo
 from utils.get_data_func import PATH_OUTPUT, FOLDER_JSON
 from os.path import join
 import os
@@ -117,6 +118,11 @@ if __name__ == "__main__":
                 if not filter(lambda x: x.startswith("data_base."), os.listdir(PATH_OUTPUT)):
                     print("Nenhum arquivo de dados encontrado. Por favor, execute o scrapping e salve os dados primeiro.")
                     continue
+                try:
+                    save_elements_to_mongo(join(PATH_OUTPUT, "data_base.json"))
+                except Exception as e:
+                    print(f"Warming: Erro ao salvar dados no MongoDB:\n{e}")
+                    continue
                 print("Selecione o tipo de análise:")
                 print("1. Apenas ALUGUEL")
                 print("2. Apenas VENDA")
@@ -130,7 +136,7 @@ if __name__ == "__main__":
                 else:
                     tipo = None
 
-                run_complete_analysis(verbose=True, tipo=tipo)
+                run_complete_analysis(tipo)
 
             case 7:
                 print("Saindo...")

@@ -1,7 +1,8 @@
 BeautifulSoup4
 matplotlib
-pandas
 playwright
 pydantic
 seaborn
 tqdm
+pandas
+pymongo

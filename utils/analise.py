@@ -3,7 +3,7 @@ from utils.funcoesAnalise import ANALISIS_FOLDER, DataAnalyzer
 from pathlib import Path
 
 
-def run_complete_analysis(verbose: bool = True, tipo: str = None) -> dict:
+def run_complete_analysis(tipo: str = None) -> dict:
     print("=" * 80)
     print(f"ANÁLISE DE DADOS DE IMÓVEIS ({tipo.upper() if tipo else 'GERAL'})")
     print("=" * 80)

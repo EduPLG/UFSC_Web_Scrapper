@@ -89,7 +89,7 @@ class Site_Imoveis_SC(Site):
     filter: tuple[str, dict[str, Any]] = ("div", {"class": "imovel-data"})
     func_get_data: Callable[[BeautifulSoup], str | None] = get_important_data_imoveis_sc
     func_next_page: Callable[[Page], bool] = next_page_imoveis_sc
-    json_name: str = "imoveis_sc"
+    json_name: str = "imoveissc"
 
     def prepare_filter_url(self,
                            city: str,
