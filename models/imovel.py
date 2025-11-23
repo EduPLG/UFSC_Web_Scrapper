@@ -51,6 +51,11 @@ class ImovelCard(BaseModel):
 
         # Se nenhum padrão acima funcionar, assume que o texto é a cidade
         self.cidade = local.title()
+        if self.bairro is None and self.rua is not None and '-' in self.rua:
+            rua_parts = [p.strip() for p in self.rua.split('-')]
+            if len(rua_parts) >= 2:
+                self.rua = rua_parts[0].title()
+                self.bairro = rua_parts[1].title()
 
     @model_validator(mode="after")
     def _fill_computed_fields(self) -> "ImovelCard":
