@@ -20,8 +20,7 @@ Os seguintes sites são utilizados para a coleta de dados:
 -   **Visualizações:** Criação de gráficos para facilitar a visualização das análises.
 
 ## Como Usar
-
-1.  **Configuração do Ambiente:**
+1.  **Opcional: Configuração do Ambiente (Se quiser utilizar metabase para a análize)**
     -   Certifique-se de ter o [Docker](https://www.docker.com/products/docker-desktop/) e o Docker Compose instalados.
     -   Na primeira vez ou sempre que alterar as dependências (`requirements.txt`), construa as imagens com o comando:
 
@@ -29,7 +28,7 @@ Os seguintes sites são utilizados para a coleta de dados:
     docker-compose up --build
     ```
 
-2.  **Execução Interativa do Scrapper:**
+2.  **Opcinal: Execução Interativa do Scrapper:**
     -   Para iniciar a aplicação e interagir com o menu principal, execute o seguinte comando. Ele irá iniciar todos os serviços necessários (`mongo`, `metabase`) e conectar seu terminal ao script principal:
     ```bash
     docker-compose run --rm scraper
