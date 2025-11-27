@@ -1,0 +1,30 @@
+[
+    {
+        "url": "https://www.brognoli.com.br/imovel/alugar-terreno-com-23000m-no-bairro-universitario-em-biguacu_9660/",
+        "titulo": "Terreno com 23000m², no bairro Universitário em Biguaçu",
+        "local_txt": "Biguaçu/SC",
+        "cidade": "Biguaçu",
+        "bairro": "Universitário",
+        "rua": "Rua Sebastião Lara",
+        "price_txt": "Valor:R$ 115.000",
+        "price_num": 115000.0,
+        "area": 23000.0,
+        "quartos": null,
+        "garagem": null,
+        "banheiros": null
+    },
+    {
+        "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-45m-2-quartos-no-bairro-fundos-em-biguacu_9381/",
+        "titulo": "Apartamento com 45m², 2 quartos, 1 garagem, no bairro Fundos em Biguaçu",
+        "local_txt": "Biguaçu/SC",
+        "cidade": "Biguaçu",
+        "bairro": "Fundos",
+        "rua": "Rua Homero De Miranda Gomes",
+        "price_txt": "Valor:R$ 1.600",
+        "price_num": 1600.0,
+        "area": 45.0,
+        "quartos": 2,
+        "garagem": 1,
+        "banheiros": null
+    }
+]

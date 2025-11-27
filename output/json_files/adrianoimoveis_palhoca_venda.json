@@ -1,0 +1,44 @@
+[
+    {
+        "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-palhoca-2-quartos-60-m/AP0861-ADU9?from=sale",
+        "titulo": "Apartamento",
+        "local_txt": "Jardim Eldorado - Palhoça - SC",
+        "cidade": "Palhoça",
+        "bairro": "Jardim Eldorado",
+        "rua": null,
+        "price_txt": "R$ 320.000",
+        "price_num": 320000.0,
+        "area": 60.45,
+        "quartos": 2,
+        "garagem": 1,
+        "banheiros": 1
+    },
+    {
+        "url": "https://www.adrianoimoveis.com.br/imovel/casa-palhoca-3-quartos-159-m/CA0625-ADU9?from=sale",
+        "titulo": "Casa",
+        "local_txt": "Praia de Fora - Palhoça - SC",
+        "cidade": "Palhoça",
+        "bairro": "Praia De Fora",
+        "rua": null,
+        "price_txt": "R$ 470.000",
+        "price_num": 470000.0,
+        "area": 159.1,
+        "quartos": 3,
+        "garagem": 4,
+        "banheiros": 3
+    },
+    {
+        "url": "https://www.adrianoimoveis.com.br/imovel/casa-palhoca-2-quartos-86-m/CA0580-ADU9?from=sale",
+        "titulo": "Casa",
+        "local_txt": "Maciambú (Ens Brito) - Palhoça - SC",
+        "cidade": "Palhoça",
+        "bairro": "Maciambú (Ens Brito)",
+        "rua": null,
+        "price_txt": "R$ 450.000",
+        "price_num": 450000.0,
+        "area": 86.0,
+        "quartos": 2,
+        "garagem": 6,
+        "banheiros": 2
+    }
+]

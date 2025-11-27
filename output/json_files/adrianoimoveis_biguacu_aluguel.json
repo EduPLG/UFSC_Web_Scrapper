@@ -1,0 +1,16 @@
+[
+    {
+        "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-biguacu-2-quartos-48-m/AP1148-ADU9?from=rent",
+        "titulo": "Apartamento",
+        "local_txt": "Encruzilhada - Biguaçu - SCResidencial Saudade",
+        "cidade": "Biguaçu",
+        "bairro": "Encruzilhada",
+        "rua": null,
+        "price_txt": "R$ 890/mês",
+        "price_num": 890.0,
+        "area": 47.73,
+        "quartos": 2,
+        "garagem": 1,
+        "banheiros": 1
+    }
+]

@@ -1,0 +1,5 @@
+cidade,price_per_m2_mean,price_per_m2_median,price_per_m2_std,price_per_m2_min,price_per_m2_max,price_per_m2_count,price_num_mean,price_num_median,area_mean,area_median
+Palhoça,5059.19,5573.77,4113.25,3.0,15229.89,113,696532.58,488000.0,833.52,120.0
+Florianópolis,4707.8,125.0,8828.77,21.81,130000.0,386,635633.04,12500.0,118.53,80.0
+Biguaçu,4345.42,5197.74,4414.67,5.0,22083.33,31,842257.74,445000.0,2931.71,150.0
+São José,4045.7,4837.6,3819.81,2.5,13423.42,169,461100.46,320000.0,206.44,70.0
