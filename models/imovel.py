@@ -15,6 +15,7 @@ class ImovelCard(BaseModel):
     quartos: int | None = Field(None, description="Número de quartos")
     garagem: int | None = Field(None, description="Número de vagas na garagem")
     banheiros: int | None = Field(None, description="Número de banheiros")
+    tipo: str | None = Field(None, description="Aluguel ou Venda")
 
     def _fill_valor_num(self) -> None:
         bruto = (

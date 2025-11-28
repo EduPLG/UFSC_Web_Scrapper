@@ -11,7 +11,8 @@
         "area": 515.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-galpao-com-2260m-no-bairro-rocado-em-sao-jose_9716/",
@@ -25,7 +26,8 @@
         "area": 2260.0,
         "quartos": null,
         "garagem": 15,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-galpao-com-810m-no-bairro-areias-em-sao-jose_9663/",
@@ -39,7 +41,8 @@
         "area": 810.0,
         "quartos": null,
         "garagem": 8,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-64m-2-quartos-no-bairro-barreiros-em-sao-jose_9180/",
@@ -53,7 +56,8 @@
         "area": 64.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-galpao-com-350m-no-bairro-serraria-em-sao-jose_8750/",
@@ -67,7 +71,8 @@
         "area": 350.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-terreno-com-10000m-no-bairro-praia-comprida-em-sao-jose_8714/",
@@ -81,7 +86,8 @@
         "area": 10000.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-casa-com-600m-5-quartos-no-bairro-jardim-cidade-de-florianopolis-em-sao-jose_6788/",
@@ -95,6 +101,7 @@
         "area": 600.0,
         "quartos": 5,
         "garagem": 10,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     }
 ]

@@ -50,18 +50,19 @@ def save_site_content(
     filter: tuple[str, dict],
     get_imp_data_func: Callable[[BeautifulSoup], ImovelCard | None],
     next_page_func: Callable[[Page], bool],
-    json_name: str
+    json_name: str,
+    aluguel: bool
 ) -> None:
     print(f"Acessando o site {url.split('.')[1]}...")
     soups = get_page_content(url, next_page_func)
     print("Páginas salvas com sucesso!")
-    
+
     lista: list[ImovelCard] = []
 
     print("Extraindo os dados...")
     for pag_soup in tqdm(soups):
         elementos = pag_soup.find_all(filter[0], filter[1])
-        lista += list(map(get_imp_data_func, elementos))
+        lista += list(map(lambda element: get_imp_data_func(element, aluguel), elementos))
     print("Salvando os dados em JSON...")
     save_elements_to_json(lista, json_name)
 

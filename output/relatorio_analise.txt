@@ -4,32 +4,32 @@ RELATÓRIO DE ANÁLISE DE IMÓVEIS
 
 ESTATÍSTICAS GERAIS
 --------------------------------------------------------------------------------
-Total de imóveis analisados: 699
-Preço médio: R$ 612444.21
+Total de imóveis analisados: 697
+Preço médio: R$ 572812.18
 Preço mediano: R$ 300000.00
-Área média: 380.13 m²
+Área média: 398.11 m²
 Área mediana: 82.00 m²
-Preço médio por m²: R$ 4588.45
-Preço mediano por m²: R$ 3750.00
+Preço médio por m²: R$ 4616.61
+Preço mediano por m²: R$ 3333.33
 
 TOP 10 CIDADES - MAIOR PREÇO POR M²
 --------------------------------------------------------------------------------
- 1. Palhoça                        - R$  5059.19/m² (113 imóveis)
- 2. Florianópolis                  - R$  4707.80/m² (386 imóveis)
- 3. Biguaçu                        - R$  4345.42/m² (31 imóveis)
- 4. São José                       - R$  4045.70/m² (169 imóveis)
+ 1. Palhoça                        - R$  5152.40/m² (109 imóveis)
+ 2. Florianópolis                  - R$  4706.71/m² (387 imóveis)
+ 3. Biguaçu                        - R$  4478.43/m² (30 imóveis)
+ 4. São José                       - R$  4095.42/m² (171 imóveis)
 
 TOP 10 BAIRROS - MAIOR PREÇO POR M²
 --------------------------------------------------------------------------------
- 1. Beira Mar                      - R$ 49152.26/m² (1 imóveis)
- 2. Jurerê Internacional           - R$ 25802.28/m² (2 imóveis)
- 3. Canasvieiras                   - R$ 12572.46/m² (2 imóveis)
- 4. Cacupé                         - R$ 12154.70/m² (1 imóveis)
- 5. Ingleses Norte                 - R$ 11688.31/m² (1 imóveis)
- 6. Ponta Das Canas                - R$ 11250.00/m² (1 imóveis)
- 7. Santinho                       - R$ 10555.56/m² (1 imóveis)
- 8. Rio Tavares                    - R$  9408.60/m² (1 imóveis)
- 9. Vargem Grande                  - R$  7377.05/m² (1 imóveis)
-10. Ingleses                       - R$  7240.26/m² (26 imóveis)
+ 1. Íris                           - R$ 130000.00/m² (1 imóveis)
+ 2. Carvoeira                      - R$ 27333.33/m² (1 imóveis)
+ 3. Morro Das Pedras               - R$ 20301.08/m² (1 imóveis)
+ 4. Flor                           - R$ 13321.80/m² (1 imóveis)
+ 5. Campeche                       - R$ 12632.61/m² (12 imóveis)
+ 6. Cacupe                         - R$ 11583.33/m² (1 imóveis)
+ 7. Ponta Das Canas                - R$ 11250.00/m² (1 imóveis)
+ 8. Rio Tavares                    - R$ 11016.67/m² (2 imóveis)
+ 9. Santo Antônio De Lisboa        - R$ 10567.57/m² (2 imóveis)
+10. Santinho                       - R$ 10555.56/m² (1 imóveis)
 
 ================================================================================

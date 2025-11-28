@@ -11,7 +11,8 @@
         "area": 60.45,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/casa-palhoca-3-quartos-159-m/CA0625-ADU9?from=sale",
@@ -25,7 +26,8 @@
         "area": 159.1,
         "quartos": 3,
         "garagem": 4,
-        "banheiros": 3
+        "banheiros": 3,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/casa-palhoca-2-quartos-86-m/CA0580-ADU9?from=sale",
@@ -39,6 +41,7 @@
         "area": 86.0,
         "quartos": 2,
         "garagem": 6,
-        "banheiros": 2
+        "banheiros": 2,
+        "tipo": "venda"
     }
 ]

@@ -58,7 +58,8 @@ class Site(BaseModel):
             self.filter,
             self.func_get_data,
             self.func_next_page,
-            self.json_name + "_" + city + ("_aluguel" if aluguel else "_venda")
+            self.json_name + "_" + city + ("_aluguel" if aluguel else "_venda"),
+            aluguel
         )
 
     @classmethod

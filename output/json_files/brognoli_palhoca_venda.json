@@ -11,7 +11,8 @@
         "area": 150.0,
         "quartos": 3,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-casa-residencial-com-189m-3-quartos-no-bairro-centro-em-palhoca_C21-57539/",
@@ -25,7 +26,8 @@
         "area": 189.0,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-terreno-comercial-residencial-com-988m-no-bairro-jardim-eldorado-em-palhoca_T73-57549/",
@@ -39,7 +41,8 @@
         "area": 988.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-casa-residencial-com-136m-2-quartos-no-bairro-centro-em-palhoca_C155-57486/",
@@ -53,7 +56,8 @@
         "area": 136.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-sobrado-residencial-com-101m-3-quartos-no-bairro-ponte-do-imaruim-em-palhoca_C43-57485/",
@@ -67,7 +71,8 @@
         "area": 101.0,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-85m-3-quartos-no-bairro-pagani-em-palhoca_A43-57492/",
@@ -81,7 +86,8 @@
         "area": 85.0,
         "quartos": 3,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-45m-2-quartos-no-bairro-bela-vista-em-palhoca_A90-57467/",
@@ -95,7 +101,8 @@
         "area": 45.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-124m-3-quartos-no-bairro-centro-em-palhoca_A32-57461/",
@@ -109,7 +116,8 @@
         "area": 124.0,
         "quartos": 3,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-terreno-inativo-com-871m-no-bairro-pagani-em-palhoca_T42-57428/",
@@ -123,7 +131,8 @@
         "area": 871.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-casa-em-condominio-com-41m-2-quartos-no-bairro-bela-vista-em-palhoca_C149-57324/",
@@ -137,7 +146,8 @@
         "area": 41.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-72m-2-quartos-no-bairro-pedra-branca-em-palhoca_A37-57250/",
@@ -151,7 +161,8 @@
         "area": 72.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-85m-3-quartos-no-bairro-pagani-em-palhoca_A78-57204/",
@@ -165,21 +176,8 @@
         "area": 85.0,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": null
-    },
-    {
-        "url": "https://www.brognoli.com.br/imovel/comprar-casa-residencial-com-80m-3-quartos-no-bairro-bela-vista-em-palhoca_C159-57182/",
-        "titulo": "Casa Residencial com 80m², 3 quartos, 1 suíte, 2 garagens, no bairro Bela Vista em Palhoça",
-        "local_txt": "Palhoça/SC",
-        "cidade": "Palhoça",
-        "bairro": "Bela Vista",
-        "rua": "Rua Miguel Batista Da Silva",
-        "price_txt": "Valor:R$ 600.000",
-        "price_num": 600000.0,
-        "area": 80.0,
-        "quartos": 3,
-        "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-terreno-comercial-residencial-com-300m-no-bairro-jardim-eldorado-em-palhoca_T32-57158/",
@@ -193,7 +191,8 @@
         "area": 300.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-71m-2-quartos-no-bairro-pedra-branca-em-palhoca_A51--57122/",
@@ -207,7 +206,8 @@
         "area": 71.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-casa-residencial-com-180m-4-quartos-no-bairro-passa-vinte-em-palhoca_C6-57099/",
@@ -221,7 +221,8 @@
         "area": 180.0,
         "quartos": 4,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-65m-2-quartos-no-bairro-pedra-branca-em-palhoca_A159-57060/",
@@ -235,7 +236,8 @@
         "area": 65.0,
         "quartos": 2,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-95m-3-quartos-no-bairro-pedra-branca-em-palhoca_A78-57031/",
@@ -249,7 +251,8 @@
         "area": 95.0,
         "quartos": 3,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-98m-3-quartos-no-bairro-pedra-branca-em-palhoca_A78-57033/",
@@ -263,7 +266,8 @@
         "area": 98.0,
         "quartos": 3,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-135m-3-quartos-no-bairro-pedra-branca-em-palhoca_A149-56994/",
@@ -277,7 +281,8 @@
         "area": 135.0,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-cobertura-com-125m-3-quartos-no-bairro-pedra-branca-em-palhoca_CB149-56995/",
@@ -291,7 +296,8 @@
         "area": 125.0,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-galpao-loja-com-360m-no-bairro-jardim-eldorado-em-palhoca_L78-56981/",
@@ -305,7 +311,8 @@
         "area": 360.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-61m-2-quartos-no-bairro-sao-sebastiao-em-palhoca_A90-56970/",
@@ -319,7 +326,8 @@
         "area": 61.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-casa-residencial-com-300m-4-quartos-no-bairro-praia-do-sonho-ens-brito-em-palhoca_C78-56959/",
@@ -333,7 +341,8 @@
         "area": 300.0,
         "quartos": 4,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-casa-residencial-com-233m-3-quartos-no-bairro-pedra-branca-em-palhoca_C21-56943/",
@@ -347,7 +356,8 @@
         "area": 233.0,
         "quartos": 3,
         "garagem": 4,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-casa-residencial-com-136m-3-quartos-no-bairro-jardim-eldorado-em-palhoca_C78-56816/",
@@ -361,7 +371,8 @@
         "area": 136.0,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-casa-residencial-com-86m-3-quartos-no-bairro-bela-vista-em-palhoca_C149-56750/",
@@ -375,7 +386,8 @@
         "area": 86.0,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-casa-em-condominio-com-200m-3-quartos-no-bairro-praia-de-fora-em-palhoca_C78-56683/",
@@ -389,7 +401,8 @@
         "area": 200.0,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-casa-em-condominio-com-339m-4-quartos-no-bairro-pedra-branca-em-palhoca_C21-56608/",
@@ -403,7 +416,8 @@
         "area": 339.0,
         "quartos": 4,
         "garagem": 4,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-casa-em-condominio-com-174m-3-quartos-no-bairro-pedra-branca-em-palhoca_C21-56609/",
@@ -417,7 +431,8 @@
         "area": 174.0,
         "quartos": 3,
         "garagem": 4,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-115m-3-quartos-no-bairro-pagani-em-palhoca_A64-56571/",
@@ -431,7 +446,8 @@
         "area": 115.0,
         "quartos": 3,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-casa-residencial-com-85m-2-quartos-no-bairro-bela-vista-em-palhoca_C64-56562/",
@@ -445,7 +461,8 @@
         "area": 85.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-72m-2-quartos-no-bairro-pedra-branca-em-palhoca_A148-56534/",
@@ -459,7 +476,8 @@
         "area": 72.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-49m-2-quartos-no-bairro-praia-de-fora-em-palhoca_A159-56480/",
@@ -473,21 +491,8 @@
         "area": 49.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
-    },
-    {
-        "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-53m-2-quartos-no-bairro-barra-do-aririu-em-palhoca_A64-56444/",
-        "titulo": "Apartamentos com 53m², 2 quartos, 1 garagem, no bairro Barra Do Aririú em Palhoça",
-        "local_txt": "Palhoça/SC",
-        "cidade": "Palhoça",
-        "bairro": "Barra Do Aririú",
-        "rua": "Rua José João Silvino",
-        "price_txt": "Valor:R$ 235.000",
-        "price_num": 235000.0,
-        "area": 53.0,
-        "quartos": 2,
-        "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-67m-2-quartos-no-bairro-passa-vinte-em-palhoca_A77-56405/",
@@ -501,7 +506,8 @@
         "area": 67.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-terreno-comercial-residencial-com-1451m-no-bairro-bela-vista-em-palhoca_T153-56381/",
@@ -515,7 +521,8 @@
         "area": 1451.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-casa-residencial-com-84m-2-quartos-no-bairro-bela-vista-em-palhoca_C50-56280/",
@@ -529,7 +536,8 @@
         "area": 84.0,
         "quartos": 2,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-55m-2-quartos-no-bairro-pedra-branca-em-palhoca_A51-56277/",
@@ -543,7 +551,8 @@
         "area": 55.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-49m-2-quartos-no-bairro-bela-vista-em-palhoca_A40-56267/",
@@ -557,7 +566,8 @@
         "area": 49.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-sobrado-residencial-com-84m-2-quartos-no-bairro-bela-vista-em-palhoca_C50-56254/",
@@ -571,7 +581,8 @@
         "area": 84.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-48m-2-quartos-no-bairro-bela-vista-em-palhoca_A40-56235/",
@@ -585,7 +596,8 @@
         "area": 48.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-58m-2-quartos-no-bairro-aririu-em-palhoca_A37-56223/",
@@ -599,7 +611,8 @@
         "area": 58.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-casa-residencial-com-280m-4-quartos-no-bairro-pedra-branca-em-palhoca_C21-56188/",
@@ -613,7 +626,8 @@
         "area": 280.0,
         "quartos": 4,
         "garagem": 4,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-casa-residencial-com-59m-2-quartos-no-bairro-praia-de-fora-em-palhoca_C149-56134/",
@@ -627,7 +641,8 @@
         "area": 59.0,
         "quartos": 2,
         "garagem": 5,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-79m-3-quartos-no-bairro-praia-de-fora-em-palhoca_A149-56092/",
@@ -636,12 +651,13 @@
         "cidade": "Palhoça",
         "bairro": "Praia De Fora",
         "rua": "Rua Raul Leonardo Weiss",
-        "price_txt": "Valor:R$ 522.000",
-        "price_num": 522000.0,
+        "price_txt": "Valor:R$ 555.000",
+        "price_num": 555000.0,
         "area": 79.0,
         "quartos": 3,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-45m-2-quartos-no-bairro-bela-vista-em-palhoca_A107-56088/",
@@ -655,7 +671,8 @@
         "area": 45.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-casa-residencial-com-64m-2-quartos-no-bairro-bela-vista-em-palhoca_C58-56075/",
@@ -669,21 +686,8 @@
         "area": 64.0,
         "quartos": 2,
         "garagem": 2,
-        "banheiros": null
-    },
-    {
-        "url": "https://www.brognoli.com.br/imovel/comprar-terrenos-residenciais-com-389m-no-bairro-pedra-branca-em-palhoca_T159-56071/",
-        "titulo": "Terrenos Residenciais com 389m², no bairro Pedra Branca em Palhoça",
-        "local_txt": "Palhoça/SC",
-        "cidade": "Palhoça",
-        "bairro": "Pedra Branca",
-        "rua": "Rua Dos Sabiás",
-        "price_txt": "Valor:R$ 560.000",
-        "price_num": 560000.0,
-        "area": 389.0,
-        "quartos": null,
-        "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-casa-em-condominio-com-275m-4-quartos-no-bairro-pedra-branca-em-palhoca_C21-56017/",
@@ -697,7 +701,8 @@
         "area": 275.0,
         "quartos": 4,
         "garagem": 4,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-52m-no-bairro-sao-sebastiao-em-palhoca_A160-56012/",
@@ -711,7 +716,8 @@
         "area": 52.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-81m-2-quartos-no-bairro-pedra-branca-em-palhoca_A21-55999/",
@@ -725,7 +731,8 @@
         "area": 81.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-90m-3-quartos-no-bairro-pagani-em-palhoca_A149-55962/",
@@ -739,7 +746,8 @@
         "area": 90.0,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-casa-residencial-com-147m-4-quartos-no-bairro-sao-sebastiao-em-palhoca_C48-55946/",
@@ -753,7 +761,8 @@
         "area": 147.0,
         "quartos": 4,
         "garagem": 4,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-terrenos-residenciais-com-1203m-no-bairro-rio-grande-em-palhoca_T153-55849/",
@@ -767,7 +776,8 @@
         "area": 1203.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-103m-3-quartos-no-bairro-pagani-em-palhoca_A51-55828/",
@@ -781,7 +791,8 @@
         "area": 103.0,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-casa-em-condominio-com-74m-3-quartos-no-bairro-bela-vista-em-palhoca_C4-55811/",
@@ -795,7 +806,8 @@
         "area": 74.0,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-casa-residencial-com-208m-3-quartos-no-bairro-pedra-branca-em-palhoca_C21-55743/",
@@ -809,7 +821,8 @@
         "area": 208.0,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-casa-residencial-com-364m-4-quartos-no-bairro-ponte-do-imaruim-em-palhoca_C42-54608/",
@@ -823,7 +836,8 @@
         "area": 364.0,
         "quartos": 4,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-61m-2-quartos-no-bairro-jardim-eldorado-em-palhoca_A107-54394/",
@@ -837,7 +851,8 @@
         "area": 61.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-85m-3-quartos-no-bairro-pedra-branca-em-palhoca_A140-54382/",
@@ -851,7 +866,8 @@
         "area": 85.0,
         "quartos": 3,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-67m-2-quartos-no-bairro-pagani-em-palhoca_A78-54178/",
@@ -865,7 +881,8 @@
         "area": 67.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-casa-residencial-com-231m-4-quartos-no-bairro-ponte-do-imaruim-em-palhoca_C145-54032/",
@@ -879,7 +896,8 @@
         "area": 231.0,
         "quartos": 4,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-124m-3-quartos-no-bairro-centro-em-palhoca_A140-53856/",
@@ -893,7 +911,8 @@
         "area": 124.0,
         "quartos": 3,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-terreno-comercial-residencial-com-360m-no-bairro-balneario-ponta-do-papagaio-ens-brito-em-palhoca_T148-53735/",
@@ -907,7 +926,8 @@
         "area": 360.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-sobrado-residencial-com-68m-2-quartos-no-bairro-praia-do-sonho-ens-brito-em-palhoca_C149-53551/",
@@ -921,7 +941,8 @@
         "area": 68.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-sobrado-residencial-com-112m-3-quartos-no-bairro-praia-do-sonho-ens-brito-em-palhoca_C149-53529/",
@@ -935,7 +956,8 @@
         "area": 112.0,
         "quartos": 3,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-98m-3-quartos-no-bairro-pedra-branca-em-palhoca_A140-53416/",
@@ -949,7 +971,8 @@
         "area": 98.0,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-casa-residencial-com-165m-3-quartos-no-bairro-jardim-eldorado-em-palhoca_C4-53196/",
@@ -963,7 +986,8 @@
         "area": 165.0,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-predio-com-750m-no-bairro-ponte-do-imaruim-em-palhoca_PR4-52682/",
@@ -977,7 +1001,8 @@
         "area": 750.0,
         "quartos": null,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-75m-2-quartos-no-bairro-centro-em-palhoca_A78-52547/",
@@ -991,7 +1016,8 @@
         "area": 75.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-casa-residencial-com-235m-3-quartos-no-bairro-pedra-branca-em-palhoca_C107-52417/",
@@ -1005,7 +1031,8 @@
         "area": 235.0,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-casa-residencial-com-120m-3-quartos-no-bairro-sao-sebastiao-em-palhoca_C37-52133/",
@@ -1019,7 +1046,8 @@
         "area": 120.0,
         "quartos": 3,
         "garagem": 4,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-61m-2-quartos-no-bairro-pagani-em-palhoca_A31-52045/",
@@ -1033,7 +1061,8 @@
         "area": 61.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-98m-3-quartos-no-bairro-pedra-branca-em-palhoca_A10-51790/",
@@ -1047,6 +1076,52 @@
         "area": 98.0,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
+    },
+    {
+        "url": "https://www.brognoli.com.br/imovel/comprar-casa-residencial-com-202m-3-quartos-no-bairro-pedra-branca-em-palhoca_C51-50898/",
+        "titulo": "Casa Residencial com 202m², 3 quartos, 1 suíte, 2 garagens, no bairro Pedra Branca em Palhoça",
+        "local_txt": "Palhoça/SC",
+        "cidade": "Palhoça",
+        "bairro": "Pedra Branca",
+        "rua": "Rua Das Macieiras",
+        "price_txt": "Valor:R$ 1.990.000",
+        "price_num": 1990000.0,
+        "area": 202.0,
+        "quartos": 3,
+        "garagem": 2,
+        "banheiros": null,
+        "tipo": "venda"
+    },
+    {
+        "url": "https://www.brognoli.com.br/imovel/comprar-terreno-comercial-residencial-com-611m-no-bairro-alto-aririu-em-palhoca_T78-50742/",
+        "titulo": "Terreno Comercial/Residencial com 611m², no bairro Alto Aririu em Palhoça",
+        "local_txt": "Palhoça/SC",
+        "cidade": "Palhoça",
+        "bairro": "Alto Aririu",
+        "rua": "Rua Torcate Martins",
+        "price_txt": "Valor:R$ 375.000",
+        "price_num": 375000.0,
+        "area": 611.0,
+        "quartos": null,
+        "garagem": null,
+        "banheiros": null,
+        "tipo": "venda"
+    },
+    {
+        "url": "https://www.brognoli.com.br/imovel/comprar-casa-residencial-com-187m-3-quartos-no-bairro-pedra-branca-em-palhoca_C95-50744/",
+        "titulo": "Casa Residencial com 187m², 3 quartos, 1 suíte, 2 garagens, no bairro Pedra Branca em Palhoça",
+        "local_txt": "Palhoça/SC",
+        "cidade": "Palhoça",
+        "bairro": "Pedra Branca",
+        "rua": "Rua Dos Canários",
+        "price_txt": "Valor:R$ 2.100.000",
+        "price_num": 2100000.0,
+        "area": 187.0,
+        "quartos": 3,
+        "garagem": 2,
+        "banheiros": null,
+        "tipo": "venda"
     }
 ]

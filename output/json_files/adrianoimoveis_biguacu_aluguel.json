@@ -11,6 +11,7 @@
         "area": 47.73,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "aluguel"
     }
 ]

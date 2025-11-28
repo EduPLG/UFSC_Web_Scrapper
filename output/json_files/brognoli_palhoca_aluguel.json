@@ -11,7 +11,8 @@
         "area": 55.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-galpao-com-1920m-no-bairro-passa-vinte-em-palhoca_9704/",
@@ -25,7 +26,8 @@
         "area": 1920.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-sala-com-732m-no-bairro-centro-em-palhoca_9673/",
@@ -39,7 +41,8 @@
         "area": 732.0,
         "quartos": null,
         "garagem": 25,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-galpao-com-1600m-no-bairro-alto-aririu-em-palhoca_9662/",
@@ -53,7 +56,8 @@
         "area": 1600.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-predio-com-900m-no-bairro-ponte-do-imaruim-em-palhoca_9654/",
@@ -67,7 +71,8 @@
         "area": 900.0,
         "quartos": null,
         "garagem": 12,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-loja-com-1914m-no-bairro-jardim-eldorado-em-palhoca_9558/",
@@ -81,7 +86,8 @@
         "area": 1914.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-35m-1-quarto-no-bairro-pedra-branca-em-palhoca_9268/",
@@ -95,7 +101,8 @@
         "area": 35.0,
         "quartos": null,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-terreno-com-360m-no-bairro-brejaru-em-palhoca_8730/",
@@ -109,7 +116,8 @@
         "area": 360.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-terreno-com-3000m-no-bairro-brejaru-em-palhoca_8717/",
@@ -123,6 +131,7 @@
         "area": 3000.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     }
 ]

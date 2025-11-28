@@ -1,6 +1,321 @@
 [
     {
-        "url": "https://www.adrianoimoveis.com.br/imovel/loja-florianopolis-200-m/LO0185-ADU9?from=rent",
+        "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-1-quarto-32-m/AP0288-ADU9?from=rent",
+        "titulo": "Apartamento",
+        "local_txt": "Capoeiras - Florianópolis - SCResidencial Plaza Mediterranne",
+        "cidade": "Florianópolis",
+        "bairro": "Capoeiras",
+        "rua": null,
+        "price_txt": "R$ 1.600/mês",
+        "price_num": 1600.0,
+        "area": 31.62,
+        "quartos": 1,
+        "garagem": null,
+        "banheiros": 1,
+        "tipo": "aluguel"
+    },
+    {
+        "url": "https://www.adrianoimoveis.com.br/imovel/kitnet-florianopolis-1-quarto-13-m/KN0076-ADU9?from=rent",
+        "titulo": "Kitnet",
+        "local_txt": "Capoeiras - Florianópolis - SC",
+        "cidade": "Florianópolis",
+        "bairro": "Capoeiras",
+        "rua": null,
+        "price_txt": "R$ 1.200/mês",
+        "price_num": 1200.0,
+        "area": 13.0,
+        "quartos": 1,
+        "garagem": 1,
+        "banheiros": 1,
+        "tipo": "aluguel"
+    },
+    {
+        "url": "https://www.adrianoimoveis.com.br/imovel/casa-florianopolis-2-quartos-70-m/CA0547-ADU9?from=rent",
+        "titulo": "Casa",
+        "local_txt": "Capoeiras - Florianópolis - SC",
+        "cidade": "Florianópolis",
+        "bairro": "Capoeiras",
+        "rua": null,
+        "price_txt": "R$ 2.690/mês",
+        "price_num": 2690.0,
+        "area": 70.0,
+        "quartos": 2,
+        "garagem": 2,
+        "banheiros": 1,
+        "tipo": "aluguel"
+    },
+    {
+        "url": "https://www.adrianoimoveis.com.br/imovel/loja-florianopolis-29-m/LO0119-ADU9?from=rent",
+        "titulo": "Loja",
+        "local_txt": "Estreito - Florianópolis - SC",
+        "cidade": "Florianópolis",
+        "bairro": "Estreito",
+        "rua": null,
+        "price_txt": "R$ 4.300/mês",
+        "price_num": 4300.0,
+        "area": 28.69,
+        "quartos": null,
+        "garagem": null,
+        "banheiros": 2,
+        "tipo": "aluguel"
+    },
+    {
+        "url": "https://www.adrianoimoveis.com.br/imovel/kitnet-florianopolis-1-quarto-18-m/KN0086-ADU9?from=rent",
+        "titulo": "Kitnet",
+        "local_txt": "Jardim Atlântico - Florianópolis - SC",
+        "cidade": "Florianópolis",
+        "bairro": "Jardim Atlântico",
+        "rua": null,
+        "price_txt": "R$ 1.400/mês",
+        "price_num": 1400.0,
+        "area": 18.0,
+        "quartos": 1,
+        "garagem": 1,
+        "banheiros": 1,
+        "tipo": "aluguel"
+    },
+    {
+        "url": "https://www.adrianoimoveis.com.br/imovel/kitnet-florianopolis-1-quarto-18-m/KN0089-ADU9?from=rent",
+        "titulo": "Kitnet",
+        "local_txt": "Jardim Atlântico - Florianópolis - SC",
+        "cidade": "Florianópolis",
+        "bairro": "Jardim Atlântico",
+        "rua": null,
+        "price_txt": "R$ 1.400/mês",
+        "price_num": 1400.0,
+        "area": 18.0,
+        "quartos": 1,
+        "garagem": 1,
+        "banheiros": 1,
+        "tipo": "aluguel"
+    },
+    {
+        "url": "https://www.adrianoimoveis.com.br/imovel/kitnet-florianopolis-1-quarto-22-m/KN0087-ADU9?from=rent",
+        "titulo": "Kitnet",
+        "local_txt": "Jardim Atlântico - Florianópolis - SC",
+        "cidade": "Florianópolis",
+        "bairro": "Jardim Atlântico",
+        "rua": null,
+        "price_txt": "R$ 1.500/mês",
+        "price_num": 1500.0,
+        "area": 22.0,
+        "quartos": 1,
+        "garagem": 1,
+        "banheiros": 1,
+        "tipo": "aluguel"
+    },
+    {
+        "url": "https://www.adrianoimoveis.com.br/imovel/kitnet-florianopolis-1-quarto-22-m/KN0088-ADU9?from=rent",
+        "titulo": "Kitnet",
+        "local_txt": "Jardim Atlântico - Florianópolis - SC",
+        "cidade": "Florianópolis",
+        "bairro": "Jardim Atlântico",
+        "rua": null,
+        "price_txt": "R$ 1.500/mês",
+        "price_num": 1500.0,
+        "area": 22.0,
+        "quartos": 1,
+        "garagem": 1,
+        "banheiros": 1,
+        "tipo": "aluguel"
+    },
+    {
+        "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-2-quartos-53-m/AP1215-ADU9?from=rent",
+        "titulo": "Apartamento",
+        "local_txt": "Capoeiras - Florianópolis - SCResidencial Estrela",
+        "cidade": "Florianópolis",
+        "bairro": "Capoeiras",
+        "rua": null,
+        "price_txt": "R$ 1.890/mês",
+        "price_num": 1890.0,
+        "area": 53.22,
+        "quartos": 2,
+        "garagem": 1,
+        "banheiros": 1,
+        "tipo": "aluguel"
+    },
+    {
+        "url": "https://www.adrianoimoveis.com.br/imovel/casa-florianopolis-4-quartos-220-m/CA0671-ADU9?from=rent",
+        "titulo": "Casa",
+        "local_txt": "Capoeiras - Florianópolis - SC",
+        "cidade": "Florianópolis",
+        "bairro": "Capoeiras",
+        "rua": null,
+        "price_txt": "R$ 4.990/mês",
+        "price_num": 4990.0,
+        "area": 220.0,
+        "quartos": 4,
+        "garagem": 5,
+        "banheiros": 3,
+        "tipo": "aluguel"
+    },
+    {
+        "url": "https://www.adrianoimoveis.com.br/imovel/cobertura-florianopolis-4-quartos-188-m/CO0003-ADU9?from=rent",
+        "titulo": "Cobertura",
+        "local_txt": "Estreito - Florianópolis - SCResidencial Açorianos",
+        "cidade": "Florianópolis",
+        "bairro": "Estreito",
+        "rua": null,
+        "price_txt": "R$ 9.800/mês",
+        "price_num": 9800.0,
+        "area": 187.75,
+        "quartos": 4,
+        "garagem": 2,
+        "banheiros": 3,
+        "tipo": "aluguel"
+    },
+    {
+        "url": "https://www.adrianoimoveis.com.br/imovel/sala-florianopolis-25-m/SA0137-ADU9",
+        "titulo": "Sala",
+        "local_txt": "Capoeiras - Florianópolis - SCEdifício D`Cezares",
+        "cidade": "Florianópolis",
+        "bairro": "Capoeiras",
+        "rua": null,
+        "price_txt": "R$ 1.420/mês",
+        "price_num": 1420.0,
+        "area": 25.0,
+        "quartos": null,
+        "garagem": null,
+        "banheiros": null,
+        "tipo": "aluguel"
+    },
+    {
+        "url": "https://www.adrianoimoveis.com.br/imovel/sala-florianopolis-25-m/SA0118-ADU9",
+        "titulo": "Sala",
+        "local_txt": "Capoeiras - Florianópolis - SCEdifício D`Cezares",
+        "cidade": "Florianópolis",
+        "bairro": "Capoeiras",
+        "rua": null,
+        "price_txt": "R$ 1.100/mês",
+        "price_num": 1100.0,
+        "area": 25.0,
+        "quartos": null,
+        "garagem": null,
+        "banheiros": null,
+        "tipo": "aluguel"
+    },
+    {
+        "url": "https://www.adrianoimoveis.com.br/imovel/sala-florianopolis-25-m/SA0135-ADU9",
+        "titulo": "Sala",
+        "local_txt": "Capoeiras - Florianópolis - SCEdifício D`Cezares",
+        "cidade": "Florianópolis",
+        "bairro": "Capoeiras",
+        "rua": null,
+        "price_txt": "R$ 1.100/mês",
+        "price_num": 1100.0,
+        "area": 25.0,
+        "quartos": null,
+        "garagem": null,
+        "banheiros": null,
+        "tipo": "aluguel"
+    },
+    {
+        "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-3-quartos-94-m/AP0158-ADU9",
+        "titulo": "Apartamento",
+        "local_txt": "Estreito - Florianópolis - SCEdifício Residencial Eldorado",
+        "cidade": "Florianópolis",
+        "bairro": "Estreito",
+        "rua": null,
+        "price_txt": "R$ 2.690/mês",
+        "price_num": 2690.0,
+        "area": 94.09,
+        "quartos": 3,
+        "garagem": 1,
+        "banheiros": 2,
+        "tipo": "aluguel"
+    },
+    {
+        "url": "https://www.adrianoimoveis.com.br/imovel/casa-florianopolis-3-quartos-87-m/CA0218-ADU9",
+        "titulo": "Casa",
+        "local_txt": "Abraão - Florianópolis - SC",
+        "cidade": "Florianópolis",
+        "bairro": "Abraão",
+        "rua": null,
+        "price_txt": "R$ 4.000/mês",
+        "price_num": 4000.0,
+        "area": 87.0,
+        "quartos": 3,
+        "garagem": 1,
+        "banheiros": 2,
+        "tipo": "aluguel"
+    },
+    {
+        "url": "https://www.adrianoimoveis.com.br/imovel/loja-florianopolis-72-m/LO0192-ADU9",
+        "titulo": "Loja",
+        "local_txt": "Estreito - Florianópolis - SCCondomínio Edifício Continental Center",
+        "cidade": "Florianópolis",
+        "bairro": "Estreito",
+        "rua": null,
+        "price_txt": "R$ 2.390/mês",
+        "price_num": 2390.0,
+        "area": 72.0,
+        "quartos": null,
+        "garagem": 1,
+        "banheiros": 1,
+        "tipo": "aluguel"
+    },
+    {
+        "url": "https://www.adrianoimoveis.com.br/imovel/sala-florianopolis-150-m/SA0117-ADU9",
+        "titulo": "Sala",
+        "local_txt": "Capoeiras - Florianópolis - SCEdifício D`Cezares",
+        "cidade": "Florianópolis",
+        "bairro": "Capoeiras",
+        "rua": null,
+        "price_txt": "R$ 4.100/mês",
+        "price_num": 4100.0,
+        "area": 150.0,
+        "quartos": null,
+        "garagem": null,
+        "banheiros": null,
+        "tipo": "aluguel"
+    },
+    {
+        "url": "https://www.adrianoimoveis.com.br/imovel/sala-florianopolis-130-m/SA0147-ADU9",
+        "titulo": "Sala",
+        "local_txt": "Capoeiras - Florianópolis - SC",
+        "cidade": "Florianópolis",
+        "bairro": "Capoeiras",
+        "rua": null,
+        "price_txt": "R$ 4.000/mês",
+        "price_num": 4000.0,
+        "area": 130.0,
+        "quartos": null,
+        "garagem": 1,
+        "banheiros": 2,
+        "tipo": "aluguel"
+    },
+    {
+        "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-3-quartos-139-m/AP1138-ADU9",
+        "titulo": "Apartamento",
+        "local_txt": "Jardim Atlântico - Florianópolis - SCCondomínio Costa Azul Clube",
+        "cidade": "Florianópolis",
+        "bairro": "Jardim Atlântico",
+        "rua": null,
+        "price_txt": "R$ 9.500/mês",
+        "price_num": 9500.0,
+        "area": 139.44,
+        "quartos": 3,
+        "garagem": 2,
+        "banheiros": 4,
+        "tipo": "aluguel"
+    },
+    {
+        "url": "https://www.adrianoimoveis.com.br/imovel/kitnet-florianopolis-1-quarto-30-m/KN0051-ADU9",
+        "titulo": "Kitnet",
+        "local_txt": "Capoeiras - Florianópolis - SC",
+        "cidade": "Florianópolis",
+        "bairro": "Capoeiras",
+        "rua": null,
+        "price_txt": "R$ 1.390/mês",
+        "price_num": 1390.0,
+        "area": 30.0,
+        "quartos": 1,
+        "garagem": 1,
+        "banheiros": 1,
+        "tipo": "aluguel"
+    },
+    {
+        "url": "https://www.adrianoimoveis.com.br/imovel/loja-florianopolis-200-m/LO0185-ADU9",
         "titulo": "Loja",
         "local_txt": "Jardim Atlântico - Florianópolis - SC",
         "cidade": "Florianópolis",
@@ -11,24 +326,11 @@
         "area": 200.0,
         "quartos": null,
         "garagem": 3,
-        "banheiros": 2
+        "banheiros": 2,
+        "tipo": "aluguel"
     },
     {
-        "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-2-quartos-75-m/AP0787-ADU9?from=rent",
-        "titulo": "Apartamento",
-        "local_txt": "Balneário - Florianópolis - SCLanciano",
-        "cidade": "Florianópolis",
-        "bairro": "Balneário",
-        "rua": null,
-        "price_txt": "R$ 2.290/mês",
-        "price_num": 2290.0,
-        "area": 74.6,
-        "quartos": 2,
-        "garagem": 1,
-        "banheiros": 1
-    },
-    {
-        "url": "https://www.adrianoimoveis.com.br/imovel/loja-florianopolis-56-m/LO0195-ADU9?from=rent",
+        "url": "https://www.adrianoimoveis.com.br/imovel/loja-florianopolis-56-m/LO0195-ADU9",
         "titulo": "Loja",
         "local_txt": "Estreito - Florianópolis - SC",
         "cidade": "Florianópolis",
@@ -39,10 +341,11 @@
         "area": 56.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "aluguel"
     },
     {
-        "url": "https://www.adrianoimoveis.com.br/imovel/casa-florianopolis-200-m/CA0559-ADU9?from=rent",
+        "url": "https://www.adrianoimoveis.com.br/imovel/casa-florianopolis-200-m/CA0559-ADU9",
         "titulo": "Casa",
         "local_txt": "Jardim Atlântico - Florianópolis - SC",
         "cidade": "Florianópolis",
@@ -53,10 +356,11 @@
         "area": 200.0,
         "quartos": null,
         "garagem": 3,
-        "banheiros": 2
+        "banheiros": 2,
+        "tipo": "aluguel"
     },
     {
-        "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-2-quartos-52-m/AP0755-ADU9?from=rent",
+        "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-2-quartos-52-m/AP0755-ADU9",
         "titulo": "Apartamento",
         "local_txt": "Jardim Atlântico - Florianópolis - SCCondomínio Conjunto Habitacional Itaguaçu",
         "cidade": "Florianópolis",
@@ -67,10 +371,11 @@
         "area": 52.4,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "aluguel"
     },
     {
-        "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-2-quartos-62-m/AP1265-ADU9?from=rent",
+        "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-2-quartos-62-m/AP1265-ADU9",
         "titulo": "Apartamento",
         "local_txt": "Jardim Atlântico - Florianópolis - SCCondomínio Conjunto Habitacional Itaguaçu",
         "cidade": "Florianópolis",
@@ -81,10 +386,11 @@
         "area": 62.0,
         "quartos": 2,
         "garagem": null,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "aluguel"
     },
     {
-        "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-2-quartos-55-m/AP0605-ADU9?from=rent",
+        "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-2-quartos-55-m/AP0605-ADU9",
         "titulo": "Apartamento",
         "local_txt": "Coqueiros - Florianópolis - SCConjunto Residencial Argus",
         "cidade": "Florianópolis",
@@ -95,10 +401,11 @@
         "area": 55.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "aluguel"
     },
     {
-        "url": "https://www.adrianoimoveis.com.br/imovel/kitnet-florianopolis-1-quarto-30-m/KN0091-ADU9?from=rent",
+        "url": "https://www.adrianoimoveis.com.br/imovel/kitnet-florianopolis-1-quarto-30-m/KN0091-ADU9",
         "titulo": "Kitnet",
         "local_txt": "Capoeiras - Florianópolis - SC",
         "cidade": "Florianópolis",
@@ -109,10 +416,11 @@
         "area": 30.0,
         "quartos": 1,
         "garagem": null,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "aluguel"
     },
     {
-        "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-1-quarto-35-m/AP0762-ADU9?from=rent",
+        "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-1-quarto-35-m/AP0762-ADU9",
         "titulo": "Apartamento",
         "local_txt": "Capoeiras - Florianópolis - SCPrédio Residencial",
         "cidade": "Florianópolis",
@@ -123,10 +431,11 @@
         "area": 35.0,
         "quartos": 1,
         "garagem": null,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "aluguel"
     },
     {
-        "url": "https://www.adrianoimoveis.com.br/imovel/loja-florianopolis-247-m/LO0070-ADU9?from=rent",
+        "url": "https://www.adrianoimoveis.com.br/imovel/loja-florianopolis-247-m/LO0070-ADU9",
         "titulo": "Loja",
         "local_txt": "Coqueiros - Florianópolis - SC",
         "cidade": "Florianópolis",
@@ -137,10 +446,11 @@
         "area": 246.5,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
-        "url": "https://www.adrianoimoveis.com.br/imovel/casa-florianopolis-5-quartos-220-m/CA0624-ADU9?from=rent",
+        "url": "https://www.adrianoimoveis.com.br/imovel/casa-florianopolis-5-quartos-220-m/CA0624-ADU9",
         "titulo": "Casa",
         "local_txt": "Bom Abrigo - Florianópolis - SC",
         "cidade": "Florianópolis",
@@ -151,10 +461,11 @@
         "area": 220.0,
         "quartos": 5,
         "garagem": 4,
-        "banheiros": 7
+        "banheiros": 7,
+        "tipo": "aluguel"
     },
     {
-        "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-3-quartos-74-m/AP0567-ADU9?from=rent",
+        "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-3-quartos-74-m/AP0567-ADU9",
         "titulo": "Apartamento",
         "local_txt": "Capoeiras - Florianópolis - SCCondomínio Conjunto Residencial Excelsior II",
         "cidade": "Florianópolis",
@@ -165,7 +476,8 @@
         "area": 74.37,
         "quartos": 3,
         "garagem": 1,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/loja-florianopolis-52-m/LO0206-ADU9",
@@ -179,7 +491,8 @@
         "area": 52.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-2-quartos-70-m/AP1233-ADU9",
@@ -193,7 +506,8 @@
         "area": 70.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/loja-florianopolis-90-m/LO0002-ADU9",
@@ -207,7 +521,8 @@
         "area": 90.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": 2
+        "banheiros": 2,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/casa-florianopolis-5-quartos-398-m/CA0623-ADU9",
@@ -221,21 +536,8 @@
         "area": 398.0,
         "quartos": 5,
         "garagem": 4,
-        "banheiros": 7
-    },
-    {
-        "url": "https://www.adrianoimoveis.com.br/imovel/loja-florianopolis-29-m/LO0119-ADU9",
-        "titulo": "Loja",
-        "local_txt": "Estreito - Florianópolis - SC",
-        "cidade": "Florianópolis",
-        "bairro": "Estreito",
-        "rua": null,
-        "price_txt": "R$ 4.300/mês",
-        "price_num": 4300.0,
-        "area": 28.69,
-        "quartos": null,
-        "garagem": null,
-        "banheiros": 2
+        "banheiros": 7,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-1-quarto-35-m/AP0735-ADU9",
@@ -249,7 +551,8 @@
         "area": 35.0,
         "quartos": 1,
         "garagem": null,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/casa-florianopolis-1-quarto-48-m/CA0241-ADU9",
@@ -263,7 +566,8 @@
         "area": 48.0,
         "quartos": 1,
         "garagem": null,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/predio-florianopolis-400-m/PR0007-ADU9",
@@ -277,7 +581,8 @@
         "area": 400.0,
         "quartos": null,
         "garagem": 10,
-        "banheiros": 5
+        "banheiros": 5,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-2-quartos-70-m/AP0296-ADU9",
@@ -291,7 +596,8 @@
         "area": 70.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-2-quartos-70-m/AP1277-ADU9",
@@ -305,7 +611,8 @@
         "area": 70.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-2-quartos-70-m/AP1276-ADU9",
@@ -319,7 +626,8 @@
         "area": 70.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-2-quartos-70-m/AP1275-ADU9",
@@ -333,7 +641,8 @@
         "area": 70.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/sala-florianopolis-25-m/SA0008-ADU9",
@@ -347,21 +656,8 @@
         "area": 25.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": 1
-    },
-    {
-        "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-2-quartos-69-m/AP1256-ADU9",
-        "titulo": "Apartamento",
-        "local_txt": "Capoeiras - Florianópolis - SCEdifício Residencial e Comercial Copenhague",
-        "cidade": "Florianópolis",
-        "bairro": "Capoeiras",
-        "rua": null,
-        "price_txt": "R$ 2.890/mês",
-        "price_num": 2890.0,
-        "area": 69.11,
-        "quartos": 2,
-        "garagem": 1,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-2-quartos-62-m/AP1249-ADU9",
@@ -375,7 +671,8 @@
         "area": 62.0,
         "quartos": 2,
         "garagem": null,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-3-quartos-85-m/AP0363-ADU9",
@@ -389,7 +686,8 @@
         "area": 85.0,
         "quartos": 3,
         "garagem": 1,
-        "banheiros": 2
+        "banheiros": 2,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-3-quartos-55-m/AP0564-ADU9",
@@ -403,7 +701,8 @@
         "area": 55.0,
         "quartos": 3,
         "garagem": 1,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/loja-florianopolis-27-m/LO0083-ADU9",
@@ -417,7 +716,8 @@
         "area": 27.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/loja-florianopolis-34-m/LO0197-ADU9",
@@ -431,7 +731,8 @@
         "area": 34.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": 2
+        "banheiros": 2,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-1-quarto-50-m/AP0464-ADU9",
@@ -445,7 +746,8 @@
         "area": 50.0,
         "quartos": 1,
         "garagem": 1,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/loja-florianopolis-30-m/LO0144-ADU9",
@@ -459,63 +761,8 @@
         "area": 30.0,
         "quartos": null,
         "garagem": 1,
-        "banheiros": 1
-    },
-    {
-        "url": "https://www.adrianoimoveis.com.br/imovel/casa-florianopolis-4-quartos-220-m/CA0671-ADU9",
-        "titulo": "Casa",
-        "local_txt": "Capoeiras - Florianópolis - SC",
-        "cidade": "Florianópolis",
-        "bairro": "Capoeiras",
-        "rua": null,
-        "price_txt": "R$ 5.990/mês",
-        "price_num": 5990.0,
-        "area": 220.0,
-        "quartos": 4,
-        "garagem": 5,
-        "banheiros": 3
-    },
-    {
-        "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-1-quarto-32-m/AP0288-ADU9",
-        "titulo": "Apartamento",
-        "local_txt": "Capoeiras - Florianópolis - SCResidencial Plaza Mediterranne",
-        "cidade": "Florianópolis",
-        "bairro": "Capoeiras",
-        "rua": null,
-        "price_txt": "R$ 1.600/mês",
-        "price_num": 1600.0,
-        "area": 31.62,
-        "quartos": 1,
-        "garagem": null,
-        "banheiros": 1
-    },
-    {
-        "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-1-quarto-38-m/AP0367-ADU9",
-        "titulo": "Apartamento",
-        "local_txt": "Centro - Florianópolis - SCPrédio Residencial",
-        "cidade": "Florianópolis",
-        "bairro": "Centro",
-        "rua": null,
-        "price_txt": "R$ 1.790/mês",
-        "price_num": 1790.0,
-        "area": 38.0,
-        "quartos": 1,
-        "garagem": null,
-        "banheiros": 1
-    },
-    {
-        "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-3-quartos-99-m/AP1226-ADU9",
-        "titulo": "Apartamento",
-        "local_txt": "Capoeiras - Florianópolis - SCEdifício Residencial Figueiras",
-        "cidade": "Florianópolis",
-        "bairro": "Capoeiras",
-        "rua": null,
-        "price_txt": "R$ 2.990/mês",
-        "price_num": 2990.0,
-        "area": 98.78,
-        "quartos": 3,
-        "garagem": 2,
-        "banheiros": 2
+        "banheiros": 1,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-3-quartos-116-m/AP0290-ADU9",
@@ -529,7 +776,8 @@
         "area": 116.24,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": 2
+        "banheiros": 2,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/kitnet-florianopolis-1-quarto-25-m/KN0092-ADU9",
@@ -543,7 +791,8 @@
         "area": 25.0,
         "quartos": 1,
         "garagem": null,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/casa-florianopolis-2-quartos-80-m/CA0568-ADU9",
@@ -557,7 +806,8 @@
         "area": 80.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-2-quartos-47-m/AP1279-ADU9",
@@ -571,21 +821,8 @@
         "area": 46.79,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": 1
-    },
-    {
-        "url": "https://www.adrianoimoveis.com.br/imovel/kitnet-florianopolis-1-quarto-13-m/KN0076-ADU9",
-        "titulo": "Kitnet",
-        "local_txt": "Capoeiras - Florianópolis - SC",
-        "cidade": "Florianópolis",
-        "bairro": "Capoeiras",
-        "rua": null,
-        "price_txt": "R$ 1.200/mês",
-        "price_num": 1200.0,
-        "area": 13.0,
-        "quartos": 1,
-        "garagem": 1,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-4-quartos-152-m/AP1222-ADU9",
@@ -599,7 +836,8 @@
         "area": 152.21,
         "quartos": 4,
         "garagem": 1,
-        "banheiros": 3
+        "banheiros": 3,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/loja-florianopolis-35-m/LO0186-ADU9",
@@ -613,174 +851,7 @@
         "area": 35.0,
         "quartos": null,
         "garagem": 1,
-        "banheiros": 1
-    },
-    {
-        "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-2-quartos-60-m/AP1280-ADU9",
-        "titulo": "Apartamento",
-        "local_txt": "Estreito - Florianópolis - SCResidencial Sumaré",
-        "cidade": "Florianópolis",
-        "bairro": "Estreito",
-        "rua": null,
-        "price_txt": "R$ 2.500/mês",
-        "price_num": 2500.0,
-        "area": 60.1,
-        "quartos": 2,
-        "garagem": 1,
-        "banheiros": 1
-    },
-    {
-        "url": "https://www.adrianoimoveis.com.br/imovel/casa-florianopolis-3-quartos-86-m/CA0611-ADU9",
-        "titulo": "Casa",
-        "local_txt": "Capoeiras - Florianópolis - SC",
-        "cidade": "Florianópolis",
-        "bairro": "Capoeiras",
-        "rua": null,
-        "price_txt": "R$ 3.990/mês",
-        "price_num": 3990.0,
-        "area": 86.0,
-        "quartos": 3,
-        "garagem": 1,
-        "banheiros": 1
-    },
-    {
-        "url": "https://www.adrianoimoveis.com.br/imovel/casa-florianopolis-3-quartos-86-m/CA0610-ADU9",
-        "titulo": "Casa",
-        "local_txt": "Capoeiras - Florianópolis - SC",
-        "cidade": "Florianópolis",
-        "bairro": "Capoeiras",
-        "rua": null,
-        "price_txt": "R$ 3.390/mês",
-        "price_num": 3390.0,
-        "area": 86.0,
-        "quartos": 3,
-        "garagem": 1,
-        "banheiros": 1
-    },
-    {
-        "url": "https://www.adrianoimoveis.com.br/imovel/sala-florianopolis-31-m/SA0085-ADU9",
-        "titulo": "Sala",
-        "local_txt": "Capoeiras - Florianópolis - SCEdifício Comercial Deschamps Office",
-        "cidade": "Florianópolis",
-        "bairro": "Capoeiras",
-        "rua": null,
-        "price_txt": "R$ 1.390/mês",
-        "price_num": 1390.0,
-        "area": 30.5,
-        "quartos": null,
-        "garagem": null,
-        "banheiros": 1
-    },
-    {
-        "url": "https://www.adrianoimoveis.com.br/imovel/casa-florianopolis-2-quartos-70-m/CA0657-ADU9",
-        "titulo": "Casa",
-        "local_txt": "Jardim Atlântico - Florianópolis - SC",
-        "cidade": "Florianópolis",
-        "bairro": "Jardim Atlântico",
-        "rua": null,
-        "price_txt": "R$ 2.500/mês",
-        "price_num": 2500.0,
-        "area": 70.0,
-        "quartos": 2,
-        "garagem": 1,
-        "banheiros": 1
-    },
-    {
-        "url": "https://www.adrianoimoveis.com.br/imovel/casa-florianopolis-1-quarto-60-m/CA0171-ADU9",
-        "titulo": "Casa",
-        "local_txt": "Jardim Atlântico - Florianópolis - SC",
-        "cidade": "Florianópolis",
-        "bairro": "Jardim Atlântico",
-        "rua": null,
-        "price_txt": "R$ 1.690/mês",
-        "price_num": 1690.0,
-        "area": 60.0,
-        "quartos": 1,
-        "garagem": 1,
-        "banheiros": 1
-    },
-    {
-        "url": "https://www.adrianoimoveis.com.br/imovel/loja-florianopolis-35-m/LO0159-ADU9",
-        "titulo": "Loja",
-        "local_txt": "Capoeiras - Florianópolis - SC",
-        "cidade": "Florianópolis",
-        "bairro": "Capoeiras",
-        "rua": null,
-        "price_txt": "R$ 1.650/mês",
-        "price_num": 1650.0,
-        "area": 35.0,
-        "quartos": null,
-        "garagem": 1,
-        "banheiros": 1
-    },
-    {
-        "url": "https://www.adrianoimoveis.com.br/imovel/casa-florianopolis-3-quartos-90-m/CA0362-ADU9",
-        "titulo": "Casa",
-        "local_txt": "Jardim Atlântico - Florianópolis - SC",
-        "cidade": "Florianópolis",
-        "bairro": "Jardim Atlântico",
-        "rua": null,
-        "price_txt": "R$ 2.600/mês",
-        "price_num": 2600.0,
-        "area": 90.0,
-        "quartos": 3,
-        "garagem": 1,
-        "banheiros": 1
-    },
-    {
-        "url": "https://www.adrianoimoveis.com.br/imovel/kitnet-florianopolis-1-quarto-22-m/KN0088-ADU9",
-        "titulo": "Kitnet",
-        "local_txt": "Jardim Atlântico - Florianópolis - SC",
-        "cidade": "Florianópolis",
-        "bairro": "Jardim Atlântico",
-        "rua": null,
-        "price_txt": "R$ 1.600/mês",
-        "price_num": 1600.0,
-        "area": 22.0,
-        "quartos": 1,
-        "garagem": 1,
-        "banheiros": 1
-    },
-    {
-        "url": "https://www.adrianoimoveis.com.br/imovel/kitnet-florianopolis-1-quarto-18-m/KN0086-ADU9",
-        "titulo": "Kitnet",
-        "local_txt": "Jardim Atlântico - Florianópolis - SC",
-        "cidade": "Florianópolis",
-        "bairro": "Jardim Atlântico",
-        "rua": null,
-        "price_txt": "R$ 1.500/mês",
-        "price_num": 1500.0,
-        "area": 18.0,
-        "quartos": 1,
-        "garagem": 1,
-        "banheiros": 1
-    },
-    {
-        "url": "https://www.adrianoimoveis.com.br/imovel/kitnet-florianopolis-1-quarto-18-m/KN0089-ADU9",
-        "titulo": "Kitnet",
-        "local_txt": "Jardim Atlântico - Florianópolis - SC",
-        "cidade": "Florianópolis",
-        "bairro": "Jardim Atlântico",
-        "rua": null,
-        "price_txt": "R$ 1.500/mês",
-        "price_num": 1500.0,
-        "area": 18.0,
-        "quartos": 1,
-        "garagem": 1,
-        "banheiros": 1
-    },
-    {
-        "url": "https://www.adrianoimoveis.com.br/imovel/kitnet-florianopolis-1-quarto-22-m/KN0087-ADU9",
-        "titulo": "Kitnet",
-        "local_txt": "Jardim Atlântico - Florianópolis - SC",
-        "cidade": "Florianópolis",
-        "bairro": "Jardim Atlântico",
-        "rua": null,
-        "price_txt": "R$ 1.600/mês",
-        "price_num": 1600.0,
-        "area": 22.0,
-        "quartos": 1,
-        "garagem": 1,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "aluguel"
     }
 ]

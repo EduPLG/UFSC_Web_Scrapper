@@ -11,7 +11,8 @@
         "area": 23000.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-45m-2-quartos-no-bairro-fundos-em-biguacu_9381/",
@@ -25,6 +26,7 @@
         "area": 45.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     }
 ]

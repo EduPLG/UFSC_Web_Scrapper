@@ -1,5 +1,50 @@
 [
     {
+        "url": "https://www.imoveis-sc.com.br/biguacu/comprar/apartamento/rio-caveiras/apartamento-biguacu-rio-caveiras-1468543.html",
+        "titulo": "Apartamento no Bairro Rio Caveiras em Biguaçu com 2 Dormitórios - 763106",
+        "local_txt": "Biguaçu, Rio Caveiras",
+        "cidade": "Biguaçu",
+        "bairro": "Rio Caveiras",
+        "rua": null,
+        "price_txt": "R$ 320.000,00",
+        "price_num": 320000.0,
+        "area": null,
+        "quartos": 2,
+        "garagem": null,
+        "banheiros": null,
+        "tipo": "venda"
+    },
+    {
+        "url": "https://www.imoveis-sc.com.br/biguacu/comprar/apartamento/centro/apartamento-biguacu-centro-1468084.html",
+        "titulo": "Apartamento no Bairro Centro em Biguaçu com 3 Dormitórios (3 suítes) - 725733",
+        "local_txt": "Biguaçu, Centro",
+        "cidade": "Biguaçu",
+        "bairro": "Centro",
+        "rua": null,
+        "price_txt": "R$ 5.300.000,00",
+        "price_num": 5300000.0,
+        "area": null,
+        "quartos": 3,
+        "garagem": 3,
+        "banheiros": 3,
+        "tipo": "venda"
+    },
+    {
+        "url": "https://www.imoveis-sc.com.br/biguacu/comprar/apartamento/centro/apartamento-biguacu-centro-1467902.html",
+        "titulo": "Apartamento no Bairro Centro em Biguaçu com 3 Dormitórios (3 suítes) - 725733",
+        "local_txt": "Biguaçu, Centro",
+        "cidade": "Biguaçu",
+        "bairro": "Centro",
+        "rua": null,
+        "price_txt": "R$ 5.300.000,00",
+        "price_num": 5300000.0,
+        "area": null,
+        "quartos": 3,
+        "garagem": 3,
+        "banheiros": 3,
+        "tipo": "venda"
+    },
+    {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/apartamento/praia-joao-rosa/apartamento-biguacu-praia-joao-rosa-1424313.html",
         "titulo": "Apartamento no Bairro Praia João Rosa em Biguaçu com 2 Dormitórios - 714648",
         "local_txt": "Biguaçu, Praia João Rosa",
@@ -11,7 +56,8 @@
         "area": null,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/centro/terreno-biguacu-centro-1267897.html",
@@ -25,7 +71,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/apartamento/universitario/apartamento-biguacu-universitario-1441891.html",
@@ -39,7 +86,8 @@
         "area": null,
         "quartos": 3,
         "garagem": 1,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/beira-rio/terreno-biguacu-beira-rio-1380845.html",
@@ -53,7 +101,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/casa/vendaval/casa-biguacu-vendaval-1418013.html",
@@ -67,7 +116,8 @@
         "area": null,
         "quartos": 2,
         "garagem": 3,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/casa/praia-joao-rosa/casa-biguacu-praia-joao-rosa-1409424.html",
@@ -81,7 +131,8 @@
         "area": null,
         "quartos": 3,
         "garagem": null,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/casa/fundos/casa-biguacu-fundos-1374930.html",
@@ -95,7 +146,8 @@
         "area": null,
         "quartos": 4,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/apartamento/praia-joao-rosa/apartamento-biguacu-praia-joao-rosa-1380857.html",
@@ -109,7 +161,8 @@
         "area": null,
         "quartos": 3,
         "garagem": 1,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/casa/boa-vista/casa-biguacu-boa-vista-1432467.html",
@@ -123,7 +176,8 @@
         "area": null,
         "quartos": 2,
         "garagem": 3,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/apartamento/praia-joao-rosa/apartamento-biguacu-praia-joao-rosa-1358636.html",
@@ -137,7 +191,8 @@
         "area": null,
         "quartos": 3,
         "garagem": 1,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/apartamento/centro/apartamento-biguacu-centro-1409086.html",
@@ -151,7 +206,8 @@
         "area": null,
         "quartos": 3,
         "garagem": 1,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/apartamento/centro/apartamento-biguacu-centro-1401438.html",
@@ -165,7 +221,8 @@
         "area": null,
         "quartos": 3,
         "garagem": 1,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/apartamento/centro/apartamento-biguacu-centro-1387071.html",
@@ -179,7 +236,8 @@
         "area": null,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/casa/beira-rio/casa-biguacu-beira-rio-1381903.html",
@@ -193,35 +251,8 @@
         "area": null,
         "quartos": 3,
         "garagem": null,
-        "banheiros": 1
-    },
-    {
-        "url": "https://www.imoveis-sc.com.br/biguacu/comprar/casa/beira-rio/casa-biguacu-beira-rio-1449776.html",
-        "titulo": "Casa no Bairro Beira Rio em Biguaçu com 3 Dormitórios (1 suíte) - RMX2727",
-        "local_txt": "Biguaçu, Beira Rio",
-        "cidade": "Biguaçu",
-        "bairro": "Beira Rio",
-        "rua": null,
-        "price_txt": "R$ 875.000,00",
-        "price_num": 875000.0,
-        "area": null,
-        "quartos": 3,
-        "garagem": 2,
-        "banheiros": 1
-    },
-    {
-        "url": "https://www.imoveis-sc.com.br/biguacu/comprar/casa/beira-rio/casa-biguacu-beira-rio-1449775.html",
-        "titulo": "Casa no Bairro Beira Rio em Biguaçu com 2 Dormitórios (2 suítes) - RMX2728",
-        "local_txt": "Biguaçu, Beira Rio",
-        "cidade": "Biguaçu",
-        "bairro": "Beira Rio",
-        "rua": null,
-        "price_txt": "R$ 875.000,00",
-        "price_num": 875000.0,
-        "area": null,
-        "quartos": 2,
-        "garagem": 2,
-        "banheiros": 2
+        "banheiros": 1,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/apartamento/centro/apartamento-biguacu-centro-1369105.html",
@@ -235,7 +266,8 @@
         "area": null,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/apartamento/centro/apartamento-biguacu-centro-1368547.html",
@@ -249,7 +281,8 @@
         "area": null,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": 3
+        "banheiros": 3,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/apartamento/centro/apartamento-biguacu-centro-1368546.html",
@@ -263,7 +296,8 @@
         "area": null,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": 3
+        "banheiros": 3,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/casa/beira-rio/casa-biguacu-beira-rio-1378636.html",
@@ -277,7 +311,8 @@
         "area": null,
         "quartos": 3,
         "garagem": null,
-        "banheiros": 3
+        "banheiros": 3,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/casa/beira-rio/casa-biguacu-beira-rio-1397113.html",
@@ -291,7 +326,8 @@
         "area": null,
         "quartos": 3,
         "garagem": null,
-        "banheiros": 2
+        "banheiros": 2,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/apartamento/centro/apartamento-biguacu-centro-1368545.html",
@@ -305,7 +341,8 @@
         "area": null,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": 3
+        "banheiros": 3,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/apartamento/centro/apartamento-biguacu-centro-1368544.html",
@@ -319,7 +356,8 @@
         "area": null,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": 3
+        "banheiros": 3,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/casa/beira-rio/casa-biguacu-beira-rio-1445714.html",
@@ -333,7 +371,8 @@
         "area": null,
         "quartos": 3,
         "garagem": 1,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/casa/beira-rio/casa-biguacu-beira-rio-1408460.html",
@@ -347,7 +386,8 @@
         "area": null,
         "quartos": 3,
         "garagem": 4,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/casa/beira-rio/casa-biguacu-beira-rio-1445950.html",
@@ -361,7 +401,8 @@
         "area": null,
         "quartos": 3,
         "garagem": 1,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/casa/beira-rio/casa-biguacu-beira-rio-1381391.html",
@@ -375,7 +416,8 @@
         "area": null,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/casa/beira-rio/casa-biguacu-beira-rio-1428796.html",
@@ -389,7 +431,8 @@
         "area": null,
         "quartos": 4,
         "garagem": null,
-        "banheiros": 2
+        "banheiros": 2,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/rio-caveiras/terreno-biguacu-rio-caveiras-1379767.html",
@@ -403,7 +446,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/casa/beira-rio/casa-biguacu-beira-rio-1423248.html",
@@ -417,7 +461,8 @@
         "area": null,
         "quartos": 4,
         "garagem": 3,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/beira-rio/terreno-biguacu-beira-rio-1380846.html",
@@ -431,7 +476,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/casa/fundos/casa-biguacu-fundos-1393682.html",
@@ -445,7 +491,8 @@
         "area": null,
         "quartos": 3,
         "garagem": null,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/apartamento/centro/apartamento-biguacu-centro-1415465.html",
@@ -459,7 +506,8 @@
         "area": null,
         "quartos": 3,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/beira-rio/terreno-biguacu-beira-rio-1332330.html",
@@ -473,7 +521,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/beira-rio/terreno-biguacu-beira-rio-1397114.html",
@@ -487,7 +536,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/beira-rio/terreno-biguacu-beira-rio-1377344.html",
@@ -501,7 +551,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/casa/deltaville/casa-biguacu-deltaville-1338161.html",
@@ -515,7 +566,8 @@
         "area": null,
         "quartos": 3,
         "garagem": null,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/casa/beira-rio/casa-biguacu-beira-rio-1389682.html",
@@ -529,7 +581,8 @@
         "area": null,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/casa/centro/casa-biguacu-centro-1358634.html",
@@ -543,7 +596,8 @@
         "area": null,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/fundos/terreno-biguacu-fundos-1385073.html",
@@ -557,7 +611,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/fundos/terreno-biguacu-fundos-1390828.html",
@@ -571,7 +626,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/fundos/terreno-biguacu-fundos-1390826.html",
@@ -585,7 +641,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/beira-rio/terreno-biguacu-beira-rio-1332327.html",
@@ -599,7 +656,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/beira-rio/terreno-biguacu-beira-rio-1332328.html",
@@ -613,7 +671,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/beira-rio/terreno-biguacu-beira-rio-1332329.html",
@@ -627,7 +686,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/beira-rio/terreno-biguacu-beira-rio-1332326.html",
@@ -641,7 +701,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/casa/beira-rio/casa-biguacu-beira-rio-1425985.html",
@@ -655,7 +716,8 @@
         "area": null,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": 3
+        "banheiros": 3,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/apartamento/bom-viver/apartamento-biguacu-bom-viver-1464460.html",
@@ -669,7 +731,8 @@
         "area": null,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/beira-rio/terreno-biguacu-beira-rio-1397116.html",
@@ -683,7 +746,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/beira-rio/terreno-biguacu-beira-rio-1397110.html",
@@ -697,7 +761,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/centro/terreno-biguacu-centro-1426249.html",
@@ -711,7 +776,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/beira-rio/terreno-biguacu-beira-rio-1380882.html",
@@ -725,7 +791,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/beira-rio/terreno-biguacu-beira-rio-1309330.html",
@@ -739,7 +806,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/jardim-santa-catarina/terreno-biguacu-jardim-santa-catarina-1350034.html",
@@ -753,7 +821,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/beira-rio/terreno-biguacu-beira-rio-1309319.html",
@@ -767,7 +836,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/beira-rio/terreno-biguacu-beira-rio-1309323.html",
@@ -781,7 +851,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/centro/terreno-biguacu-centro-1426486.html",
@@ -795,7 +866,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/fundos/terreno-biguacu-fundos-1390825.html",
@@ -809,7 +881,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/apartamento/fundos/apartamento-biguacu-fundos-1406720.html",
@@ -823,7 +896,8 @@
         "area": null,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/apartamento/fundos/apartamento-biguacu-fundos-1406723.html",
@@ -837,7 +911,8 @@
         "area": null,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/centro/terreno-biguacu-centro-1426248.html",
@@ -851,7 +926,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/centro/terreno-biguacu-centro-1426485.html",
@@ -865,7 +941,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/apartamento/rio-caveiras/apartamento-biguacu-rio-caveiras-1424335.html",
@@ -879,7 +956,8 @@
         "area": null,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/beira-rio/terreno-biguacu-beira-rio-1309320.html",
@@ -893,7 +971,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/beira-rio/terreno-biguacu-beira-rio-1309322.html",
@@ -907,7 +986,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/beira-rio/terreno-biguacu-beira-rio-1380883.html",
@@ -921,7 +1001,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/jardim-santa-catarina/terreno-biguacu-jardim-santa-catarina-1331274.html",
@@ -935,7 +1016,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/beira-rio/terreno-biguacu-beira-rio-1309318.html",
@@ -949,7 +1031,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/beira-rio/terreno-biguacu-beira-rio-1309331.html",
@@ -963,7 +1046,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/casa/beira-rio/casa-biguacu-beira-rio-1452875.html",
@@ -977,7 +1061,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/beira-rio/terreno-biguacu-beira-rio-1380884.html",
@@ -991,7 +1076,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/beira-rio/terreno-biguacu-beira-rio-1309336.html",
@@ -1005,7 +1091,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/casa/beira-rio/casa-biguacu-beira-rio-1367869.html",
@@ -1019,7 +1106,8 @@
         "area": null,
         "quartos": 3,
         "garagem": 4,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/beira-rio/terreno-biguacu-beira-rio-1309321.html",
@@ -1033,7 +1121,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/casa/universitario/casa-biguacu-universitario-1422443.html",
@@ -1047,7 +1136,8 @@
         "area": null,
         "quartos": 4,
         "garagem": 2,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/beira-rio/terreno-biguacu-beira-rio-1455771.html",
@@ -1061,7 +1151,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/centro/terreno-biguacu-centro-1425973.html",
@@ -1075,7 +1166,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/jardim-janaina/terreno-biguacu-jardim-janaina-1399513.html",
@@ -1089,7 +1181,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/casa/deltaville/casa-biguacu-deltaville-1458218.html",
@@ -1103,7 +1196,8 @@
         "area": null,
         "quartos": 4,
         "garagem": 4,
-        "banheiros": 4
+        "banheiros": 4,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/casa/beira-rio/casa-biguacu-beira-rio-1426935.html",
@@ -1117,7 +1211,8 @@
         "area": null,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/beira-rio/terreno-biguacu-beira-rio-1309332.html",
@@ -1131,7 +1226,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/apartamento/rio-caveiras/apartamento-biguacu-rio-caveiras-1451730.html",
@@ -1145,7 +1241,8 @@
         "area": 65.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/beira-rio/terreno-biguacu-beira-rio-1309335.html",
@@ -1159,7 +1256,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/beira-rio/terreno-biguacu-beira-rio-1309338.html",
@@ -1173,7 +1271,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/beira-rio/terreno-biguacu-beira-rio-1309326.html",
@@ -1187,7 +1286,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/beira-rio/terreno-biguacu-beira-rio-1309325.html",
@@ -1201,7 +1301,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/beira-rio/terreno-biguacu-beira-rio-1309324.html",
@@ -1215,7 +1316,8 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/beira-rio/terreno-biguacu-beira-rio-1309334.html",
@@ -1229,20 +1331,7 @@
         "area": null,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
-    },
-    {
-        "url": "https://www.imoveis-sc.com.br/biguacu/comprar/terreno/beira-rio/terreno-biguacu-beira-rio-1309333.html",
-        "titulo": "Terreno no Bairro Beira Rio em Biguaçu com 190.87 m² - 364057",
-        "local_txt": "Biguaçu, Beira Rio",
-        "cidade": "Biguaçu",
-        "bairro": "Beira Rio",
-        "rua": null,
-        "price_txt": "R$ 392.000,00",
-        "price_num": 392000.0,
-        "area": null,
-        "quartos": null,
-        "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     }
 ]

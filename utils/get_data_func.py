@@ -46,7 +46,7 @@ def get_elements_from_json(filename: str) -> list[ImovelCard]:
     return imoveis
 
 
-def get_important_data_imoveis_sc(imovel: BeautifulSoup)-> ImovelCard | None:
+def get_important_data_imoveis_sc(imovel: BeautifulSoup, aluguel: bool)-> ImovelCard | None:
     # Título do imóvel
     try:
         title = imovel.find("a").text.strip()
@@ -130,7 +130,8 @@ def get_important_data_imoveis_sc(imovel: BeautifulSoup)-> ImovelCard | None:
         "quartos": quartos,
         "area": area,
         "banheiros": banheiros,
-        "garagem": garagem
+        "garagem": garagem,
+        "tipo": "aluguel" if aluguel else "venda"
     }
 
     # Filtre o dicionário, removendo chaves com valores "Nulos"
@@ -147,7 +148,7 @@ def get_important_data_imoveis_sc(imovel: BeautifulSoup)-> ImovelCard | None:
     return object_imovel
 
 
-def get_important_data_brognoli(imovel: BeautifulSoup) -> ImovelCard | None:
+def get_important_data_brognoli(imovel: BeautifulSoup, aluguel: bool) -> ImovelCard | None:
     # Título do imóvel
     try:
         title = imovel.find("a")["title"]
@@ -209,7 +210,8 @@ def get_important_data_brognoli(imovel: BeautifulSoup) -> ImovelCard | None:
         "quartos": quartos,
         "area": area,
         "banheiros": banheiros,
-        "garagem": garagem
+        "garagem": garagem,
+        "tipo": "aluguel" if aluguel else "venda"
     }   
 
     # Filtre o dicionário, removendo chaves com valores "Nulos"
@@ -226,7 +228,7 @@ def get_important_data_brognoli(imovel: BeautifulSoup) -> ImovelCard | None:
     return object_imovel
 
 
-def get_important_data_adrianoimoveis(imovel: BeautifulSoup) -> ImovelCard | None:
+def get_important_data_adrianoimoveis(imovel: BeautifulSoup, aluguel: bool) -> ImovelCard | None:
     BASE_URL = "https://www.adrianoimoveis.com.br"
 
     pricestxt = imovel.find_all("p", class_="card-with-buttons__value")
@@ -309,7 +311,8 @@ def get_important_data_adrianoimoveis(imovel: BeautifulSoup) -> ImovelCard | Non
             area=area,
             quartos=quartos,
             garagem=garagem,
-            banheiros=banheiros
+            banheiros=banheiros,
+            tipo="aluguel" if aluguel else "venda"
         )
     except ValidationError:
         return None

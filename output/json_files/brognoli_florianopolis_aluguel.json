@@ -1,17 +1,18 @@
 [
     {
-        "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-71m-2-quartos-no-bairro-trindade-em-florianopolis_9777/",
-        "titulo": "Apartamento com 71m², 2 quartos, 1 suíte, 1 garagem, no bairro Trindade em Florianópolis",
+        "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-80m-2-quartos-no-bairro-estreito-em-florianopolis_9780/",
+        "titulo": "Apartamento com 80m², 2 quartos, 2 suítes, 2 garagens, no bairro Estreito em Florianópolis",
         "local_txt": "Florianópolis/SC",
         "cidade": "Florianópolis",
-        "bairro": "Trindade",
-        "rua": "Rua Lauro Linhares",
-        "price_txt": "Valor:R$ 3.300",
-        "price_num": 3300.0,
-        "area": 71.0,
+        "bairro": "Estreito",
+        "rua": "Rua Santos Saraiva",
+        "price_txt": "Valor:R$ 4.200",
+        "price_num": 4200.0,
+        "area": 80.0,
         "quartos": 2,
-        "garagem": 1,
-        "banheiros": null
+        "garagem": 2,
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-salas-conjuntos-com-32m-no-bairro-centro-em-florianopolis_9776/",
@@ -25,7 +26,8 @@
         "area": 32.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-122m-3-quartos-no-bairro-itacorubi-em-florianopolis_9775/",
@@ -39,21 +41,8 @@
         "area": 122.0,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": null
-    },
-    {
-        "url": "https://www.brognoli.com.br/imovel/alugar-salas-conjuntos-com-27m-no-bairro-estreito-em-florianopolis_9774/",
-        "titulo": "Salas/Conjuntos com 27m², 1 garagem, no bairro Estreito em Florianópolis",
-        "local_txt": "Florianópolis/SC",
-        "cidade": "Florianópolis",
-        "bairro": "Estreito",
-        "rua": "Rua General Liberato Bittencourt",
-        "price_txt": "Valor:R$ 2.355",
-        "price_num": 2355.0,
-        "area": 27.0,
-        "quartos": null,
-        "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-32m-1-quarto-no-bairro-trindade-em-florianopolis_9772/",
@@ -67,7 +56,8 @@
         "area": 32.0,
         "quartos": null,
         "garagem": 0,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-32m-1-quarto-no-bairro-trindade-em-florianopolis_9771/",
@@ -81,7 +71,8 @@
         "area": 32.0,
         "quartos": null,
         "garagem": 0,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-34m-1-quarto-no-bairro-trindade-em-florianopolis_9770/",
@@ -95,7 +86,8 @@
         "area": 34.0,
         "quartos": null,
         "garagem": 0,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-36m-1-quarto-no-bairro-trindade-em-florianopolis_9769/",
@@ -109,7 +101,8 @@
         "area": 36.0,
         "quartos": null,
         "garagem": 0,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-36m-1-quarto-no-bairro-trindade-em-florianopolis_9768/",
@@ -123,7 +116,8 @@
         "area": 36.0,
         "quartos": null,
         "garagem": 0,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-123m-3-quartos-no-bairro-centro-em-florianopolis_9767/",
@@ -137,7 +131,8 @@
         "area": 123.0,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-salas-conjuntos-com-27m-no-bairro-estreito-em-florianopolis_9766/",
@@ -151,7 +146,8 @@
         "area": 27.0,
         "quartos": null,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-45m-1-quarto-no-bairro-centro-em-florianopolis_9765/",
@@ -165,7 +161,8 @@
         "area": 45.0,
         "quartos": null,
         "garagem": 0,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-salas-conjuntos-com-23m-no-bairro-centro-em-florianopolis_9762/",
@@ -179,7 +176,8 @@
         "area": 23.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-casa-com-400m-no-bairro-trindade-em-florianopolis_9761/",
@@ -193,7 +191,8 @@
         "area": 400.0,
         "quartos": null,
         "garagem": 6,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-casa-com-250m-4-quartos-no-bairro-corrego-grande-em-florianopolis_9759/",
@@ -207,7 +206,8 @@
         "area": 250.0,
         "quartos": 4,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-65m-2-quartos-no-bairro-itacorubi-em-florianopolis_9758/",
@@ -221,7 +221,8 @@
         "area": 65.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-65m-2-quartos-no-bairro-itacorubi-em-florianopolis_9757/",
@@ -235,7 +236,8 @@
         "area": 65.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-113m-3-quartos-no-bairro-centro-em-florianopolis_9756/",
@@ -249,7 +251,8 @@
         "area": 113.0,
         "quartos": 3,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-sala-com-125m-no-bairro-saco-grande-em-florianopolis_9755/",
@@ -263,7 +266,8 @@
         "area": 125.0,
         "quartos": null,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-sala-com-250m-no-bairro-saco-grande-em-florianopolis_9754/",
@@ -277,7 +281,8 @@
         "area": 250.0,
         "quartos": null,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-loja-com-200m-no-bairro-saco-grande-em-florianopolis_9753/",
@@ -291,7 +296,8 @@
         "area": 200.0,
         "quartos": null,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-100m-3-quartos-no-bairro-centro-em-florianopolis_9752/",
@@ -305,21 +311,8 @@
         "area": 100.0,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": null
-    },
-    {
-        "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-120m-3-quartos-no-bairro-centro-em-florianopolis_9751/",
-        "titulo": "Apartamento com 120m², 3 quartos, 2 suítes, 2 garagens, no bairro Centro em Florianópolis",
-        "local_txt": "Florianópolis/SC",
-        "cidade": "Florianópolis",
-        "bairro": "Centro",
-        "rua": "Rua Prof.Herminio Jacques",
-        "price_txt": "Valor:R$ 11.000",
-        "price_num": 11000.0,
-        "area": 120.0,
-        "quartos": 3,
-        "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-casa-com-220m-4-quartos-no-bairro-sambaqui-em-florianopolis_9749/",
@@ -333,7 +326,8 @@
         "area": 220.0,
         "quartos": 4,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-loja-com-79m-no-bairro-trindade-em-florianopolis_9742/",
@@ -347,7 +341,8 @@
         "area": 79.0,
         "quartos": null,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-loja-com-77m-no-bairro-trindade-em-florianopolis_9741/",
@@ -361,7 +356,8 @@
         "area": 77.0,
         "quartos": null,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-loja-com-79m-no-bairro-trindade-em-florianopolis_9740/",
@@ -375,7 +371,8 @@
         "area": 79.0,
         "quartos": null,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-87m-3-quartos-no-bairro-trindade-em-florianopolis_9739/",
@@ -389,7 +386,8 @@
         "area": 87.0,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-casa-com-42m-1-quarto-no-bairro-agronomica-em-florianopolis_9738/",
@@ -403,7 +401,8 @@
         "area": 42.0,
         "quartos": null,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-133m-3-quartos-no-bairro-joao-paulo-em-florianopolis_9737/",
@@ -417,7 +416,8 @@
         "area": 133.0,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-34m-1-quarto-no-bairro-centro-em-florianopolis_9733/",
@@ -431,7 +431,8 @@
         "area": 34.0,
         "quartos": null,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-95m-3-quartos-no-bairro-centro-em-florianopolis_9730/",
@@ -445,7 +446,8 @@
         "area": 95.0,
         "quartos": 3,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-91m-3-quartos-no-bairro-joao-paulo-em-florianopolis_9729/",
@@ -459,11 +461,12 @@
         "area": 91.0,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-sala-com-222m-no-bairro-trindade-em-florianopolis_9724/",
-        "titulo": "Sala com 222m², 8 garagens, no bairro Trindade em Florianópolis",
+        "titulo": "Sala com 222m², 4 garagens, no bairro Trindade em Florianópolis",
         "local_txt": "Florianópolis/SC",
         "cidade": "Florianópolis",
         "bairro": "Trindade",
@@ -472,8 +475,9 @@
         "price_num": 12500.0,
         "area": 222.0,
         "quartos": null,
-        "garagem": 8,
-        "banheiros": null
+        "garagem": 4,
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-sala-com-111m-no-bairro-centro-em-florianopolis_9721/",
@@ -487,7 +491,8 @@
         "area": 111.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-loja-com-85m-no-bairro-centro-em-florianopolis_9719/",
@@ -501,7 +506,8 @@
         "area": 85.0,
         "quartos": null,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-31m-1-quarto-no-bairro-trindade-em-florianopolis_9718/",
@@ -515,7 +521,8 @@
         "area": 31.0,
         "quartos": null,
         "garagem": 0,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-60m-2-quartos-no-bairro-itacorubi-em-florianopolis_9717/",
@@ -529,7 +536,8 @@
         "area": 60.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-60m-2-quartos-no-bairro-centro-em-florianopolis_9715/",
@@ -543,7 +551,8 @@
         "area": 60.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-44m-2-quartos-no-bairro-centro-em-florianopolis_9708/",
@@ -557,7 +566,8 @@
         "area": 44.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-41m-1-quarto-no-bairro-centro-em-florianopolis_9707/",
@@ -571,7 +581,8 @@
         "area": 41.0,
         "quartos": null,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-loja-com-228m-no-bairro-trindade-em-florianopolis_9706/",
@@ -585,7 +596,8 @@
         "area": 228.0,
         "quartos": null,
         "garagem": 4,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-91m-2-quartos-no-bairro-agronomica-em-florianopolis_9705/",
@@ -599,7 +611,8 @@
         "area": 91.0,
         "quartos": 2,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-casa-com-500m-3-quartos-no-bairro-cacupe-em-florianopolis_9699/",
@@ -613,7 +626,8 @@
         "area": 500.0,
         "quartos": 3,
         "garagem": 5,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-sala-com-64m-no-bairro-centro-em-florianopolis_9693/",
@@ -627,7 +641,8 @@
         "area": 64.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-sala-com-64m-no-bairro-centro-em-florianopolis_9692/",
@@ -641,7 +656,8 @@
         "area": 64.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-loja-com-34m-no-bairro-jurere-em-florianopolis_9689/",
@@ -655,7 +671,8 @@
         "area": 34.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-168m-2-quartos-no-bairro-jurere-internacional-em-florianopolis_9685/",
@@ -669,7 +686,8 @@
         "area": 168.0,
         "quartos": 2,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-109m-3-quartos-no-bairro-jurere-em-florianopolis_9684/",
@@ -683,7 +701,8 @@
         "area": 109.0,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-predio-com-180m-no-bairro-centro-em-florianopolis_9674/",
@@ -697,7 +716,8 @@
         "area": 180.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-sala-com-80m-no-bairro-centro-em-florianopolis_9672/",
@@ -711,7 +731,8 @@
         "area": 80.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-sala-com-50m-no-bairro-centro-em-florianopolis_9668/",
@@ -725,7 +746,8 @@
         "area": 50.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-80m-2-quartos-no-bairro-trindade-em-florianopolis_9666/",
@@ -739,7 +761,8 @@
         "area": 80.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-253m-3-quartos-no-bairro-centro-em-florianopolis_9665/",
@@ -753,7 +776,8 @@
         "area": 253.0,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-219m-3-quartos-no-bairro-agronomica-em-florianopolis_9655/",
@@ -767,7 +791,8 @@
         "area": 219.0,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-31m-1-quarto-no-bairro-centro-em-florianopolis_9652/",
@@ -781,21 +806,8 @@
         "area": 31.0,
         "quartos": null,
         "garagem": 1,
-        "banheiros": null
-    },
-    {
-        "url": "https://www.brognoli.com.br/imovel/alugar-sala-com-44m-no-bairro-balneario-em-florianopolis_9642/",
-        "titulo": "Sala com 44m², no bairro Balneário em Florianópolis",
-        "local_txt": "Florianópolis/SC",
-        "cidade": "Florianópolis",
-        "bairro": "Balneário",
-        "rua": "Avenida Santa Catarina",
-        "price_txt": "Valor:R$ 2.500",
-        "price_num": 2500.0,
-        "area": 44.0,
-        "quartos": null,
-        "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-75m-1-quarto-no-bairro-coqueiros-em-florianopolis_9640/",
@@ -809,7 +821,8 @@
         "area": 75.0,
         "quartos": null,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-39m-1-quarto-no-bairro-trindade-em-florianopolis_9622/",
@@ -823,7 +836,8 @@
         "area": 39.0,
         "quartos": null,
         "garagem": 0,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-30m-1-quarto-no-bairro-trindade-em-florianopolis_9616/",
@@ -837,7 +851,8 @@
         "area": 30.0,
         "quartos": null,
         "garagem": 0,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-sala-com-91m-no-bairro-centro-em-florianopolis_9603/",
@@ -851,7 +866,8 @@
         "area": 91.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-35m-1-quarto-no-bairro-trindade-em-florianopolis_9597/",
@@ -865,7 +881,8 @@
         "area": 35.0,
         "quartos": null,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-33m-1-quarto-no-bairro-trindade-em-florianopolis_9596/",
@@ -879,7 +896,8 @@
         "area": 33.0,
         "quartos": null,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-38m-1-quarto-no-bairro-saco-dos-limoes-em-florianopolis_9584/",
@@ -893,7 +911,8 @@
         "area": 38.0,
         "quartos": null,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-60m-2-quartos-no-bairro-centro-em-florianopolis_9579/",
@@ -907,7 +926,8 @@
         "area": 60.0,
         "quartos": 2,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-salas-conjuntos-com-66m-no-bairro-centro-em-florianopolis_9578/",
@@ -921,7 +941,8 @@
         "area": 66.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-73m-2-quartos-no-bairro-agronomica-em-florianopolis_9567/",
@@ -935,7 +956,8 @@
         "area": 73.0,
         "quartos": 2,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-sala-com-38m-no-bairro-centro-em-florianopolis_9534/",
@@ -949,7 +971,8 @@
         "area": 38.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-86m-3-quartos-no-bairro-centro-em-florianopolis_9533/",
@@ -963,7 +986,8 @@
         "area": 86.0,
         "quartos": 3,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-sala-com-52m-no-bairro-centro-em-florianopolis_9532/",
@@ -977,7 +1001,8 @@
         "area": 52.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-116m-3-quartos-no-bairro-trindade-em-florianopolis_9531/",
@@ -991,7 +1016,8 @@
         "area": 116.0,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-salas-conjuntos-com-32m-no-bairro-canto-em-florianopolis_9526/",
@@ -1005,7 +1031,8 @@
         "area": 32.0,
         "quartos": null,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-sala-com-46m-no-bairro-centro-em-florianopolis_9524/",
@@ -1019,21 +1046,8 @@
         "area": 46.0,
         "quartos": null,
         "garagem": 1,
-        "banheiros": null
-    },
-    {
-        "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-350m-3-quartos-no-bairro-centro-em-florianopolis_9520/",
-        "titulo": "Apartamento com 350m², 3 quartos, 3 suítes, 2 garagens, no bairro Centro em Florianópolis",
-        "local_txt": "Florianópolis/SC",
-        "cidade": "Florianópolis",
-        "bairro": "Centro",
-        "rua": "Avenida Jornalista Rubens De Arruda Ramos",
-        "price_txt": "Valor:R$ 14.000",
-        "price_num": 14000.0,
-        "area": 350.0,
-        "quartos": 3,
-        "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-90m-3-quartos-no-bairro-jurere-em-florianopolis_9511/",
@@ -1047,6 +1061,67 @@
         "area": 90.0,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "aluguel"
+    },
+    {
+        "url": "https://www.brognoli.com.br/imovel/alugar-apartamento-com-278m-2-quartos-no-bairro-centro-em-florianopolis_9507/",
+        "titulo": "Apartamento com 278m², 2 quartos, 2 suítes, 2 garagens, no bairro Centro em Florianópolis",
+        "local_txt": "Florianópolis/SC",
+        "cidade": "Florianópolis",
+        "bairro": "Centro",
+        "rua": "Rua São Jorge",
+        "price_txt": "Valor:R$ 7.500",
+        "price_num": 7500.0,
+        "area": 278.0,
+        "quartos": 2,
+        "garagem": 2,
+        "banheiros": null,
+        "tipo": "aluguel"
+    },
+    {
+        "url": "https://www.brognoli.com.br/imovel/alugar-loja-com-39m-no-bairro-centro-em-florianopolis_9488/",
+        "titulo": "Loja com 39m², 1 garagem, no bairro Centro em Florianópolis",
+        "local_txt": "Florianópolis/SC",
+        "cidade": "Florianópolis",
+        "bairro": "Centro",
+        "rua": "Avenida Hercílio Luz",
+        "price_txt": "Valor:R$ 5.000",
+        "price_num": 5000.0,
+        "area": 39.0,
+        "quartos": null,
+        "garagem": 1,
+        "banheiros": null,
+        "tipo": "aluguel"
+    },
+    {
+        "url": "https://www.brognoli.com.br/imovel/alugar-predio-com-20m-no-bairro-centro-em-florianopolis_9482/",
+        "titulo": "Prédio com 20m², 5 garagens, no bairro Centro em Florianópolis",
+        "local_txt": "Florianópolis/SC",
+        "cidade": "Florianópolis",
+        "bairro": "Centro",
+        "rua": "Rua Professor Herminio Jacques",
+        "price_txt": "Valor:R$ 12.900",
+        "price_num": 12900.0,
+        "area": 20.0,
+        "quartos": null,
+        "garagem": 5,
+        "banheiros": null,
+        "tipo": "aluguel"
+    },
+    {
+        "url": "https://www.brognoli.com.br/imovel/alugar-salas-conjuntos-com-35m-no-bairro-centro-em-florianopolis_9460/",
+        "titulo": "Salas/Conjuntos com 35m², no bairro Centro em Florianópolis",
+        "local_txt": "Florianópolis/SC",
+        "cidade": "Florianópolis",
+        "bairro": "Centro",
+        "rua": "Rua Conselheiro Mafra",
+        "price_txt": "Valor:R$ 1.100",
+        "price_num": 1100.0,
+        "area": 35.0,
+        "quartos": null,
+        "garagem": null,
+        "banheiros": null,
+        "tipo": "aluguel"
     }
 ]

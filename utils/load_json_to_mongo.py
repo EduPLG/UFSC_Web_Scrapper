@@ -1,6 +1,6 @@
 import os
 import json
-from pymongo import MongoClient
+from pymongo import MongoClient, errors
 
 # Config do Mongo (pega default do docker compose se não tivermos no env)
 MONGO_URI = os.getenv("MONGO_URI", "mongodb://imoveis:imoveis@mongo:27017")
@@ -10,7 +10,22 @@ MONGO_COLLECTION_NAME = os.getenv("MONGO_COLLECTION_NAME", "imoveis")
 _mongo_client = MongoClient(MONGO_URI)
 
 
+def check_mongo_connection() -> bool:
+    """Verifica se a conexão com o MongoDB está ativa."""
+    try:
+        # O comando 'ping' é uma forma leve de verificar a conexão sem levantar exceções.
+        _mongo_client.admin.command('ping')
+        print("Conexão com o MongoDB bem-sucedida.")
+        return True
+    except errors.ConnectionFailure:
+        print("Sem conexão com o MongoDB.")
+        return False
+
+
 def save_elements_to_mongo(json_name: str) -> None:
+    if not check_mongo_connection():
+        return
+
     with open(json_name, "r", encoding="utf-8") as f:
         docs = json.load(f)
     if not docs:

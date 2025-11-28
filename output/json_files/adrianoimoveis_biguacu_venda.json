@@ -11,7 +11,8 @@
         "area": 41.65,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-biguacu-2-quartos-40-m/AP1073-ADU9?from=sale",
@@ -25,6 +26,7 @@
         "area": 39.67,
         "quartos": 2,
         "garagem": null,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "venda"
     }
 ]

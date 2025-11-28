@@ -11,7 +11,8 @@
         "area": 1947.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-48m-2-quartos-no-bairro-centro-em-biguacu_A8-57612/",
@@ -25,7 +26,8 @@
         "area": 48.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-41m-2-quartos-no-bairro-jardim-janaina-em-biguacu_A21-57589/",
@@ -39,7 +41,8 @@
         "area": 41.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-casa-residencial-com-1000m-4-quartos-no-bairro-sao-miguel-guaporanga-em-biguacu_C153-57253/",
@@ -53,21 +56,8 @@
         "area": 1000.0,
         "quartos": 4,
         "garagem": 4,
-        "banheiros": null
-    },
-    {
-        "url": "https://www.brognoli.com.br/imovel/comprar-terrenos-residenciais-com-507m-no-bairro-areias-de-cima-guaporanga-em-biguacu_T153-57214/",
-        "titulo": "Terrenos Residenciais com 507m², no bairro Areias de Cima (Guaporanga) em Biguaçu",
-        "local_txt": "Biguaçu/SC",
-        "cidade": "Biguaçu",
-        "bairro": "Areias De Cima (Guaporanga)",
-        "rua": "Rua Geral Jardim Carolina",
-        "price_txt": "Valor:R$ 180.000",
-        "price_num": 180000.0,
-        "area": 507.0,
-        "quartos": null,
-        "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-terreno-comercial-residencial-com-150m-no-bairro-jardim-santa-catarina-em-biguacu_T149-57138/",
@@ -81,7 +71,8 @@
         "area": 150.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-67m-2-quartos-no-bairro-praia-joao-rosa-em-biguacu_A87-56599/",
@@ -95,7 +86,8 @@
         "area": 67.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-casa-residencial-com-177m-3-quartos-no-bairro-bom-viver-em-biguacu_C140-56488/",
@@ -109,7 +101,8 @@
         "area": 177.0,
         "quartos": 3,
         "garagem": 3,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-chacara-com-43560m-3-quartos-no-bairro-russia-em-biguacu_CH153-56430/",
@@ -123,7 +116,8 @@
         "area": 43560.0,
         "quartos": 3,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-casa-em-condominio-com-165m-3-quartos-no-bairro-beira-rio-em-biguacu_C152-54968/",
@@ -137,7 +131,8 @@
         "area": 165.0,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-90m-3-quartos-no-bairro-rio-caveiras-em-biguacu_A84-54334/",
@@ -151,7 +146,8 @@
         "area": 90.0,
         "quartos": 3,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-46m-2-quartos-no-bairro-bom-viver-em-biguacu_A4-54291/",
@@ -165,7 +161,8 @@
         "area": 46.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-84m-3-quartos-no-bairro-rio-caveiras-em-biguacu_A149-54117/",
@@ -179,7 +176,8 @@
         "area": 84.0,
         "quartos": 3,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-casa-em-condominio-com-179m-3-quartos-no-bairro-beira-rio-em-biguacu_C153-52132/",
@@ -193,7 +191,8 @@
         "area": 179.0,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-casa-em-condominio-com-216m-3-quartos-no-bairro-beira-rio-em-biguacu_C48-52068/",
@@ -207,7 +206,8 @@
         "area": 216.0,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-terreno-comercial-residencial-com-10100m-no-bairro-boa-vista-em-biguacu_T78-51735/",
@@ -221,7 +221,8 @@
         "area": 10100.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-terrenos-residenciais-com-150m-no-bairro-beira-rio-em-biguacu_T32-51203/",
@@ -235,7 +236,8 @@
         "area": 150.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-terrenos-residenciais-com-150m-no-bairro-deltaville-em-biguacu_T65-50794/",
@@ -249,7 +251,8 @@
         "area": 150.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-terreno-comercial-residencial-com-2021m-no-bairro-sorocaba-de-dentro-em-biguacu_T8-50076/",
@@ -263,7 +266,8 @@
         "area": 2021.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-cobertura-com-240m-3-quartos-no-bairro-centro-em-biguacu_CB6-47588/",
@@ -277,7 +281,8 @@
         "area": 240.0,
         "quartos": 3,
         "garagem": 3,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-casa-residencial-com-120m-3-quartos-no-bairro-jardim-janaina-em-biguacu_C37-46174/",
@@ -291,7 +296,8 @@
         "area": 120.0,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-terrenos-residenciais-com-150m-no-bairro-beira-rio-em-biguacu_T8-46137/",
@@ -305,7 +311,8 @@
         "area": 150.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-sitio-com-200m-3-quartos-no-bairro-sorocaba-de-dentro-em-biguacu_ST8-43759/",
@@ -319,7 +326,8 @@
         "area": 200.0,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-apartamentos-com-52m-2-quartos-no-bairro-vendaval-em-biguacu_A8-40986/",
@@ -333,7 +341,8 @@
         "area": 52.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.brognoli.com.br/imovel/comprar-terreno-comercial-residencial-com-6184m-no-bairro-bom-viver-em-biguacu_T32-38646/",
@@ -347,6 +356,7 @@
         "area": 6184.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     }
 ]

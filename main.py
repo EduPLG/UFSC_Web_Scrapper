@@ -118,11 +118,7 @@ if __name__ == "__main__":
                 if not filter(lambda x: x.startswith("data_base."), os.listdir(PATH_OUTPUT)):
                     print("Nenhum arquivo de dados encontrado. Por favor, execute o scrapping e salve os dados primeiro.")
                     continue
-                try:
-                    save_elements_to_mongo(join(PATH_OUTPUT, "data_base.json"))
-                except Exception as e:
-                    print(f"Warming: Erro ao salvar dados no MongoDB:\n{e}")
-                    continue
+                save_elements_to_mongo(join(PATH_OUTPUT, "data_base.json"))
                 print("Selecione o tipo de análise:")
                 print("1. Apenas ALUGUEL")
                 print("2. Apenas VENDA")

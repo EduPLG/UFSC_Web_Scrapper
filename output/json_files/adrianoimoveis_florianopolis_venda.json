@@ -1,5 +1,50 @@
 [
     {
+        "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-1-quarto-52-m/AP1254-ADU9?from=sale",
+        "titulo": "Apartamento",
+        "local_txt": "Capoeiras - Florianópolis - SCResidencial Plaza Mediterranne",
+        "cidade": "Florianópolis",
+        "bairro": "Capoeiras",
+        "rua": null,
+        "price_txt": "R$ 330.000",
+        "price_num": 330000.0,
+        "area": 51.5,
+        "quartos": 1,
+        "garagem": null,
+        "banheiros": 2,
+        "tipo": "venda"
+    },
+    {
+        "url": "https://www.adrianoimoveis.com.br/imovel/casa-florianopolis-4-quartos-143-m/CA0651-ADU9?from=sale",
+        "titulo": "Casa",
+        "local_txt": "Capoeiras - Florianópolis - SC",
+        "cidade": "Florianópolis",
+        "bairro": "Capoeiras",
+        "rua": null,
+        "price_txt": "R$ 1.000.000",
+        "price_num": 1000000.0,
+        "area": 143.27,
+        "quartos": 4,
+        "garagem": null,
+        "banheiros": 2,
+        "tipo": "venda"
+    },
+    {
+        "url": "https://www.adrianoimoveis.com.br/imovel/casa-florianopolis-3-quartos-140-m/CA0600-ADU9?from=sale",
+        "titulo": "Casa",
+        "local_txt": "Coloninha - Florianópolis - SC",
+        "cidade": "Florianópolis",
+        "bairro": "Coloninha",
+        "rua": null,
+        "price_txt": "R$ 890.000",
+        "price_num": 890000.0,
+        "area": 140.0,
+        "quartos": 3,
+        "garagem": 2,
+        "banheiros": 1,
+        "tipo": "venda"
+    },
+    {
         "url": "https://www.adrianoimoveis.com.br/imovel/kitnet-florianopolis-1-quarto-32-m/KN0085-ADU9?from=sale",
         "titulo": "Kitnet",
         "local_txt": "Capoeiras - Florianópolis - SCResidencial Plaza Mediterranne",
@@ -11,7 +56,8 @@
         "area": 31.62,
         "quartos": 1,
         "garagem": 1,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/predio-florianopolis-340-m/PR0005-ADU9?from=sale",
@@ -25,7 +71,8 @@
         "area": 340.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": 4
+        "banheiros": 4,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/loja-florianopolis-38-m/LO0068-ADU9?from=sale",
@@ -39,7 +86,8 @@
         "area": 38.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/casa-florianopolis-4-quartos-99-m/CA0513-ADU9?from=sale",
@@ -53,7 +101,8 @@
         "area": 99.0,
         "quartos": 4,
         "garagem": 2,
-        "banheiros": 2
+        "banheiros": 2,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/casa-florianopolis-3-quartos-177-m/CA0648-ADU9?from=sale",
@@ -67,7 +116,8 @@
         "area": 177.0,
         "quartos": 3,
         "garagem": 6,
-        "banheiros": 2
+        "banheiros": 2,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/casa-florianopolis-4-quartos-119-m/CA0179-ADU9?from=sale",
@@ -81,7 +131,8 @@
         "area": 118.72,
         "quartos": 4,
         "garagem": 1,
-        "banheiros": 2
+        "banheiros": 2,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/sala-florianopolis-30-m/SA0125-ADU9?from=sale",
@@ -95,7 +146,8 @@
         "area": 30.0,
         "quartos": null,
         "garagem": 1,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/casa-florianopolis-5-quartos-307-m/CA0064-ADU9?from=sale",
@@ -109,10 +161,11 @@
         "area": 307.0,
         "quartos": 5,
         "garagem": 6,
-        "banheiros": 4
+        "banheiros": 4,
+        "tipo": "venda"
     },
     {
-        "url": "https://www.adrianoimoveis.com.br/imovel/casa-florianopolis-5-quartos-290-m/CA0577-ADU9?from=sale",
+        "url": "https://www.adrianoimoveis.com.br/imovel/casa-florianopolis-5-quartos-290-m/CA0577-ADU9",
         "titulo": "Casa",
         "local_txt": "Capoeiras - Florianópolis - SC",
         "cidade": "Florianópolis",
@@ -123,10 +176,11 @@
         "area": 290.0,
         "quartos": 5,
         "garagem": 4,
-        "banheiros": 4
+        "banheiros": 4,
+        "tipo": "venda"
     },
     {
-        "url": "https://www.adrianoimoveis.com.br/imovel/sala-florianopolis-32-m/SA0082-ADU9?from=sale",
+        "url": "https://www.adrianoimoveis.com.br/imovel/sala-florianopolis-32-m/SA0082-ADU9",
         "titulo": "Sala",
         "local_txt": "Capoeiras - Florianópolis - SCEdifício Comercial Deschamps Office",
         "cidade": "Florianópolis",
@@ -137,10 +191,11 @@
         "area": 32.11,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
-        "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-2-quartos-77-m/AP0984-ADU9?from=sale",
+        "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-2-quartos-77-m/AP0984-ADU9",
         "titulo": "Apartamento",
         "local_txt": "Capoeiras - Florianópolis - SC",
         "cidade": "Florianópolis",
@@ -151,7 +206,8 @@
         "area": 76.75,
         "quartos": 2,
         "garagem": 2,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/sala-florianopolis-82-m/SA0146-ADU9",
@@ -165,7 +221,8 @@
         "area": 82.42,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/terreno-florianopolis-1-042-m/TE0065-ADU9",
@@ -179,7 +236,8 @@
         "area": 1042.4,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/sala-florianopolis-48-m/SA0026-ADU9",
@@ -193,7 +251,8 @@
         "area": 48.0,
         "quartos": null,
         "garagem": 1,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-2-quartos-62-m/AP0592-ADU9",
@@ -207,7 +266,8 @@
         "area": 61.57,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/sala-florianopolis-163-m/SA0064-ADU9",
@@ -221,7 +281,8 @@
         "area": 163.32,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-2-quartos-59-m/AP1085-ADU9",
@@ -235,7 +296,8 @@
         "area": 58.57,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/casa-florianopolis-3-quartos-137-m/CA0448-ADU9",
@@ -249,7 +311,8 @@
         "area": 137.25,
         "quartos": 3,
         "garagem": 4,
-        "banheiros": 2
+        "banheiros": 2,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/terreno-florianopolis-140-m/TE0088-ADU9",
@@ -263,21 +326,8 @@
         "area": 139.5,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
-    },
-    {
-        "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-2-quartos-47-m/AP1208-ADU9",
-        "titulo": "Apartamento",
-        "local_txt": "Capoeiras - Florianópolis - SCCondomínio Residencial Anita Garibaldi",
-        "cidade": "Florianópolis",
-        "bairro": "Capoeiras",
-        "rua": null,
-        "price_txt": "R$ 319.000",
-        "price_num": 319000.0,
-        "area": 46.79,
-        "quartos": 2,
-        "garagem": 1,
-        "banheiros": 1
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-3-quartos-73-m/AP1253-ADU9",
@@ -291,7 +341,8 @@
         "area": 72.71,
         "quartos": 3,
         "garagem": 1,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/terreno-florianopolis-240-m/TE0066-ADU9",
@@ -305,7 +356,8 @@
         "area": 240.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-1-quarto-52-m/AP1156-ADU9",
@@ -319,7 +371,8 @@
         "area": 51.5,
         "quartos": 1,
         "garagem": 1,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-3-quartos-70-m/AP0356-ADU9",
@@ -333,7 +386,8 @@
         "area": 70.0,
         "quartos": 3,
         "garagem": 1,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/casa-florianopolis-4-quartos-200-m/CA0384-ADU9",
@@ -347,7 +401,8 @@
         "area": 200.0,
         "quartos": 4,
         "garagem": 2,
-        "banheiros": 4
+        "banheiros": 4,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-3-quartos-65-m/AP1160-ADU9",
@@ -361,7 +416,8 @@
         "area": 65.14,
         "quartos": 3,
         "garagem": 1,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-2-quartos-79-m/AP1157-ADU9",
@@ -375,7 +431,8 @@
         "area": 79.0,
         "quartos": 2,
         "garagem": null,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/predio-florianopolis-100-m/PR0002-ADU9",
@@ -389,7 +446,8 @@
         "area": 100.0,
         "quartos": null,
         "garagem": 6,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/casa-florianopolis-3-quartos-265-m/CA0601-ADU9",
@@ -403,7 +461,8 @@
         "area": 265.0,
         "quartos": 3,
         "garagem": 6,
-        "banheiros": 2
+        "banheiros": 2,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-3-quartos-96-m/AP0891-ADU9",
@@ -417,21 +476,8 @@
         "area": 95.57,
         "quartos": 3,
         "garagem": 1,
-        "banheiros": 2
-    },
-    {
-        "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-3-quartos-179-m/AP0945-ADU9",
-        "titulo": "Apartamento",
-        "local_txt": "Canto - Florianópolis - SC",
-        "cidade": "Florianópolis",
-        "bairro": "Canto",
-        "rua": null,
-        "price_txt": "R$ 1.100.000",
-        "price_num": 1100000.0,
-        "area": 179.2,
-        "quartos": 3,
-        "garagem": 2,
-        "banheiros": 2
+        "banheiros": 2,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/casa-florianopolis-2-quartos-152-m/CA0673-ADU9",
@@ -445,7 +491,8 @@
         "area": 152.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": 2
+        "banheiros": 2,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-2-quartos-69-m/AP0763-ADU9",
@@ -459,7 +506,8 @@
         "area": 69.0,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/casa-florianopolis-2-quartos-107-m/CA0655-ADU9",
@@ -473,7 +521,8 @@
         "area": 107.4,
         "quartos": 2,
         "garagem": 2,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/casa-florianopolis-3-quartos-140-m/CA0514-ADU9",
@@ -487,21 +536,8 @@
         "area": 140.0,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": 2
-    },
-    {
-        "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-1-quarto-52-m/AP1254-ADU9",
-        "titulo": "Apartamento",
-        "local_txt": "Capoeiras - Florianópolis - SCResidencial Plaza Mediterranne",
-        "cidade": "Florianópolis",
-        "bairro": "Capoeiras",
-        "rua": null,
-        "price_txt": "R$ 365.000",
-        "price_num": 365000.0,
-        "area": 51.5,
-        "quartos": 1,
-        "garagem": null,
-        "banheiros": 2
+        "banheiros": 2,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-2-quartos-52-m/AP1170-ADU9",
@@ -515,7 +551,8 @@
         "area": 51.86,
         "quartos": 2,
         "garagem": 1,
-        "banheiros": 1
+        "banheiros": 1,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/terreno-florianopolis-522-m/TE0087-ADU9",
@@ -529,7 +566,8 @@
         "area": 522.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/casa-florianopolis-4-quartos-190-m/CA0539-ADU9",
@@ -543,7 +581,8 @@
         "area": 190.0,
         "quartos": 4,
         "garagem": 2,
-        "banheiros": 3
+        "banheiros": 3,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/terreno-florianopolis-1-320-m/TE0089-ADU9",
@@ -557,7 +596,8 @@
         "area": 1320.0,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-73-m/AP1250-ADU9",
@@ -571,7 +611,8 @@
         "area": 72.71,
         "quartos": null,
         "garagem": null,
-        "banheiros": null
+        "banheiros": null,
+        "tipo": "venda"
     },
     {
         "url": "https://www.adrianoimoveis.com.br/imovel/apartamento-florianopolis-3-quartos-81-m/AP0726-ADU9",
@@ -585,34 +626,7 @@
         "area": 80.87,
         "quartos": 3,
         "garagem": 2,
-        "banheiros": 1
-    },
-    {
-        "url": "https://www.adrianoimoveis.com.br/imovel/casa-florianopolis-3-quartos-140-m/CA0600-ADU9",
-        "titulo": "Casa",
-        "local_txt": "Coloninha - Florianópolis - SC",
-        "cidade": "Florianópolis",
-        "bairro": "Coloninha",
-        "rua": null,
-        "price_txt": "R$ 890.000",
-        "price_num": 890000.0,
-        "area": 140.0,
-        "quartos": 3,
-        "garagem": 2,
-        "banheiros": 1
-    },
-    {
-        "url": "https://www.adrianoimoveis.com.br/imovel/casa-florianopolis-4-quartos-143-m/CA0651-ADU9",
-        "titulo": "Casa",
-        "local_txt": "Capoeiras - Florianópolis - SC",
-        "cidade": "Florianópolis",
-        "bairro": "Capoeiras",
-        "rua": null,
-        "price_txt": "R$ 1.000.000",
-        "price_num": 1000000.0,
-        "area": 143.27,
-        "quartos": 4,
-        "garagem": null,
-        "banheiros": 2
+        "banheiros": 1,
+        "tipo": "venda"
     }
 ]
